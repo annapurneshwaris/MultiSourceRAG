@@ -7,7 +7,6 @@ Supports cross-validation (GPT-4o + Claude) to avoid self-preference bias.
 from __future__ import annotations
 
 import json
-import re
 from dataclasses import dataclass
 
 from generation.prompt_templates import LLM_JUDGE_PROMPT
@@ -95,14 +94,15 @@ class LLMJudge:
 
         response = self._llm.generate(prompt, max_tokens=500, temperature=0.0)
 
-        # Parse JSON response
+        # Parse JSON response — use find/rfind to handle nested braces
         try:
-            json_match = re.search(r"\{[^}]+\}", response, re.DOTALL)
-            if json_match:
-                scores = json.loads(json_match.group())
+            start = response.find("{")
+            end = response.rfind("}") + 1
+            if start >= 0 and end > start:
+                scores = json.loads(response[start:end])
             else:
                 scores = json.loads(response)
-        except (json.JSONDecodeError, AttributeError):
+        except json.JSONDecodeError:
             scores = {"rci": 0, "as": 0, "vm": 0, "root_cause_category": "unknown", "reasoning": "Parse error"}
 
         return JudgeResult(

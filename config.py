@@ -125,6 +125,8 @@ LLM_PROVIDER = os.getenv("LLM_MODEL", "openai")
 LLM_MODEL_NAME = os.getenv("LLM_MODEL_NAME", "gpt-4o")
 LLM_TEMPERATURE = 0.1
 LLM_MAX_TOKENS = 2048
+JUDGE_MODEL = "gpt-4o-2024-11-20"        # Pinned snapshot for reproducibility
+RANDOM_SEED = 42
 
 # --- Vector Store ---
 VECTOR_STORE = os.getenv("VECTOR_STORE", "faiss")
@@ -155,6 +157,25 @@ INDICES_DIR = os.path.join("data", "indices")
 MODELS_DIR = os.path.join("data", "models")
 EVAL_DIR = os.path.join("data", "evaluation")
 
-# Ensure directories exist
-for d in [RAW_DATA_DIR, PROCESSED_DATA_DIR, CHECKPOINT_DIR, INDICES_DIR, MODELS_DIR, EVAL_DIR]:
-    os.makedirs(d, exist_ok=True)
+ALL_DIRS = [RAW_DATA_DIR, PROCESSED_DATA_DIR, CHECKPOINT_DIR, INDICES_DIR, MODELS_DIR, EVAL_DIR]
+
+
+def init_paths():
+    """Create output directories. Call once at startup, not at import time."""
+    for d in ALL_DIRS:
+        os.makedirs(d, exist_ok=True)
+
+
+def set_seeds(seed: int = RANDOM_SEED):
+    """Set random seeds for reproducibility across numpy, torch, and Python."""
+    import random
+    import numpy as np
+    random.seed(seed)
+    np.random.seed(seed)
+    try:
+        import torch
+        torch.manual_seed(seed)
+        if torch.cuda.is_available():
+            torch.cuda.manual_seed_all(seed)
+    except ImportError:
+        pass

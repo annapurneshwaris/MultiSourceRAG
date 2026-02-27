@@ -36,10 +36,10 @@ _SOURCE_MAP = {
 def _parse_config(config: str) -> list[str]:
     """Parse config string like 'DBW' into source type list.
 
-    Configs: D, B, W, DB, DW, BW, DBW, BM25, Naive, PageIndex,
+    Configs: D, B, W, DB, DW, BW, DBW, BM25, Naive,
              HeteroRAG, HeteroRAG-H, HeteroRAG-L
     """
-    if config.upper() in ("BM25", "NAIVE", "PAGEINDEX", "HETERORAG", "HETERORAG-H", "HETERORAG-L"):
+    if config.upper() in ("BM25", "NAIVE", "HETERORAG", "HETERORAG-H", "HETERORAG-L"):
         return ["doc", "bug", "work_item"]
 
     sources = []
@@ -191,7 +191,6 @@ class RetrievalPipeline:
         active_sources = _parse_config(config)
         is_bm25 = config_upper == "BM25"
         is_naive = config_upper == "NAIVE"
-        is_pageindex = config_upper == "PAGEINDEX"
 
         # Step 0: Embed query
         t0 = time.time()
@@ -206,9 +205,6 @@ class RetrievalPipeline:
         if is_bm25 or is_naive:
             # No routing for baselines — equal weights
             source_boosts = {"doc": 0.5, "bug": 0.5, "work_item": 0.5}
-        elif is_pageindex:
-            # Doc-only
-            source_boosts = {"doc": 1.0, "bug": 0.2, "work_item": 0.2}
         else:
             router = self._router
             if router_type and router_type != self._router_type:
@@ -219,6 +215,12 @@ class RetrievalPipeline:
                     from retrieval.router.llm_zeroshot import LLMZeroShotRouter
                     router = LLMZeroShotRouter()
             source_boosts = router.predict(query, query_embedding)
+
+        # Normalize boosts so they sum to 1 (consistent reranker weighting)
+        boost_sum = sum(source_boosts.values())
+        if boost_sum > 0:
+            source_boosts = {k: v / boost_sum for k, v in source_boosts.items()}
+
         timing["route_ms"] = round((time.time() - t0) * 1000, 1)
 
         # Step 2: Retrieve — per-source retrieval
@@ -229,12 +231,6 @@ class RetrievalPipeline:
             all_candidates = self._retrievers["bm25"].retrieve(
                 query, query_embedding, top_k=top_k * 3
             )
-        elif is_pageindex:
-            # Doc-only retrieval via doc retriever
-            if "doc" in self._retrievers:
-                all_candidates = self._retrievers["doc"].retrieve(
-                    query, query_embedding, top_k=top_k * 3, metadata_hints=hints,
-                )
         elif is_naive:
             # Naive: retrieve from all sources, no metadata hints
             per_source_k = cfg.TOP_K_PER_SOURCE
@@ -265,10 +261,19 @@ class RetrievalPipeline:
             all_candidates.sort(key=lambda x: x[1], reverse=True)
             reranked = all_candidates[:top_k]
         else:
+            # Build chunk embeddings for cosine-based redundancy detection
+            chunk_embeddings = {}
+            if all_candidates:
+                cand_texts = [c.text_with_context or c.text for c, _ in all_candidates]
+                cand_embs = self._embedder.embed(cand_texts)
+                for (chunk, _), emb in zip(all_candidates, cand_embs):
+                    chunk_embeddings[chunk.chunk_id] = emb
+
             reranked = rerank(
                 candidates=all_candidates,
                 source_boosts=source_boosts,
                 top_k=top_k,
+                embeddings=chunk_embeddings,
                 w_relevance=cfg.W_RELEVANCE,
                 w_source_boost=cfg.W_SOURCE_BOOST,
                 w_freshness=cfg.W_FRESHNESS,

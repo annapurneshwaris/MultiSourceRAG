@@ -92,6 +92,9 @@ class AdaptiveRouter(SourceRouter):
     ) -> None:
         """Update router with observed utilities from a query.
 
+        Uses Sherman-Morrison rank-1 update for O(d²) incremental inverse
+        instead of O(d³) full matrix inversion.
+
         Args:
             query_embedding: The query's embedding vector.
             utilities: {source_type: utility_score} from UtilitySignalCollector.
@@ -108,8 +111,12 @@ class AdaptiveRouter(SourceRouter):
             self._A[src] += np.outer(x, x)
             self._b[src] += reward * x
 
-            # Recompute inverse
-            self._A_inv[src] = np.linalg.inv(self._A[src])
+            # Sherman-Morrison rank-1 update: O(d²) instead of O(d³)
+            # A_inv_new = A_inv - (A_inv @ x)(x^T @ A_inv) / (1 + x^T @ A_inv @ x)
+            A_inv = self._A_inv[src]
+            Ax = A_inv @ x                     # d-vector
+            denom = 1.0 + x @ Ax               # scalar
+            self._A_inv[src] = A_inv - np.outer(Ax, Ax) / denom
 
         # Decay exploration
         self._alpha = max(self._alpha_min, self._alpha * self._alpha_decay)

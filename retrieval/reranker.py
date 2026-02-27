@@ -128,7 +128,7 @@ def rerank(
 
     # Greedy MMR selection with diversity
     selected: list[tuple[Chunk, float]] = []
-    selected_texts: list[str] = []
+    selected_ids: list[str] = []
 
     for item in scored:
         if len(selected) >= top_k:
@@ -137,19 +137,26 @@ def rerank(
         chunk = item["chunk"]
         score = item["final_score"]
 
-        # Redundancy penalty (simple text overlap heuristic)
+        # Redundancy penalty — cosine similarity if embeddings available, else word overlap
         redundancy = 0.0
-        chunk_words = set(chunk.text.lower().split()[:50])
-        for prev_text in selected_texts:
-            prev_words = set(prev_text.lower().split()[:50])
-            if chunk_words and prev_words:
-                overlap = len(chunk_words & prev_words) / len(chunk_words | prev_words)
-                redundancy = max(redundancy, overlap)
+        if embeddings and chunk.chunk_id in embeddings:
+            emb = embeddings[chunk.chunk_id]
+            for prev_id in selected_ids:
+                if prev_id in embeddings:
+                    sim = _cosine_similarity(emb, embeddings[prev_id])
+                    redundancy = max(redundancy, sim)
+        else:
+            chunk_words = set(chunk.text.lower().split()[:50])
+            for prev_chunk, _ in selected:
+                prev_words = set(prev_chunk.text.lower().split()[:50])
+                if chunk_words and prev_words:
+                    overlap = len(chunk_words & prev_words) / len(chunk_words | prev_words)
+                    redundancy = max(redundancy, overlap)
 
         adjusted_score = score - w_redundancy * redundancy
 
         selected.append((chunk, adjusted_score))
-        selected_texts.append(chunk.text)
+        selected_ids.append(chunk.chunk_id)
 
     # Diversity enforcement: ensure at least 1 from each source above threshold
     source_types_present = {chunk.source_type for chunk, _ in selected}

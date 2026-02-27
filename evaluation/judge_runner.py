@@ -46,7 +46,7 @@ def _save_scores(scores: list[dict]) -> None:
 
 def run_judge(
     results_path: str = "data/evaluation/ablation_results.json",
-    judge_model: str = "gpt-4o",
+    judge_model: str | None = None,
     max_results: int | None = None,
 ) -> list[dict]:
     """Run LLM judge on ablation results.
@@ -59,7 +59,11 @@ def run_judge(
     Returns:
         List of judge score dicts.
     """
+    import config as cfg
     from evaluation.llm_judge import LLMJudge
+
+    if judge_model is None:
+        judge_model = cfg.JUDGE_MODEL
 
     if not os.path.exists(results_path):
         print(f"No results at {results_path}. Run ablation_runner first.")
@@ -160,7 +164,7 @@ def run_judge(
 
 def main():
     parser = argparse.ArgumentParser(description="Run LLM judge on ablation results")
-    parser.add_argument("--judge-model", type=str, default="gpt-4o", help="Judge model (gpt-4o or claude)")
+    parser.add_argument("--judge-model", type=str, default=None, help="Judge model (gpt-4o-dated or claude)")
     parser.add_argument("--max-results", type=int, default=None, help="Max results to score")
     parser.add_argument("--results-path", type=str, default="data/evaluation/ablation_results.json")
     args = parser.parse_args()

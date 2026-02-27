@@ -25,6 +25,8 @@ stats_service = StatsService()
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Initialize pipeline on startup, save router on shutdown."""
+    import config as cfg
+    cfg.init_paths()
     print("Starting HeteroRAG API...")
 
     # Initialize pipeline (loads embedder, indices, router)
@@ -45,7 +47,7 @@ async def lifespan(app: FastAPI):
     try:
         pipeline = query_service.pipeline
         if hasattr(pipeline._router, "save_state"):
-            pipeline._router.save_state("models/adaptive_router")
+            pipeline._router.save_state("data/models/adaptive_router")
             print("Router state saved.")
     except Exception:
         pass

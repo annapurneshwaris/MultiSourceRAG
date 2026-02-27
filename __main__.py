@@ -15,6 +15,10 @@ import sys
 
 
 def main():
+    import config as cfg
+    cfg.init_paths()
+    cfg.set_seeds()
+
     parser = argparse.ArgumentParser(
         prog="heterorag",
         description="HeteroRAG: Multi-Source Heterogeneous RAG for Technical Support",
@@ -44,7 +48,7 @@ def main():
 
     # judge
     j_parser = sub.add_parser("judge", help="Run LLM judge on ablation results")
-    j_parser.add_argument("--judge-model", type=str, default="gpt-4o")
+    j_parser.add_argument("--judge-model", type=str, default=cfg.JUDGE_MODEL)
     j_parser.add_argument("--max-results", type=int, default=None)
 
     # train

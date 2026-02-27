@@ -27,10 +27,9 @@ ALL_CONFIGS = [
     "D", "B", "W",           # Single source
     "DB", "DW", "BW",        # Two sources
     "DBW",                    # Three sources (main)
-    # Baselines (3)
+    # Baselines (2)
     "BM25",                   # BM25 keyword baseline
     "Naive",                  # Naive concat (no routing, no diversity)
-    "PageIndex",              # Doc-tree-only retrieval baseline
 ]
 
 ROUTER_VARIANTS = ["heuristic", "adaptive", "llm_zeroshot"]

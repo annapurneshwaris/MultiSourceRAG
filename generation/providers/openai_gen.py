@@ -2,11 +2,19 @@
 
 from __future__ import annotations
 
+import logging
+import time
+
 from generation.providers.base import LLMProvider
+
+logger = logging.getLogger(__name__)
+
+_MAX_RETRIES = 3
+_TIMEOUT = 30  # seconds
 
 
 class OpenAIProvider(LLMProvider):
-    """OpenAI API-based text generation."""
+    """OpenAI API-based text generation with retry and timeout."""
 
     def __init__(
         self,
@@ -16,7 +24,10 @@ class OpenAIProvider(LLMProvider):
         import openai
         import config as cfg
 
-        self._client = openai.OpenAI(api_key=api_key or cfg.OPENAI_API_KEY)
+        self._client = openai.OpenAI(
+            api_key=api_key or cfg.OPENAI_API_KEY,
+            timeout=_TIMEOUT,
+        )
         self._model = model or cfg.LLM_MODEL_NAME
 
     def generate(
@@ -25,10 +36,21 @@ class OpenAIProvider(LLMProvider):
         max_tokens: int = 2048,
         temperature: float = 0.1,
     ) -> str:
-        response = self._client.chat.completions.create(
-            model=self._model,
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=max_tokens,
-            temperature=temperature,
-        )
-        return response.choices[0].message.content or ""
+        import openai
+
+        for attempt in range(_MAX_RETRIES):
+            try:
+                response = self._client.chat.completions.create(
+                    model=self._model,
+                    messages=[{"role": "user", "content": prompt}],
+                    max_tokens=max_tokens,
+                    temperature=temperature,
+                )
+                return response.choices[0].message.content or ""
+            except (openai.RateLimitError, openai.APITimeoutError, openai.APIConnectionError) as e:
+                wait = 2 ** attempt
+                logger.warning("OpenAI attempt %d/%d failed: %s — retrying in %ds", attempt + 1, _MAX_RETRIES, e, wait)
+                if attempt < _MAX_RETRIES - 1:
+                    time.sleep(wait)
+                else:
+                    raise

@@ -100,7 +100,7 @@ async def configs():
     """List available experiment configurations."""
     return {
         "source_configs": ["D", "B", "W", "DB", "DW", "BW", "DBW"],
-        "baseline_configs": ["BM25", "Naive", "PageIndex"],
+        "baseline_configs": ["BM25", "Naive"],
         "router_types": ["heuristic", "adaptive", "llm_zeroshot"],
     }
 

@@ -1,6 +1,6 @@
 """Table 3: Baseline comparison results.
 
-Compares HeteroRAG (DBW) against BM25, Naive, PageIndex, and single-source baselines.
+Compares HeteroRAG (DBW) against BM25, Naive, and single-source baselines.
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ def generate_table3(
 
     judge_scores = _load_judge_scores(judge_path)
 
-    baseline_configs = ["D", "B", "W", "BM25", "Naive", "PageIndex", "DBW"]
+    baseline_configs = ["D", "B", "W", "BM25", "Naive", "DBW"]
 
     by_config = defaultdict(list)
     for r in results:

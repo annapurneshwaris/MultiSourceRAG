@@ -1,0 +1,77 @@
+# HeteroRAG Experiment Configuration
+# All hyperparameters and settings used for reproducible experiments.
+# Corresponds to config.py values — this file is for traceability only.
+
+experiment:
+  name: "HeteroRAG v4"
+  random_seed: 42
+  date: "2026-02-27"
+
+data:
+  source_repo: "microsoft/vscode"
+  docs_repo: "microsoft/vscode-docs"
+  bug_date_range: ["2023-01-01", "2025-12-31"]
+  counts:
+    docs: 402
+    bugs: 13913
+    work_items: 3729
+    comments: 13069
+
+embedding:
+  provider: "sentence-transformers"
+  model: "all-MiniLM-L6-v2"
+  dimension: 384
+  batch_size: 64
+
+chunking:
+  min_tokens: 100
+  max_tokens: 500
+  overlap_tokens: 50
+
+retrieval:
+  vector_store: "faiss"
+  top_k_per_source: 20
+  top_k_final: 10
+  min_boost: 0.2
+
+router:
+  cold_start_threshold: 50
+  alpha_initial: 1.0
+  alpha_min: 0.3
+  alpha_decay: 0.99
+
+reranker:
+  w_relevance: 0.4
+  w_source_boost: 0.25
+  w_freshness: 0.1
+  w_authority: 0.1
+  w_redundancy: 0.15
+  diversity_threshold: 0.3
+  redundancy_method: "cosine_similarity"
+
+generation:
+  provider: "openai"
+  model: "gpt-4o"
+  temperature: 0.1
+  max_tokens: 2048
+
+evaluation:
+  judge_model: "gpt-4o-2024-11-20"
+  cross_validation_model: "claude-sonnet-4-20250514"
+  query_count: 250
+  categories:
+    how_to: 60
+    debugging: 75
+    error_diagnosis: 50
+    status_roadmap: 40
+    config: 25
+
+ablation:
+  source_configs: ["D", "B", "W", "DB", "DW", "BW", "DBW"]
+  baseline_configs: ["BM25", "Naive"]
+  router_variants: ["heuristic", "adaptive", "llm_zeroshot"]
+
+metrics:
+  ra: "(RCI + AS + VM) / 6"
+  csas: "citation_source_alignment_score"
+  msur: "multi_source_utilization_rate"
