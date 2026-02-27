@@ -15,7 +15,7 @@ from processing.feature_area_map import extract_feature_area
 _CHARS_PER_TOKEN = 4
 _BODY_MAX_CHARS = 400 * _CHARS_PER_TOKEN       # ~400 tokens
 _COMMENT_MAX_CHARS = 200 * _CHARS_PER_TOKEN     # ~200 tokens
-_CHUNK_MAX_CHARS = 800 * _CHARS_PER_TOKEN       # ~800 tokens (split threshold)
+_CHUNK_MAX_CHARS = 500 * _CHARS_PER_TOKEN       # ~500 tokens (split threshold per v4 spec)
 
 # Common OS patterns in bug bodies
 _OS_PATTERNS = [

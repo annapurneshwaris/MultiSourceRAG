@@ -1,13 +1,10 @@
 """Orchestrator: Run all data collection and post-processing pipelines."""
 
 import os
-import sys
 import json
 import argparse
 import logging
 from collections import Counter
-
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import config
 

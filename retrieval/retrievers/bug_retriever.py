@@ -71,12 +71,12 @@ class BugRetriever(SourceRetriever):
             if meta.get("has_team_response"):
                 boost *= 1.3
 
-            # High-reaction bugs are important
+            # High-reaction bugs are important (check larger threshold first)
             reactions = meta.get("total_reactions", 0)
-            if reactions > 10:
-                boost *= 1.1
-            elif reactions > 50:
+            if reactions > 50:
                 boost *= 1.2
+            elif reactions > 10:
+                boost *= 1.1
 
             boosted.append((chunk, score * boost))
 

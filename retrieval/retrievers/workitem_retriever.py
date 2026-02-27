@@ -67,13 +67,15 @@ class WorkItemRetriever(SourceRetriever):
             if reactions > 0:
                 boost *= 1.0 + 0.1 * math.log1p(reactions)
 
-            # Shipped/closed items are confirmed
-            if meta.get("state") == "closed":
+            # Shipped/completed items are confirmed (not_planned closures are noise)
+            state = meta.get("state", "")
+            state_reason = meta.get("state_reason", "")
+            if state == "closed" and state_reason != "not_planned":
                 boost *= 1.2
 
             # Current/recent milestones
             milestone = meta.get("milestone", "")
-            if milestone and any(y in milestone for y in ["2025", "2024"]):
+            if milestone and any(y in milestone for y in ["2026", "2025", "2024"]):
                 boost *= 1.1
 
             boosted.append((chunk, score * boost))

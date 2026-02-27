@@ -156,13 +156,23 @@ def rerank(
     all_sources = {"doc", "bug", "work_item"}
     missing_sources = all_sources - source_types_present
 
+    already_selected_ids = {chunk.chunk_id for chunk, _ in selected}
+
     for missing_src in missing_sources:
-        # Find best candidate from this source
+        # Find best candidate from this source not already selected
         for item in scored:
-            if item["source_type"] == missing_src and item["final_score"] > diversity_threshold:
-                # Replace lowest-scored item
-                if selected:
+            if (
+                item["source_type"] == missing_src
+                and item["final_score"] > diversity_threshold
+                and item["chunk"].chunk_id not in already_selected_ids
+            ):
+                if len(selected) >= top_k:
+                    # Replace lowest-scored item
+                    selected.sort(key=lambda x: x[1], reverse=True)
                     selected[-1] = (item["chunk"], item["final_score"])
+                else:
+                    selected.append((item["chunk"], item["final_score"]))
+                already_selected_ids.add(item["chunk"].chunk_id)
                 break
 
     # Final sort

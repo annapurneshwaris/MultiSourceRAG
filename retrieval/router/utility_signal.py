@@ -17,16 +17,20 @@ class UtilitySignalCollector:
         was_cited: bool,
         retrieval_rank: int,
         total_retrieved: int,
+        n_cited_chunks: int = 0,
+        n_source_chunks: int = 0,
     ) -> float:
         """Compute online utility signal for a single source.
 
-        Formula: 0.4 × was_cited + 0.3 × retrieval_quality + 0.3 × source_position
+        Formula: 0.4 × was_cited + 0.3 × retrieval_quality + 0.3 × citation_density
 
         Args:
             source_type: "doc", "bug", or "work_item".
             was_cited: Whether this source was cited in the answer.
             retrieval_rank: Best rank position of this source's chunk (1-indexed).
             total_retrieved: Total number of chunks retrieved.
+            n_cited_chunks: Number of chunks from this source that were cited.
+            n_source_chunks: Total chunks from this source in the result set.
 
         Returns:
             Utility score in [0, 1].
@@ -40,13 +44,16 @@ class UtilitySignalCollector:
         else:
             retrieval_quality = 0.0
 
-        # Source position: how early this source appears in results
-        position_score = retrieval_quality  # Same as rank-based for now
+        # Citation density: fraction of this source's chunks that were cited
+        if n_source_chunks > 0 and n_cited_chunks > 0:
+            citation_density = min(1.0, n_cited_chunks / n_source_chunks)
+        else:
+            citation_density = 0.0
 
         utility = (
             0.4 * citation_signal
             + 0.3 * retrieval_quality
-            + 0.3 * position_score
+            + 0.3 * citation_density
         )
 
         return min(1.0, max(0.0, utility))

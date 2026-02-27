@@ -6,23 +6,31 @@ Output: data/evaluation/ablation_results.json
 Usage:
     python -m evaluation.ablation_runner
     python -m evaluation.ablation_runner --configs D,DBW --queries 10
+    python -m evaluation.ablation_runner --router-sweep  # Run all 3 routers on DBW
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import logging
 import os
 import time
 
 from evaluation.query_bank import load_queries, EvalQuery
 
+logger = logging.getLogger(__name__)
+
 # All 13 experiment configurations
 ALL_CONFIGS = [
+    # Source ablation (7)
     "D", "B", "W",           # Single source
     "DB", "DW", "BW",        # Two sources
-    "DBW",                     # Three sources (main)
-    "BM25",                    # BM25 baseline
+    "DBW",                    # Three sources (main)
+    # Baselines (3)
+    "BM25",                   # BM25 keyword baseline
+    "Naive",                  # Naive concat (no routing, no diversity)
+    "PageIndex",              # Doc-tree-only retrieval baseline
 ]
 
 ROUTER_VARIANTS = ["heuristic", "adaptive", "llm_zeroshot"]
@@ -55,6 +63,7 @@ def run_ablation(
     max_queries: int | None = None,
     generate: bool = True,
     router_type: str = "heuristic",
+    router_sweep: bool = False,
 ) -> list[dict]:
     """Run ablation experiments.
 
@@ -62,7 +71,8 @@ def run_ablation(
         configs: List of config strings, or None for all.
         max_queries: Limit number of queries (for testing).
         generate: Whether to generate LLM answers.
-        router_type: Which router to use.
+        router_type: Which router to use (ignored if router_sweep=True).
+        router_sweep: If True, run DBW with all 3 router variants.
 
     Returns:
         List of result dicts.
@@ -77,10 +87,6 @@ def run_ablation(
     checkpoint = _load_checkpoint()
     completed_keys = set(tuple(k) for k in checkpoint["completed"])
 
-    # Initialize pipeline
-    print(f"Initializing pipeline (router={router_type})...")
-    pipeline = RetrievalPipeline(router_type=router_type)
-
     all_results: list[dict] = []
 
     # Load existing results if any
@@ -88,23 +94,46 @@ def run_ablation(
         with open(RESULTS_PATH, "r", encoding="utf-8") as f:
             all_results = json.load(f)
 
-    total = len(configs) * len(queries)
+    # Build list of (config, router_type) pairs to run
+    run_pairs: list[tuple[str, str]] = []
+
+    for cfg in configs:
+        run_pairs.append((cfg, router_type))
+
+    # Router sweep: run DBW with all 3 router variants
+    if router_sweep:
+        for rv in ROUTER_VARIANTS:
+            if ("DBW", rv) not in run_pairs:
+                run_pairs.append(("DBW", rv))
+
+    total = len(run_pairs) * len(queries)
     done = 0
 
-    for config in configs:
+    # Cache pipelines by router type to avoid re-initialization
+    pipelines: dict[str, RetrievalPipeline] = {}
+
+    for cfg, rt in run_pairs:
+        # Lazily initialize pipeline for this router type
+        if rt not in pipelines:
+            logger.info(f"Initializing pipeline (router={rt})...")
+            print(f"Initializing pipeline (router={rt})...")
+            pipelines[rt] = RetrievalPipeline(router_type=rt)
+
+        pipeline = pipelines[rt]
+
         for query in queries:
-            key = (query.query_id, config, router_type)
+            key = (query.query_id, cfg, rt)
             if key in completed_keys:
                 done += 1
                 continue
 
-            print(f"  [{done + 1}/{total}] {config} | {query.query_id}: {query.query_text[:60]}...")
+            print(f"  [{done + 1}/{total}] {cfg}:{rt} | {query.query_id}: {query.query_text[:60]}...")
 
             try:
                 t0 = time.time()
                 result = pipeline.process_query(
                     query=query.query_text,
-                    config=config,
+                    config=cfg,
                     generate=generate,
                 )
 
@@ -113,7 +142,7 @@ def run_ablation(
                 result["expected_sources"] = query.expected_sources
                 result["expected_area"] = query.expected_area
                 result["difficulty"] = query.difficulty
-                result["router_type"] = router_type
+                result["router_type"] = rt
                 result["eval_time"] = round(time.time() - t0, 2)
 
                 all_results.append(result)
@@ -127,11 +156,12 @@ def run_ablation(
                     _save_results(all_results)
 
             except Exception as e:
+                logger.error(f"Error on {cfg}:{rt} {query.query_id}: {e}")
                 print(f"    ERROR: {e}")
                 all_results.append({
                     "query_id": query.query_id,
-                    "config": config,
-                    "router_type": router_type,
+                    "config": cfg,
+                    "router_type": rt,
                     "error": str(e),
                 })
 
@@ -148,6 +178,7 @@ def main():
     parser.add_argument("--queries", type=int, default=None, help="Max queries to evaluate")
     parser.add_argument("--router", type=str, default="heuristic", help="Router type")
     parser.add_argument("--no-generate", action="store_true", help="Skip LLM generation")
+    parser.add_argument("--router-sweep", action="store_true", help="Run all 3 routers on DBW")
     args = parser.parse_args()
 
     configs = args.configs.split(",") if args.configs else None
@@ -157,6 +188,7 @@ def main():
         max_queries=args.queries,
         generate=not args.no_generate,
         router_type=args.router,
+        router_sweep=args.router_sweep,
     )
 
 

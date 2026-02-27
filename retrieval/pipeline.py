@@ -12,6 +12,7 @@ Steps:
 
 from __future__ import annotations
 
+import logging
 import os
 import time
 from typing import Optional
@@ -20,6 +21,8 @@ import numpy as np
 
 from processing.schemas import Chunk
 from retrieval.metadata_hints import extract_hints
+
+logger = logging.getLogger(__name__)
 from retrieval.reranker import rerank
 
 # Source type lists for config parsing
@@ -139,7 +142,7 @@ class RetrievalPipeline:
                 cold_start_threshold=cfg.COLD_START_THRESHOLD,
             )
             # Load saved state if available
-            router_state_dir = os.path.join("models", "adaptive_router")
+            router_state_dir = os.path.join("data", "models", "adaptive_router")
             if os.path.exists(os.path.join(router_state_dir, "router_state.json")):
                 self._router.load_state(router_state_dir)
         elif router_type == "llm_zeroshot":
@@ -181,9 +184,14 @@ class RetrievalPipeline:
         timing = {}
         t_start = time.time()
 
+        import config as cfg
+
         # Parse config
+        config_upper = config.upper()
         active_sources = _parse_config(config)
-        is_bm25 = config.upper() == "BM25"
+        is_bm25 = config_upper == "BM25"
+        is_naive = config_upper == "NAIVE"
+        is_pageindex = config_upper == "PAGEINDEX"
 
         # Step 0: Embed query
         t0 = time.time()
@@ -195,12 +203,15 @@ class RetrievalPipeline:
 
         # Step 1: Route — predict source boosts
         t0 = time.time()
-        if is_bm25:
+        if is_bm25 or is_naive:
+            # No routing for baselines — equal weights
             source_boosts = {"doc": 0.5, "bug": 0.5, "work_item": 0.5}
+        elif is_pageindex:
+            # Doc-only
+            source_boosts = {"doc": 1.0, "bug": 0.2, "work_item": 0.2}
         else:
             router = self._router
             if router_type and router_type != self._router_type:
-                # Use alternate router for this query
                 if router_type == "heuristic":
                     from retrieval.router.heuristic import HeuristicRouter
                     router = HeuristicRouter()
@@ -218,10 +229,23 @@ class RetrievalPipeline:
             all_candidates = self._retrievers["bm25"].retrieve(
                 query, query_embedding, top_k=top_k * 3
             )
-        else:
-            import config as cfg
+        elif is_pageindex:
+            # Doc-only retrieval via doc retriever
+            if "doc" in self._retrievers:
+                all_candidates = self._retrievers["doc"].retrieve(
+                    query, query_embedding, top_k=top_k * 3, metadata_hints=hints,
+                )
+        elif is_naive:
+            # Naive: retrieve from all sources, no metadata hints
             per_source_k = cfg.TOP_K_PER_SOURCE
-
+            for source in active_sources:
+                if source in self._retrievers:
+                    results = self._retrievers[source].retrieve(
+                        query, query_embedding, top_k=per_source_k,
+                    )
+                    all_candidates.extend(results)
+        else:
+            per_source_k = cfg.TOP_K_PER_SOURCE
             for source in active_sources:
                 if source in self._retrievers:
                     results = self._retrievers[source].retrieve(
@@ -235,18 +259,22 @@ class RetrievalPipeline:
 
         # Step 3: Re-rank — diversity-constrained MMR
         t0 = time.time()
-        import config as cfg
 
-        reranked = rerank(
-            candidates=all_candidates,
-            source_boosts=source_boosts,
-            top_k=top_k,
-            w_relevance=cfg.W_RELEVANCE,
-            w_source_boost=cfg.W_SOURCE_BOOST,
-            w_freshness=cfg.W_FRESHNESS,
-            w_authority=cfg.W_AUTHORITY,
-            w_redundancy=cfg.W_REDUNDANCY,
-        )
+        if is_naive:
+            # Naive baseline: sort by relevance only, no diversity enforcement
+            all_candidates.sort(key=lambda x: x[1], reverse=True)
+            reranked = all_candidates[:top_k]
+        else:
+            reranked = rerank(
+                candidates=all_candidates,
+                source_boosts=source_boosts,
+                top_k=top_k,
+                w_relevance=cfg.W_RELEVANCE,
+                w_source_boost=cfg.W_SOURCE_BOOST,
+                w_freshness=cfg.W_FRESHNESS,
+                w_authority=cfg.W_AUTHORITY,
+                w_redundancy=cfg.W_REDUNDANCY,
+            )
         timing["rerank_ms"] = round((time.time() - t0) * 1000, 1)
 
         # Step 4: Generate — LLM answer with citations
@@ -273,8 +301,10 @@ class RetrievalPipeline:
             # Compute per-source utility
             utilities = {}
             for source in active_sources:
-                source_chunks = [c for c, _ in reranked if c.source_type == source]
-                was_cited = source in citations and len(citations[source]) > 0
+                n_source = sum(1 for c, _ in reranked if c.source_type == source)
+                cited_ids = set(citations.get(source, []))
+                was_cited = len(cited_ids) > 0
+                n_cited = len(cited_ids)
 
                 # Best rank for this source
                 best_rank = 0
@@ -288,13 +318,15 @@ class RetrievalPipeline:
                     was_cited=was_cited,
                     retrieval_rank=best_rank,
                     total_retrieved=len(reranked),
+                    n_cited_chunks=n_cited,
+                    n_source_chunks=n_source,
                 )
 
             # Update router
             self._router.update(query_embedding, utilities)
 
             # Persist state
-            router_state_dir = os.path.join("models", "adaptive_router")
+            router_state_dir = os.path.join("data", "models", "adaptive_router")
             self._router.save_state(router_state_dir)
             self._router.save_history(
                 {"query": query, "config": config, "boosts": source_boosts, "utilities": utilities},
