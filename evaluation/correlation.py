@@ -1,79 +1,158 @@
-"""Human-LLM judge correlation analysis.
+"""Inter-judge and human-LLM judge correlation analysis.
 
-Computes agreement between human annotators and LLM judges
+Computes agreement between any two raters (LLM judges or human annotators)
 across all evaluation dimensions (RCI, AS, VM, RA).
+
+Supports:
+- Inter-judge: GPT-4o vs Claude vs Gemini (pairwise)
+- Human-LLM: human annotations vs any LLM judge (future)
 """
 
 from __future__ import annotations
 
-import json
-import os
+from evaluation.significance import cohens_kappa, pearson_correlation, spearman_correlation
 
-from evaluation.significance import cohens_kappa, pearson_correlation
+DIMENSIONS = ["rci", "as", "vm"]
 
 
-def compute_judge_correlation(
-    human_annotations: list[dict],
-    judge_results: list[dict],
-) -> dict:
-    """Compute correlation between human and LLM judge scores.
+def _build_score_map(scores: list[dict]) -> dict[tuple[str, str], dict]:
+    """Key scores by (query_id, config)."""
+    result = {}
+    for s in scores:
+        key = (s["query_id"], s["config"])
+        result[key] = s
+    return result
 
-    Args:
-        human_annotations: List of human annotation dicts.
-        judge_results: List of LLM judge result dicts.
+
+def _extract_paired(
+    map_a: dict[tuple[str, str], dict],
+    map_b: dict[tuple[str, str], dict],
+) -> dict[str, tuple[list[float], list[float]]]:
+    """Extract paired score lists for all dimensions from two score maps.
 
     Returns:
-        Dict with per-dimension correlations and overall agreement.
+        Dict mapping dimension name -> (scores_a, scores_b) lists.
     """
-    # Match by (query_id, config)
-    human_map = {}
-    for ann in human_annotations:
-        key = (ann["query_id"], ann["config"])
-        human_map.setdefault(key, []).append(ann)
+    common_keys = set(map_a.keys()) & set(map_b.keys())
 
-    judge_map = {}
-    for jr in judge_results:
-        key = (jr["query_id"], jr["config"])
-        judge_map[key] = jr
+    paired: dict[str, tuple[list, list]] = {
+        dim: ([], []) for dim in DIMENSIONS + ["ra"]
+    }
 
-    # Collect paired scores
-    paired_rci_h, paired_rci_j = [], []
-    paired_as_h, paired_as_j = [], []
-    paired_vm_h, paired_vm_j = [], []
-    paired_ra_h, paired_ra_j = [], []
+    for key in common_keys:
+        a, b = map_a[key], map_b[key]
+        for dim in DIMENSIONS:
+            a_key = "as" if dim == "as" else dim
+            val_a = a.get(a_key, 0)
+            val_b = b.get(a_key, 0)
+            if val_a is not None and val_b is not None:
+                paired[dim][0].append(float(val_a))
+                paired[dim][1].append(float(val_b))
 
-    for key, h_anns in human_map.items():
-        if key not in judge_map:
+        ra_a = a.get("ra")
+        ra_b = b.get("ra")
+        if ra_a is not None and ra_b is not None:
+            paired["ra"][0].append(float(ra_a))
+            paired["ra"][1].append(float(ra_b))
+
+    return paired
+
+
+def compute_pairwise_agreement(
+    scores_a: list[dict],
+    scores_b: list[dict],
+    label_a: str = "judge_a",
+    label_b: str = "judge_b",
+) -> dict:
+    """Compute Cohen's kappa and Spearman rho between two sets of judge scores.
+
+    Works for any two raters: LLM-LLM or human-LLM.
+
+    Args:
+        scores_a: Score dicts from rater A.
+        scores_b: Score dicts from rater B.
+        label_a: Display label for rater A.
+        label_b: Display label for rater B.
+
+    Returns:
+        Dict with per-dimension kappa, spearman, pearson, and n_paired.
+    """
+    map_a = _build_score_map(scores_a)
+    map_b = _build_score_map(scores_b)
+    paired = _extract_paired(map_a, map_b)
+
+    result = {
+        "rater_a": label_a,
+        "rater_b": label_b,
+        "n_paired": len(paired["ra"][0]),
+        "dimensions": {},
+    }
+
+    for dim in DIMENSIONS + ["ra"]:
+        vals_a, vals_b = paired[dim]
+        if len(vals_a) < 3:
             continue
 
-        j = judge_map[key]
-        # Average human scores if multiple annotators
-        avg_rci = sum(a["rci"] for a in h_anns) / len(h_anns)
-        avg_as = sum(a["as"] for a in h_anns) / len(h_anns)
-        avg_vm = sum(a["vm"] for a in h_anns) / len(h_anns)
-        avg_ra = sum(a.get("ra", (a["rci"] + a["as"] + a["vm"]) / 6.0) for a in h_anns) / len(h_anns)
+        dim_result = {}
 
-        paired_rci_h.append(avg_rci)
-        paired_rci_j.append(j["rci"])
-        paired_as_h.append(avg_as)
-        paired_as_j.append(j["as"])
-        paired_vm_h.append(avg_vm)
-        paired_vm_j.append(j["vm"])
-        paired_ra_h.append(avg_ra)
-        paired_ra_j.append(j.get("ra", (j["rci"] + j["as"] + j["vm"]) / 6.0))
+        # Spearman rank correlation (primary for paper)
+        dim_result["spearman"] = spearman_correlation(vals_a, vals_b)
 
-    result = {"n_paired": len(paired_ra_h)}
+        # Pearson correlation
+        dim_result["pearson"] = pearson_correlation(vals_a, vals_b)
 
-    if len(paired_ra_h) >= 3:
-        result["rci_correlation"] = pearson_correlation(paired_rci_h, paired_rci_j)
-        result["as_correlation"] = pearson_correlation(paired_as_h, paired_as_j)
-        result["vm_correlation"] = pearson_correlation(paired_vm_h, paired_vm_j)
-        result["ra_correlation"] = pearson_correlation(paired_ra_h, paired_ra_j)
+        # Cohen's kappa (discretize to integer bins for ordinal data)
+        int_a = [round(v) for v in vals_a]
+        int_b = [round(v) for v in vals_b]
+        if len(set(int_a)) > 1 or len(set(int_b)) > 1:
+            dim_result["kappa"] = cohens_kappa(int_a, int_b)
 
-        # Cohen's kappa (discretize to integer bins)
-        rci_h_int = [round(v) for v in paired_rci_h]
-        rci_j_int = [round(v) for v in paired_rci_j]
-        if len(set(rci_h_int)) > 1 or len(set(rci_j_int)) > 1:
-            result["rci_kappa"] = cohens_kappa(rci_h_int, rci_j_int)
+        result["dimensions"][dim] = dim_result
 
     return result
+
+
+def compute_inter_judge_matrix(
+    judge_scores: dict[str, list[dict]],
+) -> dict:
+    """Compute full pairwise agreement matrix across all judges.
+
+    Args:
+        judge_scores: Dict mapping judge name -> list of score dicts.
+            e.g. {"gpt-4o": [...], "claude": [...], "gemini": [...]}
+
+    Returns:
+        Dict with pairwise comparisons and summary statistics.
+    """
+    judges = list(judge_scores.keys())
+    comparisons = []
+
+    for i in range(len(judges)):
+        for j in range(i + 1, len(judges)):
+            pair = compute_pairwise_agreement(
+                judge_scores[judges[i]],
+                judge_scores[judges[j]],
+                label_a=judges[i],
+                label_b=judges[j],
+            )
+            comparisons.append(pair)
+
+    # Summary: average kappa and spearman across all pairs for RA
+    avg_kappa = []
+    avg_spearman = []
+    for comp in comparisons:
+        ra_dim = comp.get("dimensions", {}).get("ra", {})
+        if "kappa" in ra_dim:
+            avg_kappa.append(ra_dim["kappa"])
+        if "spearman" in ra_dim:
+            avg_spearman.append(ra_dim["spearman"]["correlation"])
+
+    return {
+        "judges": judges,
+        "pairwise": comparisons,
+        "summary": {
+            "avg_ra_kappa": sum(avg_kappa) / len(avg_kappa) if avg_kappa else None,
+            "avg_ra_spearman": sum(avg_spearman) / len(avg_spearman) if avg_spearman else None,
+            "n_pairs": len(comparisons),
+        },
+    }

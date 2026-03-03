@@ -92,16 +92,29 @@ class LLMJudge:
             chunks=chunks_text,
         )
 
-        response = self._llm.generate(prompt, max_tokens=500, temperature=0.0)
+        # Gemini thinking models need more tokens for chain-of-thought
+        max_tok = 2048 if "gemini" in self._judge_model else 500
+        response = self._llm.generate(prompt, max_tokens=max_tok, temperature=0.0)
+
+        # Strip markdown code fences (Gemini wraps JSON in ```json ... ```)
+        cleaned = response.strip()
+        if cleaned.startswith("```"):
+            # Remove opening fence (```json or ```)
+            first_nl = cleaned.find("\n")
+            if first_nl > 0:
+                cleaned = cleaned[first_nl + 1:]
+            # Remove closing fence
+            if cleaned.endswith("```"):
+                cleaned = cleaned[:-3].strip()
 
         # Parse JSON response — use find/rfind to handle nested braces
         try:
-            start = response.find("{")
-            end = response.rfind("}") + 1
+            start = cleaned.find("{")
+            end = cleaned.rfind("}") + 1
             if start >= 0 and end > start:
-                scores = json.loads(response[start:end])
+                scores = json.loads(cleaned[start:end])
             else:
-                scores = json.loads(response)
+                scores = json.loads(cleaned)
         except json.JSONDecodeError:
             scores = {"rci": 0, "as": 0, "vm": 0, "root_cause_category": "unknown", "reasoning": "Parse error"}
 

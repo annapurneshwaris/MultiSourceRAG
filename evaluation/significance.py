@@ -103,10 +103,23 @@ def pearson_correlation(
     scores_a: list[float],
     scores_b: list[float],
 ) -> dict:
-    """Compute Pearson correlation between human and LLM judge scores."""
+    """Compute Pearson correlation between two sets of scores."""
     r, p_value = stats.pearsonr(scores_a, scores_b)
     return {
         "correlation": float(r),
+        "p_value": float(p_value),
+        "significant": p_value < 0.05,
+    }
+
+
+def spearman_correlation(
+    scores_a: list[float],
+    scores_b: list[float],
+) -> dict:
+    """Compute Spearman rank correlation between two sets of scores."""
+    rho, p_value = stats.spearmanr(scores_a, scores_b)
+    return {
+        "correlation": float(rho),
         "p_value": float(p_value),
         "significant": p_value < 0.05,
     }
