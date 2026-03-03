@@ -7,6 +7,7 @@ Supports cross-validation (GPT-4o + Claude) to avoid self-preference bias.
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass
 
 from generation.prompt_templates import LLM_JUDGE_PROMPT
@@ -92,22 +93,17 @@ class LLMJudge:
             chunks=chunks_text,
         )
 
-        # Gemini thinking models need more tokens for chain-of-thought
-        max_tok = 2048 if "gemini" in self._judge_model else 500
+        # Gemini thinking models use tokens for internal reasoning, need high limit
+        # to avoid truncation of visible output
+        max_tok = 8192 if "gemini" in self._judge_model else 500
         response = self._llm.generate(prompt, max_tokens=max_tok, temperature=0.0)
 
         # Strip markdown code fences (Gemini wraps JSON in ```json ... ```)
         cleaned = response.strip()
-        if cleaned.startswith("```"):
-            # Remove opening fence (```json or ```)
-            first_nl = cleaned.find("\n")
-            if first_nl > 0:
-                cleaned = cleaned[first_nl + 1:]
-            # Remove closing fence
-            if cleaned.endswith("```"):
-                cleaned = cleaned[:-3].strip()
+        # Remove ALL markdown fences — handles ```json, ```, with any surrounding text
+        cleaned = re.sub(r'```\w*\s*', '', cleaned).strip()
 
-        # Parse JSON response — use find/rfind to handle nested braces
+        # Extract JSON object — find outermost { } to handle any surrounding text
         try:
             start = cleaned.find("{")
             end = cleaned.rfind("}") + 1

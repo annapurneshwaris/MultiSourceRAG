@@ -22,6 +22,8 @@ class GeminiProvider(LLMProvider):
         api_key: str | None = None,
     ):
         from google import genai
+        from dotenv import load_dotenv
+        load_dotenv()
 
         api_key = api_key or os.getenv("GOOGLE_API_KEY")
         self._client = genai.Client(api_key=api_key)

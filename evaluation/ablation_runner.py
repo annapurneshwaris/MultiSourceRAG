@@ -163,6 +163,9 @@ def run_ablation(
                     "router_type": rt,
                     "error": str(e),
                 })
+                # Add to checkpoint so we don't retry on resume (no duplicates)
+                checkpoint["completed"].append(list(key))
+                _save_checkpoint(checkpoint)
 
             done += 1
 

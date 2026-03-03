@@ -9,8 +9,8 @@ from generation.providers.base import LLMProvider
 
 logger = logging.getLogger(__name__)
 
-_MAX_RETRIES = 3
-_TIMEOUT = 30  # seconds
+_MAX_RETRIES = 5
+_TIMEOUT = 60  # seconds
 
 
 class OpenAIProvider(LLMProvider):
@@ -48,8 +48,8 @@ class OpenAIProvider(LLMProvider):
                 )
                 return response.choices[0].message.content or ""
             except (openai.RateLimitError, openai.APITimeoutError, openai.APIConnectionError) as e:
-                wait = 2 ** attempt
-                logger.warning("OpenAI attempt %d/%d failed: %s — retrying in %ds", attempt + 1, _MAX_RETRIES, e, wait)
+                wait = min(2 ** attempt * 2, 60)  # 2, 4, 8, 16, 32s
+                logger.warning("OpenAI attempt %d/%d failed: %s -- retrying in %ds", attempt + 1, _MAX_RETRIES, e, wait)
                 if attempt < _MAX_RETRIES - 1:
                     time.sleep(wait)
                 else:

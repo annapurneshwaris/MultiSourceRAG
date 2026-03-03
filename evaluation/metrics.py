@@ -9,18 +9,26 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-# Root cause categories for RCI classification
+# Root cause categories (collapsed from 9 to 4 for inter-judge reliability)
 ROOT_CAUSE_CATEGORIES = [
-    "configuration",
-    "extension_conflict",
-    "known_bug",
-    "missing_feature",
-    "platform_specific",
-    "performance",
-    "user_error",
-    "documentation_gap",
-    "unknown",
+    "configuration",    # settings, preferences, workspace config, user error
+    "bug_or_issue",     # known bugs, extension conflicts, platform-specific, performance
+    "gap_or_missing",   # missing features, documentation gaps, feature requests
+    "unknown",          # cannot determine
 ]
+
+# Mapping from legacy 9-category to new 4-category taxonomy
+LEGACY_CATEGORY_MAP = {
+    "configuration": "configuration",
+    "user_error": "configuration",
+    "extension_conflict": "bug_or_issue",
+    "known_bug": "bug_or_issue",
+    "platform_specific": "bug_or_issue",
+    "performance": "bug_or_issue",
+    "missing_feature": "gap_or_missing",
+    "documentation_gap": "gap_or_missing",
+    "unknown": "unknown",
+}
 
 
 @dataclass

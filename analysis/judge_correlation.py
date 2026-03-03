@@ -1,6 +1,7 @@
 """Table 6: Inter-judge agreement matrix.
 
-Computes pairwise Cohen's kappa and Spearman rho across all LLM judges.
+Computes pairwise quadratic weighted kappa (ordinal dimensions) and
+Spearman rho with bootstrap 95% CIs across all LLM judges.
 Optionally includes human annotations if available.
 
 Output: 3x3 pairwise matrix (GPT-4o, Claude, Gemini) + optional human row.
@@ -13,14 +14,16 @@ import os
 
 from evaluation.correlation import compute_inter_judge_matrix, compute_pairwise_agreement
 
+# Resolve paths relative to repo root
+BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
 JUDGE_FILES = {
-    "gpt-4o": "data/evaluation/judge_scores_gpt4o.json",
-    "claude": "data/evaluation/judge_scores_claude.json",
-    "gemini": "data/evaluation/judge_scores_gemini.json",
+    "gpt-4o": os.path.join(BASE, "data", "evaluation", "judge_scores_gpt4o.json"),
+    "claude": os.path.join(BASE, "data", "evaluation", "judge_scores_claude.json"),
+    "gemini": os.path.join(BASE, "data", "evaluation", "judge_scores_gemini.json"),
 }
-HUMAN_FILE = "data/evaluation/annotations.json"
-# Legacy fallback for GPT-4o scores
-LEGACY_GPT4O = "data/evaluation/judge_scores.json"
+HUMAN_FILE = os.path.join(BASE, "data", "evaluation", "annotations.json")
+LEGACY_GPT4O = os.path.join(BASE, "data", "evaluation", "judge_scores.json")
 
 
 def _load_scores(path: str) -> list[dict] | None:
