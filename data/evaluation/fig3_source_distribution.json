@@ -1,0 +1,27 @@
+{
+  "config": {
+    "bug": 18.5,
+    "doc": 73.5,
+    "work_item": 8.1
+  },
+  "debugging": {
+    "bug": 67.4,
+    "doc": 18.9,
+    "work_item": 13.7
+  },
+  "error_diagnosis": {
+    "bug": 78.7,
+    "doc": 12.3,
+    "work_item": 9.0
+  },
+  "how_to": {
+    "bug": 17.9,
+    "work_item": 9.9,
+    "doc": 72.2
+  },
+  "status_roadmap": {
+    "work_item": 72.4,
+    "bug": 17.7,
+    "doc": 9.9
+  }
+}

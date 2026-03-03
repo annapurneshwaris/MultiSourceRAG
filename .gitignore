@@ -9,12 +9,8 @@ dist/
 build/
 .vscode/
 
-# Data (large files — not tracked in git)
-data/raw/
-data/processed/
+# Data — large files tracked via Git LFS, checkpoints/models excluded
 data/checkpoints/
-data/indices/
-data/evaluation/
 data/models/
 vscode-docs/
 
