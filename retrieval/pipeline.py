@@ -355,7 +355,7 @@ class RetrievalPipeline:
                     "source_id": c.source_id,
                     "source_url": c.source_url,
                     "feature_area": c.feature_area,
-                    "text": c.text[:500],
+                    "text": c.text[:2000],  # ~500 tokens; matches CHUNK_MAX_CHARS
                     "score": round(s, 4),
                 }
                 for c, s in reranked

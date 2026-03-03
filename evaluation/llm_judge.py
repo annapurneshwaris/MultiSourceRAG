@@ -84,7 +84,7 @@ class LLMJudge:
             JudgeResult with scores.
         """
         # Format chunks for prompt
-        chunks_text = format_chunks_for_prompt(chunks, max_context_chars=6000)
+        chunks_text = format_chunks_for_prompt(chunks, max_context_chars=10000)
 
         prompt = LLM_JUDGE_PROMPT.format(
             query=query_text,
