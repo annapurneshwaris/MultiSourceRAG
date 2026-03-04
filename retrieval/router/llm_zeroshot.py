@@ -20,7 +20,7 @@ Given a user query, score how relevant each information source is on a scale of 
 - "bug": GitHub bug reports (errors, crashes, workarounds, confirmed issues)
 - "work_item": Roadmap items (feature requests, iteration plans, milestones)
 
-Respond with ONLY a JSON object: {"doc": N, "bug": N, "work_item": N}
+Respond with ONLY a JSON object: {{"doc": N, "bug": N, "work_item": N}}
 
 Query: {query}"""
 

@@ -43,8 +43,8 @@ def _resolve_paths(judge_key: str) -> tuple[str, str]:
     return scores, checkpoint
 
 
-def _load_checkpoint(checkpoint_path: str) -> set[tuple[str, str, str]]:
-    """Load set of already-scored (query_id, config, judge_model) tuples."""
+def _load_checkpoint(checkpoint_path: str) -> set[tuple]:
+    """Load set of already-scored (query_id, config, judge_model[, router_type]) tuples."""
     if not os.path.exists(checkpoint_path):
         return set()
     with open(checkpoint_path, "r") as f:
@@ -132,6 +132,9 @@ def run_judge(
         r for r in results
         if "error" not in r and r.get("answer") and r["answer"] != ""
     ]
+    del results  # Free memory — ablation_results.json can be 30MB+
+    import gc; gc.collect()
+
     if max_results:
         scorable = scorable[:max_results]
 
@@ -150,7 +153,8 @@ def run_judge(
     for r in scorable:
         query_id = r.get("query_id", "")
         config = r.get("config", "")
-        key = (query_id, config, judge_model)
+        router_type = r.get("router_type", "heuristic")
+        key = (query_id, config, judge_model, router_type)
 
         if key in completed:
             done += 1

@@ -57,6 +57,12 @@ class BugRetriever(SourceRetriever):
             filter_ids=filter_ids,
         )
 
+        # Safety fallback: if filtered search returned nothing, retry with all bugs
+        if not results and filter_ids is not None and self._meta_idx:
+            all_bug_ids = self._meta_idx.filter({"source_type": "bug"})
+            if all_bug_ids and all_bug_ids != filter_ids:
+                results = self._store.search(query_embedding, top_k=top_k, filter_ids=all_bug_ids)
+
         # Authority boost
         boosted = []
         for chunk, score in results:

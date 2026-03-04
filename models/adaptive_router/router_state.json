@@ -1,0 +1,9 @@
+{
+  "query_count": 9,
+  "alpha": 0.1,
+  "feature_dim": 384,
+  "alpha_initial": 0.5,
+  "alpha_min": 0.1,
+  "alpha_decay": 0.995,
+  "cold_start": 0
+}

@@ -65,6 +65,12 @@ class DocRetriever(SourceRetriever):
             filter_ids=filter_ids,
         )
 
+        # Safety fallback: if filtered search returned nothing, retry with all docs
+        if not results and filter_ids is not None:
+            all_doc_ids = self._meta_idx.filter({"source_type": "doc"}) if self._meta_idx else None
+            if all_doc_ids and all_doc_ids != filter_ids:
+                results = self._store.search(query_embedding, top_k=top_k, filter_ids=all_doc_ids)
+
         return results
 
     def get_tree_summary(self, max_depth: int = 2) -> str:

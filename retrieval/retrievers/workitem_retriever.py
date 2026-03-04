@@ -56,6 +56,12 @@ class WorkItemRetriever(SourceRetriever):
             filter_ids=filter_ids,
         )
 
+        # Safety fallback: if filtered search returned nothing, retry with all work items
+        if not results and filter_ids is not None and self._meta_idx:
+            all_wi_ids = self._meta_idx.filter({"source_type": "work_item"})
+            if all_wi_ids and all_wi_ids != filter_ids:
+                results = self._store.search(query_embedding, top_k=top_k, filter_ids=all_wi_ids)
+
         # Reaction + status boost
         boosted = []
         for chunk, score in results:

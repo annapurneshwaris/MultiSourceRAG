@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import re
 
-from processing.feature_area_map import FEATURE_AREA_MAP, DOC_AREA_MAP
+from processing.feature_area_map import FEATURE_AREA_MAP
 
 # OS detection patterns
 _OS_MAP = {
@@ -23,13 +23,12 @@ _STATUS_MAP = {
     "open": ["open", "unresolved", "pending", "active"],
 }
 
-# All known area keywords (lowercase)
+# All known area keywords from GitHub labels (NOT DOC_AREA_MAP — those contain
+# generic words like "configure", "editing", "setup" that cause false matches)
 _AREA_KEYWORDS: dict[str, str] = {}
 for label, area in FEATURE_AREA_MAP.items():
     # Use the label itself as a keyword
     _AREA_KEYWORDS[label.replace("-", " ")] = area
-    _AREA_KEYWORDS[label] = area
-for label, area in DOC_AREA_MAP.items():
     _AREA_KEYWORDS[label] = area
 
 
