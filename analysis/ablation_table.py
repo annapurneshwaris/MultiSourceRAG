@@ -13,18 +13,45 @@ from collections import defaultdict
 from evaluation.metrics import compute_csas, compute_msur
 
 
-def _load_judge_scores(judge_path: str) -> dict[tuple[str, str], dict]:
-    """Load LLM judge scores keyed by (query_id, config)."""
-    if not os.path.exists(judge_path):
-        return {}
-    with open(judge_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    return {(d["query_id"], d["config"]): d for d in data}
+JUDGE_FILES = [
+    "data/evaluation/judge_scores_gpt4o.json",
+    "data/evaluation/judge_scores_claude.json",
+    "data/evaluation/judge_scores_gemini.json",
+]
+
+
+def _load_judge_scores_averaged() -> dict[tuple[str, str], dict]:
+    """Load all 3 judge scores and average RA, keyed by (query_id, config)."""
+    from collections import defaultdict as _dd
+    ra_by_key: dict[tuple, list[float]] = _dd(list)
+    rci_by_key: dict[tuple, list[int]] = _dd(list)
+    any_scores: dict[tuple, dict] = {}
+    for jf in JUDGE_FILES:
+        if not os.path.exists(jf):
+            continue
+        with open(jf, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        for d in data:
+            key = (d["query_id"], d["config"])
+            if d.get("ra") is not None:
+                ra_by_key[key].append(d["ra"])
+            if d.get("rci") is not None:
+                rci_by_key[key].append(d["rci"])
+            any_scores[key] = d
+    # Build averaged dict
+    result = {}
+    for key in any_scores:
+        entry = dict(any_scores[key])
+        if key in ra_by_key:
+            entry["ra"] = sum(ra_by_key[key]) / len(ra_by_key[key])
+        if key in rci_by_key:
+            entry["rci"] = round(sum(rci_by_key[key]) / len(rci_by_key[key]), 2)
+        result[key] = entry
+    return result
 
 
 def generate_table2(
     results_path: str = "data/evaluation/ablation_results.json",
-    judge_path: str = "data/evaluation/judge_scores.json",
 ) -> dict:
     """Generate Table 2: Ablation Results with RA, CSAS, MSUR."""
     if not os.path.exists(results_path):
@@ -33,7 +60,7 @@ def generate_table2(
     with open(results_path, "r", encoding="utf-8") as f:
         results = json.load(f)
 
-    judge_scores = _load_judge_scores(judge_path)
+    judge_scores = _load_judge_scores_averaged()
 
     # Group by config
     by_config: dict[str, list] = defaultdict(list)

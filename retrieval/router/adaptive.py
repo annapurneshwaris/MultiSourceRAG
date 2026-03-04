@@ -39,6 +39,7 @@ class AdaptiveRouter(SourceRouter):
         self._alpha_decay = alpha_decay
         self._cold_start = cold_start_threshold
         self._query_count = 0
+        self._update_count = 0
 
         # Per-source LinUCB parameters
         # A_s: d×d matrix (initialized to identity)
@@ -118,6 +119,8 @@ class AdaptiveRouter(SourceRouter):
             denom = 1.0 + x @ Ax               # scalar
             self._A_inv[src] = A_inv - np.outer(Ax, Ax) / denom
 
+        self._update_count += 1
+
         # Decay exploration
         self._alpha = max(self._alpha_min, self._alpha * self._alpha_decay)
 
@@ -127,6 +130,7 @@ class AdaptiveRouter(SourceRouter):
 
         state = {
             "query_count": self._query_count,
+            "update_count": self._update_count,
             "alpha": self._alpha,
             "feature_dim": self._feature_dim,
             "alpha_initial": self._alpha_initial,
@@ -147,6 +151,7 @@ class AdaptiveRouter(SourceRouter):
             state = json.load(f)
 
         self._query_count = state["query_count"]
+        self._update_count = state.get("update_count", 0)
         self._alpha = state["alpha"]
         self._feature_dim = state["feature_dim"]
 
@@ -168,6 +173,7 @@ class AdaptiveRouter(SourceRouter):
     def stats(self) -> dict:
         return {
             "query_count": self._query_count,
+            "update_count": self._update_count,
             "alpha": round(self._alpha, 4),
             "cold_start_remaining": max(0, self._cold_start - self._query_count),
         }

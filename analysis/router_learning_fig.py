@@ -18,7 +18,7 @@ def generate_figure2(
         return {"error": "No router history found."}
 
     entries = []
-    with open(history_path, "r") as f:
+    with open(history_path, "r", encoding="utf-8") as f:
         for line in f:
             entries.append(json.loads(line))
 
@@ -31,7 +31,7 @@ def generate_figure2(
     }
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
     return data

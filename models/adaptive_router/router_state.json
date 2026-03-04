@@ -1,5 +1,6 @@
 {
   "query_count": 9,
+  "update_count": 750,
   "alpha": 0.1,
   "feature_dim": 384,
   "alpha_initial": 0.5,
