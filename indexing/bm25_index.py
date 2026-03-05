@@ -80,5 +80,22 @@ class BM25Index:
         with open(os.path.join(path, "bm25_chunks.pkl"), "rb") as f:
             self._chunks = pickle.load(f)
 
+    def score_query(self, query: str) -> dict[str, float]:
+        """Get BM25 scores for all chunks, keyed by chunk_id.
+
+        Returns only chunks with score > 0.
+        """
+        if self._bm25 is None or not self._chunks:
+            return {}
+
+        tokens = _tokenize(query)
+        scores = self._bm25.get_scores(tokens)
+
+        result = {}
+        for idx, score in enumerate(scores):
+            if score > 0:
+                result[self._chunks[idx].chunk_id] = float(score)
+        return result
+
     def __len__(self) -> int:
         return len(self._chunks)

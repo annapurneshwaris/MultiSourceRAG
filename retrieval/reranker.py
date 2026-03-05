@@ -69,11 +69,13 @@ def rerank(
     source_boosts: dict[str, float],
     top_k: int = 10,
     embeddings: dict[str, np.ndarray] | None = None,
+    bm25_scores: dict[str, float] | None = None,
     w_relevance: float = 0.4,
     w_source_boost: float = 0.25,
     w_freshness: float = 0.1,
     w_authority: float = 0.1,
     w_redundancy: float = 0.15,
+    w_bm25: float = 0.0,
     diversity_threshold: float = 0.3,
 ) -> list[tuple[Chunk, float]]:
     """Diversity-constrained MMR re-ranking.
@@ -83,11 +85,13 @@ def rerank(
         source_boosts: Router's source boost weights {"doc": 0.8, "bug": 0.5, ...}.
         top_k: Number of results to return.
         embeddings: Optional dict of chunk_id → embedding for redundancy computation.
+        bm25_scores: Optional dict of chunk_id → BM25 score for hybrid ranking.
         w_relevance: Weight for base relevance score.
         w_source_boost: Weight for source routing boost.
         w_freshness: Weight for temporal freshness.
         w_authority: Weight for authority signals.
         w_redundancy: Weight for redundancy penalty.
+        w_bm25: Weight for BM25 keyword match signal.
         diversity_threshold: Min score for a source to be force-included.
 
     Returns:
@@ -100,6 +104,14 @@ def rerank(
     max_rel = max(score for _, score in candidates) if candidates else 1.0
     if max_rel == 0:
         max_rel = 1.0
+
+    # Normalize BM25 scores to [0, 1] if provided
+    max_bm25 = 1.0
+    if bm25_scores and w_bm25 > 0:
+        bm25_vals = [bm25_scores.get(c.chunk_id, 0.0) for c, _ in candidates]
+        max_bm25 = max(bm25_vals) if bm25_vals else 1.0
+        if max_bm25 == 0:
+            max_bm25 = 1.0
 
     # Score each candidate
     scored = []
@@ -115,6 +127,11 @@ def rerank(
             + w_freshness * freshness
             + w_authority * authority
         )
+
+        # Hybrid BM25 signal
+        if bm25_scores and w_bm25 > 0:
+            norm_bm25 = bm25_scores.get(chunk.chunk_id, 0.0) / max_bm25
+            final += w_bm25 * norm_bm25
 
         scored.append({
             "chunk": chunk,
@@ -158,10 +175,14 @@ def rerank(
         selected.append((chunk, adjusted_score))
         selected_ids.append(chunk.chunk_id)
 
-    # Diversity enforcement: ensure at least 1 from each source above threshold
+    # Diversity enforcement: only force-include from sources the router considers relevant
     source_types_present = {chunk.source_type for chunk, _ in selected}
-    all_sources = {"doc", "bug", "work_item"}
-    missing_sources = all_sources - source_types_present
+    # Only enforce diversity for sources with meaningful router boost
+    boost_threshold = 0.3
+    relevant_sources = {
+        src for src, boost in source_boosts.items() if boost >= boost_threshold
+    }
+    missing_sources = relevant_sources - source_types_present
 
     already_selected_ids = {chunk.chunk_id for chunk, _ in selected}
 

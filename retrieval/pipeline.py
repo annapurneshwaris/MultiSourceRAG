@@ -253,6 +253,11 @@ class RetrievalPipeline:
 
         timing["retrieve_ms"] = round((time.time() - t0) * 1000, 1)
 
+        # Step 2.5: Get BM25 scores for hybrid ranking
+        bm25_scores = {}
+        if self._bm25 and not is_bm25:
+            bm25_scores = self._bm25.score_query(query)
+
         # Step 3: Re-rank — diversity-constrained MMR
         t0 = time.time()
 
@@ -274,11 +279,13 @@ class RetrievalPipeline:
                 source_boosts=source_boosts,
                 top_k=top_k,
                 embeddings=chunk_embeddings,
+                bm25_scores=bm25_scores,
                 w_relevance=cfg.W_RELEVANCE,
                 w_source_boost=cfg.W_SOURCE_BOOST,
                 w_freshness=cfg.W_FRESHNESS,
                 w_authority=cfg.W_AUTHORITY,
                 w_redundancy=cfg.W_REDUNDANCY,
+                w_bm25=cfg.W_BM25,
             )
         timing["rerank_ms"] = round((time.time() - t0) * 1000, 1)
 

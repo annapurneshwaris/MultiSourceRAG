@@ -148,6 +148,7 @@ W_SOURCE_BOOST = 0.25
 W_FRESHNESS = 0.1
 W_AUTHORITY = 0.1
 W_REDUNDANCY = 0.15
+W_BM25 = 0.15
 
 # --- Output Paths ---
 RAW_DATA_DIR = os.path.join("data", "raw")
