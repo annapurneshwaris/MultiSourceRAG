@@ -1,0 +1,37 @@
+graph TD
+    Q["🔍 User Query"] --> EMB["Embedding<br/>(all-MiniLM-L6-v2, 384d)"]
+    EMB --> ROUTER["Adaptive Router<br/>(LinUCB Bandit)"]
+    EMB --> BM25S["BM25 Scorer<br/>(Keyword Signal)"]
+
+    ROUTER -->|"boost=0.7"| DR["📄 Doc Retriever<br/>Tree Navigation + Vector Search"]
+    ROUTER -->|"boost=0.2"| BR["🐛 Bug Retriever<br/>Vector + Metadata Filter"]
+    ROUTER -->|"boost=0.1"| WR["📋 Work Item Retriever<br/>Vector + Metadata Filter"]
+
+    subgraph "Source-Specific Chunking"
+        DC["Docs: Hierarchical<br/>(H2/H3 split, breadcrumbs)"]
+        BC["Bugs: Composite<br/>(title+body+errors+comments)"]
+        WC["Work Items: Type-dependent<br/>(plans→sections, requests→single)"]
+    end
+
+    DC -.-> DR
+    BC -.-> BR
+    WC -.-> WR
+
+    DR --> RERANK["Diversity-Constrained<br/>MMR Reranker"]
+    BR --> RERANK
+    WR --> RERANK
+    BM25S --> RERANK
+
+    RERANK -->|"Score = 0.4×semantic + 0.25×router<br/>+ 0.15×BM25 + 0.1×freshness<br/>+ 0.1×authority - 0.15×redundancy"| TOP10["Top-10 Chunks"]
+
+    TOP10 --> GEN["LLM Generator<br/>(GPT-4o)"]
+    GEN --> ANS["Answer with Citations<br/>[DOC-x] [BUG-y] [PLAN-z]"]
+
+    ANS --> UTIL["Utility Signal<br/>(citation + rank + position)"]
+    UTIL -->|"LinUCB update:<br/>A += x·x', b += u·x"| ROUTER
+
+    style Q fill:#e1f5fe
+    style ANS fill:#e8f5e9
+    style ROUTER fill:#fff3e0
+    style RERANK fill:#f3e5f5
+    style GEN fill:#fce4ec

@@ -1,0 +1,145 @@
+{
+  "_metadata": {
+    "generated": "2026-03-04",
+    "dbw_filter": "router_type=heuristic for Tables 2/3/5, all variants for Table 4",
+    "judges": [
+      "gpt4o",
+      "claude",
+      "gemini"
+    ],
+    "ra_method": "3-judge average of (RCI + AS + VM) / 6",
+    "bootstrap_resamples": 10000,
+    "random_seed": 42
+  },
+  "cases": [
+    {
+      "case_id": 1,
+      "label": "Multi-source synthesis win",
+      "query_id": "ht_021",
+      "category": "how_to",
+      "dbw_ra": 0.888889,
+      "d_ra": 0.166667,
+      "bm25_ra": 0.833333,
+      "dbw_csas": 0.666667,
+      "dbw_answer_excerpt": "To use the Problems panel in Visual Studio Code to view errors and warnings, follow these steps:\n\n1. **Open the Problems Panel**: You can open the Problems panel by clicking on the Problems icon in the Activity Bar on the side of the window or by using the shortcut `Ctrl+Shift+M`.\n\n2. **View Errors ",
+      "d_answer_excerpt": "I'm sorry, but the provided context does not contain specific information on how to use the problems panel to view errors and warnings in VS Code. If you have access to the official documentation or other resources, I recommend checking there for detailed instructions.",
+      "dbw_citations": {
+        "doc": 1,
+        "bug": 1,
+        "work_item": 0
+      },
+      "dbw_source_distribution": {
+        "doc": 2,
+        "bug": 5,
+        "work_item": 3
+      },
+      "source_boosts": {
+        "doc": 0.29411764705882354,
+        "bug": 0.5882352941176471,
+        "work_item": 0.11764705882352942
+      },
+      "narrative": "DBW RA=0.889 vs D RA=0.167: multi-source retrieval provides complementary information that single-source misses."
+    },
+    {
+      "case_id": 2,
+      "label": "Attribution quality win",
+      "query_id": "ht_010",
+      "category": "how_to",
+      "dbw_ra": 0.833333,
+      "d_ra": 0.888889,
+      "bm25_ra": 0.833333,
+      "dbw_csas": 1.0,
+      "bm25_csas": 0.666667,
+      "dbw_answer_excerpt": "To use Jupyter Notebooks in Visual Studio Code, follow these steps:\n\n1. **Install the Jupyter Extension**: VS Code supports Jupyter Notebooks natively through the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) [DOC-doc_dd29183e_0].\n\n2. **Set Up Your Pytho",
+      "bm25_answer_excerpt": "To use Jupyter notebooks in Visual Studio Code, follow these steps:\n\n1. **Install the Jupyter Extension**: First, ensure that you have the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) installed in VS Code. This extension provides native support for Jupy",
+      "dbw_citations": {
+        "doc": 8,
+        "bug": 0,
+        "work_item": 0
+      },
+      "source_boosts": {
+        "doc": 0.7142857142857143,
+        "bug": 0.14285714285714288,
+        "work_item": 0.14285714285714288
+      },
+      "narrative": "Similar RA (0.833 vs 0.833) but DBW correctly attributes to expected sources (CSAS=1.000 vs 0.667)."
+    },
+    {
+      "case_id": 3,
+      "label": "Perfect routing",
+      "query_id": "db_003",
+      "category": "debugging",
+      "dbw_ra": 0.888889,
+      "d_ra": null,
+      "bm25_ra": 1.0,
+      "dbw_csas": 1.0,
+      "dbw_answer_excerpt": "When opening large files in VS Code, users have reported performance issues, including freezing. According to [BUG-bug_262473_0], when the content of a text file is large, using the system's built-in conversion tool to change case can cause the program to freeze. This issue is specific to versions 1",
+      "dbw_citations": {
+        "doc": 0,
+        "bug": 2,
+        "work_item": 0
+      },
+      "dbw_source_distribution": {
+        "doc": 0,
+        "bug": 10,
+        "work_item": 0
+      },
+      "source_boosts": {
+        "doc": 0.14285714285714288,
+        "bug": 0.7142857142857143,
+        "work_item": 0.14285714285714288
+      },
+      "narrative": "Router correctly boosted bugs (0.71) for debugging query; 100% of retrieved chunks are from bug reports."
+    },
+    {
+      "case_id": 4,
+      "label": "Status/roadmap data ceiling",
+      "query_id": "sr_016",
+      "category": "status_roadmap",
+      "dbw_ra": 0.333333,
+      "d_ra": 0.388889,
+      "bm25_ra": 0.222222,
+      "dbw_csas": 0.0,
+      "dbw_answer_excerpt": "The context provided does not contain specific information about remote development features that were shipped in 2024. If you have more specific queries or need information on a particular feature, please provide additional details or check the official VS Code release notes for 2024.",
+      "dbw_citations": {
+        "doc": 0,
+        "bug": 0,
+        "work_item": 0
+      },
+      "source_boosts": {
+        "doc": 0.45454545454545453,
+        "bug": 0.09090909090909091,
+        "work_item": 0.45454545454545453
+      },
+      "narrative": "All configs fail (DBW=0.333, D=0.389, BM25=0.222): query requires up-to-date roadmap data that our static dataset lacks."
+    },
+    {
+      "case_id": 5,
+      "label": "Diversity fix demonstration",
+      "query_id": "ht_002",
+      "category": "how_to",
+      "dbw_ra": 0.833333,
+      "d_ra": 0.777778,
+      "bm25_ra": 0.888889,
+      "dbw_csas": 1.0,
+      "dbw_answer_excerpt": "To set up remote SSH development in Visual Studio Code, follow these steps:\n\n1. **Install Required Software**:\n   - Ensure you have an [OpenSSH compatible SSH client](https://code.visualstudio.com/docs/remote/troubleshooting.md#installing-a-supported-ssh-client) installed on your machine [DOC-doc_64",
+      "dbw_citations": {
+        "doc": 4,
+        "bug": 0,
+        "work_item": 0
+      },
+      "dbw_source_distribution": {
+        "doc": 10,
+        "bug": 0,
+        "work_item": 0
+      },
+      "source_boosts": {
+        "doc": 0.7142857142857143,
+        "bug": 0.14285714285714288,
+        "work_item": 0.14285714285714288
+      },
+      "narrative": "Fixed reranker correctly lets doc dominate (100%) when the router identifies a single-source query, instead of forcing artificial diversity."
+    }
+  ],
+  "n_cases_found": 5
+}

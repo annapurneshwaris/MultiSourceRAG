@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Evaluation metrics and LLM judge rubric.}
+\label{tab:metrics}
+\centering
+\small
+\begin{tabular}{llp{6cm}}
+\toprule
+Metric & Range & Description \\
+\midrule
+RA & [0,1] & (RCI + AS + VM) / 6, averaged across 3 judges \\
+\ \ RCI & 0--2 & Technical depth: 0=none, 1=correct area, 2=specific mechanism \\
+\ \ AS & 0--2 & Actionable steps: 0=none, 1=vague, 2=specific commands \\
+\ \ VM & 0--2 & Version match: 0=wrong, 1=general, 2=version-specific \\
+\midrule
+CSAS & [0,1] & F1 of source-type citations vs.\ expected sources \\
+MSUR & [0,1] & Fraction of \{doc, bug, work\_item\} in top-$k$ \\
+\bottomrule
+\end{tabular}
+\end{table}

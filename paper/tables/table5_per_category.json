@@ -1,0 +1,195 @@
+{
+  "_metadata": {
+    "generated": "2026-03-04",
+    "dbw_filter": "router_type=heuristic for Tables 2/3/5, all variants for Table 4",
+    "judges": [
+      "gpt4o",
+      "claude",
+      "gemini"
+    ],
+    "ra_method": "3-judge average of (RCI + AS + VM) / 6",
+    "bootstrap_resamples": 10000,
+    "random_seed": 42
+  },
+  "table5a_dbw_per_category": [
+    {
+      "category": "how_to",
+      "n": 60,
+      "ra": 0.8269,
+      "csas": 0.7944,
+      "msur": 0.6222,
+      "dominant_source": "doc",
+      "dominant_source_pct": 83.3,
+      "citation_leader": "doc"
+    },
+    {
+      "category": "debugging",
+      "n": 75,
+      "ra": 0.6822,
+      "csas": 0.7724,
+      "msur": 0.7378,
+      "dominant_source": "bug",
+      "dominant_source_pct": 69.8,
+      "citation_leader": "bug"
+    },
+    {
+      "category": "error_diagnosis",
+      "n": 50,
+      "ra": 0.7256,
+      "csas": 0.758,
+      "msur": 0.6533,
+      "dominant_source": "bug",
+      "dominant_source_pct": 80.4,
+      "citation_leader": "bug"
+    },
+    {
+      "category": "status_roadmap",
+      "n": 40,
+      "ra": 0.4944,
+      "csas": 0.7275,
+      "msur": 0.5833,
+      "dominant_source": "work_item",
+      "dominant_source_pct": 75.7,
+      "citation_leader": "work_item"
+    },
+    {
+      "category": "config",
+      "n": 25,
+      "ra": 0.8044,
+      "csas": 0.7733,
+      "msur": 0.7067,
+      "dominant_source": "doc",
+      "dominant_source_pct": 78.0,
+      "citation_leader": "doc"
+    }
+  ],
+  "table5b_cross_config": [
+    {
+      "category": "how_to",
+      "DBW_ra": 0.8269,
+      "DBW_n": 60,
+      "D_ra": 0.7731,
+      "D_n": 60,
+      "B_ra": 0.7472,
+      "B_n": 60,
+      "W_ra": 0.6563,
+      "W_n": 59,
+      "BM25_ra": 0.8259,
+      "BM25_n": 60,
+      "delta_vs_best_single": 0.0538
+    },
+    {
+      "category": "debugging",
+      "DBW_ra": 0.6822,
+      "DBW_n": 75,
+      "D_ra": 0.7079,
+      "D_n": 66,
+      "B_ra": 0.6104,
+      "B_n": 75,
+      "W_ra": 0.4887,
+      "W_n": 74,
+      "BM25_ra": 0.6956,
+      "BM25_n": 75,
+      "delta_vs_best_single": -0.0257
+    },
+    {
+      "category": "error_diagnosis",
+      "DBW_ra": 0.7256,
+      "DBW_n": 50,
+      "D_ra": 0.7601,
+      "D_n": 44,
+      "B_ra": 0.7244,
+      "B_n": 50,
+      "W_ra": 0.5978,
+      "W_n": 46,
+      "BM25_ra": 0.7356,
+      "BM25_n": 50,
+      "delta_vs_best_single": -0.0345
+    },
+    {
+      "category": "status_roadmap",
+      "DBW_ra": 0.4944,
+      "DBW_n": 40,
+      "D_ra": 0.4099,
+      "D_n": 37,
+      "B_ra": 0.4048,
+      "B_n": 35,
+      "W_ra": 0.4611,
+      "W_n": 40,
+      "BM25_ra": 0.51,
+      "BM25_n": 39,
+      "delta_vs_best_single": 0.0333
+    },
+    {
+      "category": "config",
+      "DBW_ra": 0.8044,
+      "DBW_n": 25,
+      "D_ra": 0.7,
+      "D_n": 25,
+      "B_ra": 0.6511,
+      "B_n": 25,
+      "W_ra": 0.6733,
+      "W_n": 25,
+      "BM25_ra": 0.8044,
+      "BM25_n": 25,
+      "delta_vs_best_single": 0.1044
+    }
+  ],
+  "table5c_per_category_significance": [
+    {
+      "category": "how_to",
+      "n_paired": 60,
+      "dbw_ra": 0.8269,
+      "d_ra": 0.7731,
+      "delta": 0.0537,
+      "bootstrap_p": 0.0,
+      "ci_lower": 0.0241,
+      "ci_upper": 0.0935,
+      "significant": true
+    },
+    {
+      "category": "debugging",
+      "n_paired": 66,
+      "dbw_ra": 0.6886,
+      "d_ra": 0.7079,
+      "delta": -0.0194,
+      "bootstrap_p": 0.2144,
+      "ci_lower": -0.0648,
+      "ci_upper": 0.0269,
+      "significant": false
+    },
+    {
+      "category": "error_diagnosis",
+      "n_paired": 44,
+      "dbw_ra": 0.7197,
+      "d_ra": 0.7601,
+      "delta": -0.0404,
+      "bootstrap_p": 0.0935,
+      "ci_lower": -0.0997,
+      "ci_upper": 0.0164,
+      "significant": false
+    },
+    {
+      "category": "status_roadmap",
+      "n_paired": 37,
+      "dbw_ra": 0.5135,
+      "d_ra": 0.4099,
+      "delta": 0.1036,
+      "bootstrap_p": 0.0017,
+      "ci_lower": 0.036,
+      "ci_upper": 0.1712,
+      "significant": true
+    },
+    {
+      "category": "config",
+      "n_paired": 25,
+      "dbw_ra": 0.8044,
+      "d_ra": 0.7,
+      "delta": 0.1044,
+      "bootstrap_p": 0.0058,
+      "ci_lower": 0.02,
+      "ci_upper": 0.2022,
+      "significant": true
+    }
+  ]
+}

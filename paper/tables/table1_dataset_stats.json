@@ -1,0 +1,98 @@
+{
+  "_metadata": {
+    "generated": "2026-03-04",
+    "dbw_filter": "router_type=heuristic for Tables 2/3/5, all variants for Table 4",
+    "judges": [
+      "gpt4o",
+      "claude",
+      "gemini"
+    ],
+    "ra_method": "3-judge average of (RCI + AS + VM) / 6",
+    "bootstrap_resamples": 10000,
+    "random_seed": 42
+  },
+  "rows": [
+    {
+      "source": "Documentation",
+      "repository": "microsoft/vscode-docs",
+      "structure": "Unstructured",
+      "raw_items": 402,
+      "chunks": 4704,
+      "min_tokens": 1,
+      "p25_tokens": 77,
+      "median_tokens": 119,
+      "p75_tokens": 181,
+      "max_tokens": 694,
+      "feature_area_coverage_pct": 100.0
+    },
+    {
+      "source": "Bug Reports",
+      "repository": "microsoft/vscode",
+      "structure": "Semi-structured",
+      "raw_items": 13913,
+      "chunks": 14181,
+      "min_tokens": 3,
+      "p25_tokens": 57,
+      "median_tokens": 119,
+      "p75_tokens": 227,
+      "max_tokens": 2558,
+      "feature_area_coverage_pct": 69.2
+    },
+    {
+      "source": "Work Items",
+      "repository": "microsoft/vscode",
+      "structure": "Structured",
+      "raw_items": 3729,
+      "chunks": 5960,
+      "min_tokens": 1,
+      "p25_tokens": 28,
+      "median_tokens": 67,
+      "p75_tokens": 128,
+      "max_tokens": 1762,
+      "feature_area_coverage_pct": 100.0
+    }
+  ],
+  "total": {
+    "raw_items": 18044,
+    "chunks": 24845
+  },
+  "additional": {
+    "date_range": "2023-01-01 to 2025-12-31",
+    "unique_feature_areas": 24,
+    "feature_areas_list": [
+      "accessibility",
+      "advanced",
+      "azure",
+      "comments",
+      "copilot",
+      "debug",
+      "editor",
+      "enterprise",
+      "explorer",
+      "extensions",
+      "git",
+      "languages",
+      "notebook",
+      "other",
+      "performance",
+      "reference",
+      "remote",
+      "search",
+      "settings",
+      "setup",
+      "tasks",
+      "terminal",
+      "testing",
+      "workbench"
+    ],
+    "query_bank": {
+      "total": 250,
+      "how_to": 60,
+      "debugging": 75,
+      "error_diagnosis": 50,
+      "status_roadmap": 40,
+      "config": 25
+    },
+    "tree_nodes": 6285
+  }
+}

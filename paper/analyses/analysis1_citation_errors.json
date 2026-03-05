@@ -1,0 +1,87 @@
+{
+  "_metadata": {
+    "generated": "2026-03-04",
+    "dbw_filter": "router_type=heuristic for Tables 2/3/5, all variants for Table 4",
+    "judges": [
+      "gpt4o",
+      "claude",
+      "gemini"
+    ],
+    "ra_method": "3-judge average of (RCI + AS + VM) / 6",
+    "bootstrap_resamples": 10000,
+    "random_seed": 42
+  },
+  "total_high_ra_low_csas": 3,
+  "error_types": [
+    {
+      "type": "expected_source_missing",
+      "count": 2,
+      "example_query_id": "ed_005"
+    },
+    {
+      "type": "wrong_source_cited",
+      "count": 1,
+      "example_query_id": "db_020"
+    }
+  ],
+  "detailed_errors": [
+    {
+      "query_id": "db_020",
+      "query_text": "The issue of file watchers not detecting external changes on Linux could be related to the way VS Co...",
+      "category": "debugging",
+      "ra": 0.722222,
+      "csas": 0.0,
+      "expected_sources": [
+        "doc",
+        "bug"
+      ],
+      "cited_sources": [
+        "work_item"
+      ],
+      "missing_sources": [
+        "doc",
+        "bug"
+      ],
+      "unexpected_sources": [
+        "work_item"
+      ],
+      "error_type": "wrong_source_cited"
+    },
+    {
+      "query_id": "ed_005",
+      "query_text": "The error \"Permission denied (publickey)\" typically indicates an issue with SSH key authentication. ...",
+      "category": "error_diagnosis",
+      "ra": 0.722222,
+      "csas": 0.0,
+      "expected_sources": [
+        "doc",
+        "bug"
+      ],
+      "cited_sources": [],
+      "missing_sources": [
+        "doc",
+        "bug"
+      ],
+      "unexpected_sources": [],
+      "error_type": "expected_source_missing"
+    },
+    {
+      "query_id": "ed_017",
+      "query_text": "The error message \"Your local changes would be overwritten by merge\" typically occurs when you attem...",
+      "category": "error_diagnosis",
+      "ra": 0.722222,
+      "csas": 0.0,
+      "expected_sources": [
+        "doc",
+        "bug"
+      ],
+      "cited_sources": [],
+      "missing_sources": [
+        "doc",
+        "bug"
+      ],
+      "unexpected_sources": [],
+      "error_type": "expected_source_missing"
+    }
+  ]
+}

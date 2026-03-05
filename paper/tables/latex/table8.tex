@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Latency breakdown for DBW heuristic configuration ($n$=250).}
+\label{tab:latency}
+\centering
+\small
+\begin{tabular}{lrrr}
+\toprule
+Stage & Mean (ms) & P50 (ms) & P95 (ms) \\
+\midrule
+Embedding & 10 & 8 & 12 \\
+Routing & 1 & 1 & 1 \\
+Retrieval & 9 & 8 & 12 \\
+Reranking & 683 & 669 & 1094 \\
+Generation & 7242 & 6782 & 13458 \\
+\midrule
+Total & 8027 & 7535 & 14084 \\
+\bottomrule
+\end{tabular}
+\end{table}

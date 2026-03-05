@@ -1,0 +1,40 @@
+{
+  "_metadata": {
+    "generated": "2026-03-04",
+    "dbw_filter": "router_type=heuristic for Tables 2/3/5, all variants for Table 4",
+    "judges": [
+      "gpt4o",
+      "claude",
+      "gemini"
+    ],
+    "ra_method": "3-judge average of (RCI + AS + VM) / 6",
+    "bootstrap_resamples": 10000,
+    "random_seed": 42
+  },
+  "terciles": [
+    {
+      "label": "Low confidence",
+      "n": 83,
+      "avg_ra": 0.6888,
+      "avg_csas": 0.7293,
+      "confidence_range": "0.0000-0.5714",
+      "avg_confidence": 0.0795
+    },
+    {
+      "label": "Medium confidence",
+      "n": 83,
+      "avg_ra": 0.7651,
+      "avg_csas": 0.7976,
+      "confidence_range": "0.5714-0.5714",
+      "avg_confidence": 0.5714
+    },
+    {
+      "label": "High confidence",
+      "n": 84,
+      "avg_ra": 0.67,
+      "avg_csas": 0.7762,
+      "confidence_range": "0.5714-0.5714",
+      "avg_confidence": 0.5714
+    }
+  ]
+}

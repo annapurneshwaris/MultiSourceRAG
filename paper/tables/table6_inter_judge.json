@@ -1,0 +1,74 @@
+{
+  "_metadata": {
+    "generated": "2026-03-04",
+    "dbw_filter": "router_type=heuristic for Tables 2/3/5, all variants for Table 4",
+    "judges": [
+      "gpt4o",
+      "claude",
+      "gemini"
+    ],
+    "ra_method": "3-judge average of (RCI + AS + VM) / 6",
+    "bootstrap_resamples": 10000,
+    "random_seed": 42
+  },
+  "pairs": [
+    {
+      "pair": "gpt4o vs claude",
+      "n_paired": 2721,
+      "pearson_r": 0.8825,
+      "pearson_ci": [
+        0.8699,
+        0.8939
+      ],
+      "spearman_rho": 0.8741,
+      "spearman_ci": [
+        0.8612,
+        0.8862
+      ],
+      "kappa_rci": 0.8248,
+      "kappa_as": 0.8863,
+      "kappa_vm": 0.5898
+    },
+    {
+      "pair": "gpt4o vs gemini",
+      "n_paired": 2721,
+      "pearson_r": 0.7634,
+      "pearson_ci": [
+        0.7432,
+        0.7823
+      ],
+      "spearman_rho": 0.7326,
+      "spearman_ci": [
+        0.7114,
+        0.7526
+      ],
+      "kappa_rci": 0.686,
+      "kappa_as": 0.7403,
+      "kappa_vm": 0.3104
+    },
+    {
+      "pair": "claude vs gemini",
+      "n_paired": 2721,
+      "pearson_r": 0.7697,
+      "pearson_ci": [
+        0.75,
+        0.7882
+      ],
+      "spearman_rho": 0.7318,
+      "spearman_ci": [
+        0.7106,
+        0.752
+      ],
+      "kappa_rci": 0.7648,
+      "kappa_as": 0.7522,
+      "kappa_vm": 0.2066
+    }
+  ],
+  "averages": {
+    "pearson_r": 0.8052,
+    "spearman_rho": 0.7795,
+    "kappa_rci": 0.7585,
+    "kappa_as": 0.7929,
+    "kappa_vm": 0.3689
+  }
+}

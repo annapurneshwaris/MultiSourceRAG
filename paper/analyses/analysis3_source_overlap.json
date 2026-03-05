@@ -1,0 +1,31 @@
+{
+  "_metadata": {
+    "generated": "2026-03-04",
+    "dbw_filter": "router_type=heuristic for Tables 2/3/5, all variants for Table 4",
+    "judges": [
+      "gpt4o",
+      "claude",
+      "gemini"
+    ],
+    "ra_method": "3-judge average of (RCI + AS + VM) / 6",
+    "bootstrap_resamples": 10000,
+    "random_seed": 42
+  },
+  "sources_per_query": {
+    "1_source": {
+      "count": 85,
+      "pct": 34.0
+    },
+    "2_sources": {
+      "count": 81,
+      "pct": 32.4
+    },
+    "3_sources": {
+      "count": 84,
+      "pct": 33.6
+    }
+  },
+  "avg_sources_per_query": 2.0,
+  "n": 250,
+  "interpretation": "165 of 250 queries (66.0%) use chunks from 2+ sources, confirming multi-source retrieval is active"
+}

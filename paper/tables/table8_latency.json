@@ -1,0 +1,78 @@
+{
+  "_metadata": {
+    "generated": "2026-03-04",
+    "dbw_filter": "router_type=heuristic for Tables 2/3/5, all variants for Table 4",
+    "judges": [
+      "gpt4o",
+      "claude",
+      "gemini"
+    ],
+    "ra_method": "3-judge average of (RCI + AS + VM) / 6",
+    "bootstrap_resamples": 10000,
+    "random_seed": 42
+  },
+  "config": "DBW heuristic",
+  "n": 250,
+  "rows": [
+    {
+      "stage": "Embedding",
+      "stage_key": "embed_ms",
+      "mean_ms": 10.2,
+      "p50_ms": 8.5,
+      "p95_ms": 12.4,
+      "min_ms": 6.0,
+      "max_ms": 151.1,
+      "n": 250
+    },
+    {
+      "stage": "Routing",
+      "stage_key": "route_ms",
+      "mean_ms": 0.8,
+      "p50_ms": 1.0,
+      "p95_ms": 1.0,
+      "min_ms": 0.5,
+      "max_ms": 1.0,
+      "n": 3
+    },
+    {
+      "stage": "Retrieval",
+      "stage_key": "retrieve_ms",
+      "mean_ms": 8.9,
+      "p50_ms": 8.2,
+      "p95_ms": 12.5,
+      "min_ms": 6.5,
+      "max_ms": 18.0,
+      "n": 250
+    },
+    {
+      "stage": "Reranking",
+      "stage_key": "rerank_ms",
+      "mean_ms": 683.3,
+      "p50_ms": 669.0,
+      "p95_ms": 1093.7,
+      "min_ms": 98.8,
+      "max_ms": 1319.4,
+      "n": 250
+    },
+    {
+      "stage": "Generation",
+      "stage_key": "generate_ms",
+      "mean_ms": 7241.5,
+      "p50_ms": 6782.4,
+      "p95_ms": 13457.7,
+      "min_ms": 1370.5,
+      "max_ms": 21695.4,
+      "n": 250
+    },
+    {
+      "stage": "Total",
+      "stage_key": "total_ms",
+      "mean_ms": 8026.6,
+      "p50_ms": 7534.9,
+      "p95_ms": 14083.7,
+      "min_ms": 1664.7,
+      "max_ms": 22324.8,
+      "n": 250
+    }
+  ]
+}

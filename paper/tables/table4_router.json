@@ -1,0 +1,66 @@
+{
+  "_metadata": {
+    "generated": "2026-03-04",
+    "dbw_filter": "router_type=heuristic for Tables 2/3/5, all variants for Table 4",
+    "judges": [
+      "gpt4o",
+      "claude",
+      "gemini"
+    ],
+    "ra_method": "3-judge average of (RCI + AS + VM) / 6",
+    "bootstrap_resamples": 10000,
+    "random_seed": 42
+  },
+  "_note": "Adaptive and LLM-zero-shot results use pre-fix reranker. Heuristic uses fixed reranker with hybrid BM25 signal and router-aware diversity. Direct RA comparison across routers is confounded by reranker version. Table primarily demonstrates routing latency tradeoffs and source boost distributions.",
+  "recommendation": "Present in paper as supplementary/appendix with caveat, OR reframe as 'Impact of Routing Strategy and Reranker Logic' showing reranker matters more than router choice.",
+  "rows": [
+    {
+      "router_type": "heuristic",
+      "n": 250,
+      "ra": 0.7078,
+      "ra_std": 0.1895,
+      "csas": 0.7677,
+      "msur": 0.6653,
+      "route_ms_mean": 0.0,
+      "route_ms_p50": 0.0,
+      "total_ms_mean": 8027.0,
+      "avg_source_boosts": {
+        "doc": 0.4199,
+        "bug": 0.3433,
+        "work_item": 0.2368
+      }
+    },
+    {
+      "router_type": "adaptive",
+      "n": 250,
+      "ra": 0.6849,
+      "ra_std": 0.1989,
+      "csas": 0.6793,
+      "msur": 0.8627,
+      "route_ms_mean": 0.3,
+      "route_ms_p50": 0.0,
+      "total_ms_mean": 6908.0,
+      "avg_source_boosts": {
+        "doc": 0.2194,
+        "bug": 0.2453,
+        "work_item": 0.5353
+      }
+    },
+    {
+      "router_type": "llm_zeroshot",
+      "n": 250,
+      "ra": 0.7042,
+      "ra_std": 0.1932,
+      "csas": 0.7183,
+      "msur": 0.832,
+      "route_ms_mean": 1021.6,
+      "route_ms_p50": 872.3,
+      "total_ms_mean": 8127.0,
+      "avg_source_boosts": {
+        "doc": 0.4196,
+        "bug": 0.3243,
+        "work_item": 0.2561
+      }
+    }
+  ]
+}

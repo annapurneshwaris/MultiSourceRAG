@@ -1,0 +1,42 @@
+\begin{table}[t]
+\caption{Per-category performance (DBW heuristic). Dominant source shows \% of
+retrieved chunks from each source type.}
+\label{tab:per-category}
+\centering
+\small
+\begin{tabular}{lcccccl}
+\toprule
+Category & $n$ & RA & CSAS & MSUR & Dominant & Dom.\% \\
+\midrule
+how\_to & 60 & 0.827 & 0.794 & 0.622 & doc & 83\% \\
+debugging & 75 & 0.682 & 0.772 & 0.738 & bug & 70\% \\
+error\_diagnosis & 50 & 0.726 & 0.758 & 0.653 & bug & 80\% \\
+status\_roadmap & 40 & 0.494 & 0.728 & 0.583 & work_item & 76\% \\
+config & 25 & 0.804 & 0.773 & 0.707 & doc & 78\% \\
+\bottomrule
+\end{tabular}
+\vspace{1em}
+\begin{tabular}{lcccccr}
+\toprule
+Category & DBW & D & B & W & BM25 & $\Delta$ \\
+\midrule
+how\_to & 0.827 & 0.773 & 0.747 & 0.656 & 0.826 & +0.054 \\
+debugging & 0.682 & 0.708 & 0.610 & 0.489 & 0.696 & -0.026 \\
+error\_diagnosis & 0.726 & 0.760 & 0.724 & 0.598 & 0.736 & -0.035 \\
+status\_roadmap & 0.494 & 0.410 & 0.405 & 0.461 & 0.510 & +0.033 \\
+config & 0.804 & 0.700 & 0.651 & 0.673 & 0.804 & +0.104 \\
+\bottomrule
+\end{tabular}
+\vspace{1em}
+\begin{tabular}{lcccc}
+\toprule
+Category & $n$ & $\Delta$(DBW$-$D) & $p$ & Sig. \\
+\midrule
+how\_to & 60 & +0.054 & 0.000 & *** \\
+debugging & 66 & -0.019 & 0.214 &  \\
+error\_diagnosis & 44 & -0.040 & 0.093 &  \\
+status\_roadmap & 37 & +0.104 & 0.002 & ** \\
+config & 25 & +0.104 & 0.006 & ** \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,17 @@
+\begin{table}[t]
+\caption{Router comparison on DBW configuration. Note: adaptive and LLM-zero-shot
+use pre-fix reranker; heuristic uses fixed reranker with hybrid BM25. Direct RA
+comparison is confounded by reranker version.}
+\label{tab:router}
+\centering
+\small
+\begin{tabular}{lcccccccc}
+\toprule
+Router & $n$ & RA & CSAS & MSUR & Route (ms) & Total (ms) & Doc & Bug & WI \\
+\midrule
+heuristic & 250 & 0.708 & 0.768 & 0.665 & 0.0 & 8027 & 0.42 & 0.34 & 0.24 \\
+adaptive & 250 & 0.685 & 0.679 & 0.863 & 0.3 & 6908 & 0.22 & 0.25 & 0.54 \\
+llm_zeroshot & 250 & 0.704 & 0.718 & 0.832 & 1021.6 & 8127 & 0.42 & 0.32 & 0.26 \\
+\bottomrule
+\end{tabular}
+\end{table}
