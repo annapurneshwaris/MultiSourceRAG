@@ -52,6 +52,11 @@ def run_ablation(
     router_type: str = "heuristic",
 ) -> list[dict]:
     """Run ablation experiments on Flutter data."""
+    # Monkey-patch metadata_hints to use Flutter's feature area map
+    import retrieval.metadata_hints_flutter as hints_flutter
+    import retrieval.metadata_hints as hints_orig
+    hints_orig.extract_hints = hints_flutter.extract_hints
+
     from retrieval.pipeline import RetrievalPipeline
 
     configs = configs or ALL_CONFIGS

@@ -66,6 +66,15 @@ def main() -> None:
     print("\n[2/5] Processing docs (hierarchical chunking + tree)...")
     t0 = time.time()
     doc_chunks, tree_nodes = process_docs(docs)
+    # FIX 4: Replace VS Code doc URLs with Flutter doc URLs
+    _VSCODE_PREFIX = "https://code.visualstudio.com/docs/src/content/"
+    _FLUTTER_PREFIX = "https://docs.flutter.dev/"
+    for chunk in doc_chunks:
+        if chunk.source_url and chunk.source_url.startswith(_VSCODE_PREFIX):
+            chunk.source_url = chunk.source_url.replace(_VSCODE_PREFIX, _FLUTTER_PREFIX)
+    for node in tree_nodes:
+        if hasattr(node, "source_url") and node.source_url and node.source_url.startswith(_VSCODE_PREFIX):
+            node.source_url = node.source_url.replace(_VSCODE_PREFIX, _FLUTTER_PREFIX)
     print(f"  {len(doc_chunks)} chunks, {len(tree_nodes)} tree nodes "
           f"({time.time() - t0:.1f}s)")
 
