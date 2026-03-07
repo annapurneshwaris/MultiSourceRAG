@@ -82,10 +82,16 @@ def run_ablation(
         bm25 = BM25Index()
         bm25.load(FLUTTER_BM25_DIR)
 
+    # Use Gemini 2.5 Flash for generation (cheap + fast)
+    from generation.providers.gemini_gen import GeminiProvider
+    from generation.generator import Generator
+    gemini_generator = Generator(llm_provider=GeminiProvider(model="gemini-2.5-flash"))
+
     pipeline = RetrievalPipeline(
         router_type=router_type,
         index_dir=FLUTTER_INDEX_DIR,
         bm25_index=bm25,
+        generator=gemini_generator,
     )
 
     total = len(configs) * len(queries)
