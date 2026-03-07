@@ -12,7 +12,10 @@ build/
 # Data — large files tracked via Git LFS, checkpoints/models excluded
 data/checkpoints/
 data/models/
+data/flutter/checkpoints/
+data/flutter/models/
 vscode-docs/
+flutter-website/
 
 # Model weights & router state
 models/

@@ -1,0 +1,4781 @@
+[
+  {
+    "node_id": "src_content_index_md",
+    "title": "Flutter documentation",
+    "summary": "Documentation page: Flutter documentation",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_9af49f89_0",
+      "doc_9af49f89_1",
+      "doc_9af49f89_2"
+    ],
+    "children": [
+      "src_content_index_md_h2_b4725e"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_index_md_h2_b4725e",
+    "title": "New to Flutter?",
+    "summary": "New to Flutter?",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_9af49f89_1",
+      "doc_9af49f89_2"
+    ],
+    "children": [
+      "src_content_index_md_h3_a3907c",
+      "src_content_index_md_h3_554cfa"
+    ],
+    "parent": "src_content_index_md"
+  },
+  {
+    "node_id": "src_content_index_md_h3_a3907c",
+    "title": "Docs",
+    "summary": "Docs",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_9af49f89_1"
+    ],
+    "children": [],
+    "parent": "src_content_index_md_h2_b4725e"
+  },
+  {
+    "node_id": "src_content_index_md_h3_554cfa",
+    "title": "Videos",
+    "summary": "Videos",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_9af49f89_2"
+    ],
+    "children": [],
+    "parent": "src_content_index_md_h2_b4725e"
+  },
+  {
+    "node_id": "src_content_add-to-app_debugging_md",
+    "title": "Debug your add-to-app module",
+    "summary": "Documentation page: Debug your add-to-app module",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_84a754f4_0",
+      "doc_84a754f4_1",
+      "doc_84a754f4_2"
+    ],
+    "children": [
+      "src_content_add-to-app_debugging_md_h2_3b8782",
+      "src_content_add-to-app_debugging_md_h2_2dbd22",
+      "src_content_add-to-app_debugging_md_h2_25fdbc",
+      "src_content_add-to-app_debugging_md_h2_8b765f",
+      "src_content_add-to-app_debugging_md_h2_6d9061"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_debugging_md_h2_3b8782",
+    "title": "Overview",
+    "summary": "Overview",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_84a754f4_0"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_debugging_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_debugging_md_h2_2dbd22",
+    "title": "Debug from the Terminal",
+    "summary": "Debug from the Terminal",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_84a754f4_1"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_debugging_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_debugging_md_h2_25fdbc",
+    "title": "Debug iOS extension in Xcode and VS Code",
+    "summary": "Debug iOS extension in Xcode and VS Code",
+    "depth": 2,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_add-to-app_debugging_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_debugging_md_h2_8b765f",
+    "title": "Debug Android extension in Android Studio",
+    "summary": "Debug Android extension in Android Studio",
+    "depth": 2,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_add-to-app_debugging_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_debugging_md_h2_6d9061",
+    "title": "Debug without USB connection {:#wireless-debugging}",
+    "summary": "Debug without USB connection {:#wireless-debugging}",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_84a754f4_1",
+      "doc_84a754f4_2"
+    ],
+    "children": [
+      "src_content_add-to-app_debugging_md_h3_b0a89b",
+      "src_content_add-to-app_debugging_md_h3_c5b3b3"
+    ],
+    "parent": "src_content_add-to-app_debugging_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_debugging_md_h3_b0a89b",
+    "title": "Debug over Wi-Fi on iOS devices",
+    "summary": "Debug over Wi-Fi on iOS devices",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_84a754f4_1",
+      "doc_84a754f4_2"
+    ],
+    "children": [
+      "src_content_add-to-app_debugging_md_h4_f27cc8"
+    ],
+    "parent": "src_content_add-to-app_debugging_md_h2_6d9061"
+  },
+  {
+    "node_id": "src_content_add-to-app_debugging_md_h4_f27cc8",
+    "title": "To determine if you're on an IPv6 network",
+    "summary": "To determine if you're on an IPv6 network",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_84a754f4_2"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_debugging_md_h3_b0a89b"
+  },
+  {
+    "node_id": "src_content_add-to-app_debugging_md_h3_c5b3b3",
+    "title": "Debug over Wi-Fi on Android devices",
+    "summary": "Debug over Wi-Fi on Android devices",
+    "depth": 3,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_add-to-app_debugging_md_h2_6d9061"
+  },
+  {
+    "node_id": "src_content_add-to-app_index_md",
+    "title": "Add Flutter to an existing app",
+    "summary": "Documentation page: Add Flutter to an existing app",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_3d6b89ec_0",
+      "doc_3d6b89ec_1",
+      "doc_3d6b89ec_2",
+      "doc_3d6b89ec_3",
+      "doc_3d6b89ec_4",
+      "doc_3d6b89ec_5",
+      "doc_3d6b89ec_6",
+      "doc_3d6b89ec_7"
+    ],
+    "children": [
+      "src_content_add-to-app_index_md_h2_9d8a01",
+      "src_content_add-to-app_index_md_h2_f6d7a1",
+      "src_content_add-to-app_index_md_h2_be11c7",
+      "src_content_add-to-app_index_md_h2_9f05f0",
+      "src_content_add-to-app_index_md_h2_e646e1"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_index_md_h2_9d8a01",
+    "title": "Add-to-app",
+    "summary": "Add-to-app",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_3d6b89ec_0",
+      "doc_3d6b89ec_1"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_index_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_index_md_h2_f6d7a1",
+    "title": "Supported features",
+    "summary": "Supported features",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_3d6b89ec_2",
+      "doc_3d6b89ec_3",
+      "doc_3d6b89ec_4"
+    ],
+    "children": [
+      "src_content_add-to-app_index_md_h3_705295",
+      "src_content_add-to-app_index_md_h3_48d8d5",
+      "src_content_add-to-app_index_md_h3_b2fe1d"
+    ],
+    "parent": "src_content_add-to-app_index_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_index_md_h3_705295",
+    "title": "Add to Android applications",
+    "summary": "Add to Android applications",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_3d6b89ec_2"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_index_md_h2_f6d7a1"
+  },
+  {
+    "node_id": "src_content_add-to-app_index_md_h3_48d8d5",
+    "title": "Add to iOS applications",
+    "summary": "Add to iOS applications",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_3d6b89ec_3"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_index_md_h2_f6d7a1"
+  },
+  {
+    "node_id": "src_content_add-to-app_index_md_h3_b2fe1d",
+    "title": "Add to web applications",
+    "summary": "Add to web applications",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_3d6b89ec_4"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_index_md_h2_f6d7a1"
+  },
+  {
+    "node_id": "src_content_add-to-app_index_md_h2_be11c7",
+    "title": "Get started",
+    "summary": "Get started",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_3d6b89ec_5"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_index_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_index_md_h2_9f05f0",
+    "title": "API usage",
+    "summary": "API usage",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_3d6b89ec_6"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_index_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_index_md_h2_e646e1",
+    "title": "Limitations",
+    "summary": "Limitations",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_3d6b89ec_7"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_index_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_multiple-flutters_md",
+    "title": "Multiple Flutter screens or views",
+    "summary": "Documentation page: Multiple Flutter screens or views",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_81a27907_0",
+      "doc_81a27907_1",
+      "doc_81a27907_2"
+    ],
+    "children": [
+      "src_content_add-to-app_multiple-flutters_md_h2_850513",
+      "src_content_add-to-app_multiple-flutters_md_h2_05bbb4",
+      "src_content_add-to-app_multiple-flutters_md_h2_07a3dd",
+      "src_content_add-to-app_multiple-flutters_md_h2_db8d50"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_multiple-flutters_md_h2_850513",
+    "title": "Scenarios",
+    "summary": "Scenarios",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_81a27907_0"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_multiple-flutters_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_multiple-flutters_md_h2_05bbb4",
+    "title": "Components",
+    "summary": "Components",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_81a27907_1"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_multiple-flutters_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_multiple-flutters_md_h2_07a3dd",
+    "title": "Communication",
+    "summary": "Communication",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_81a27907_2"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_multiple-flutters_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_multiple-flutters_md_h2_db8d50",
+    "title": "Samples",
+    "summary": "Samples",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_81a27907_2"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_multiple-flutters_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_performance_md",
+    "title": "Load sequence, performance, and memory",
+    "summary": "Documentation page: Load sequence, performance, and memory",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_d4ed38fa_0",
+      "doc_d4ed38fa_1",
+      "doc_d4ed38fa_2",
+      "doc_d4ed38fa_3",
+      "doc_d4ed38fa_4"
+    ],
+    "children": [
+      "src_content_add-to-app_performance_md_h2_79a16e"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_performance_md_h2_79a16e",
+    "title": "Loading Flutter",
+    "summary": "Loading Flutter",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_d4ed38fa_0",
+      "doc_d4ed38fa_1",
+      "doc_d4ed38fa_2",
+      "doc_d4ed38fa_3",
+      "doc_d4ed38fa_4"
+    ],
+    "children": [
+      "src_content_add-to-app_performance_md_h3_01cadf",
+      "src_content_add-to-app_performance_md_h3_0a81af",
+      "src_content_add-to-app_performance_md_h3_f47894",
+      "src_content_add-to-app_performance_md_h3_4135d9",
+      "src_content_add-to-app_performance_md_h3_17f6e4"
+    ],
+    "parent": "src_content_add-to-app_performance_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_performance_md_h3_01cadf",
+    "title": "Finding the Flutter resources",
+    "summary": "Finding the Flutter resources",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_d4ed38fa_0"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_performance_md_h2_79a16e"
+  },
+  {
+    "node_id": "src_content_add-to-app_performance_md_h3_0a81af",
+    "title": "Loading the Flutter library",
+    "summary": "Loading the Flutter library",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_d4ed38fa_1"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_performance_md_h2_79a16e"
+  },
+  {
+    "node_id": "src_content_add-to-app_performance_md_h3_f47894",
+    "title": "Starting the Dart VM",
+    "summary": "Starting the Dart VM",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_d4ed38fa_1"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_performance_md_h2_79a16e"
+  },
+  {
+    "node_id": "src_content_add-to-app_performance_md_h3_4135d9",
+    "title": "Creating and running a Dart Isolate",
+    "summary": "Creating and running a Dart Isolate",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_d4ed38fa_2"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_performance_md_h2_79a16e"
+  },
+  {
+    "node_id": "src_content_add-to-app_performance_md_h3_17f6e4",
+    "title": "Attaching a UI to the Flutter engine",
+    "summary": "Attaching a UI to the Flutter engine",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_d4ed38fa_3",
+      "doc_d4ed38fa_4"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_performance_md_h2_79a16e"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-fragment_md",
+    "title": "Add a Flutter Fragment to an Android app",
+    "summary": "Documentation page: Add a Flutter Fragment to an Android app",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_0841cb4d_0",
+      "doc_0841cb4d_1",
+      "doc_0841cb4d_2",
+      "doc_0841cb4d_3",
+      "doc_0841cb4d_4",
+      "doc_0841cb4d_5",
+      "doc_0841cb4d_6",
+      "doc_0841cb4d_7",
+      "doc_0841cb4d_8",
+      "doc_0841cb4d_9",
+      "doc_0841cb4d_10",
+      "doc_0841cb4d_11",
+      "doc_0841cb4d_12",
+      "doc_0841cb4d_13"
+    ],
+    "children": [
+      "src_content_add-to-app_android_add-flutter-fragment_md_h2_6c06a9",
+      "src_content_add-to-app_android_add-flutter-fragment_md_h2_9dcd6d",
+      "src_content_add-to-app_android_add-flutter-fragment_md_h2_fac786",
+      "src_content_add-to-app_android_add-flutter-fragment_md_h2_3afebd",
+      "src_content_add-to-app_android_add-flutter-fragment_md_h2_e32cbb",
+      "src_content_add-to-app_android_add-flutter-fragment_md_h2_8758ac",
+      "src_content_add-to-app_android_add-flutter-fragment_md_h2_07ed1c",
+      "src_content_add-to-app_android_add-flutter-fragment_md_h2_6daf5a"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-fragment_md_h2_6c06a9",
+    "title": "Add a `FlutterFragment` to an `Activity` with a new `FlutterEngine`",
+    "summary": "Add a `FlutterFragment` to an `Activity` with a new `FlutterEngine`",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_0841cb4d_1",
+      "doc_0841cb4d_2",
+      "doc_0841cb4d_3",
+      "doc_0841cb4d_4"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-fragment_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-fragment_md_h2_9dcd6d",
+    "title": "Using a pre-warmed `FlutterEngine`",
+    "summary": "Using a pre-warmed `FlutterEngine`",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_0841cb4d_5",
+      "doc_0841cb4d_6",
+      "doc_0841cb4d_7"
+    ],
+    "children": [
+      "src_content_add-to-app_android_add-flutter-fragment_md_h4_1d82d7"
+    ],
+    "parent": "src_content_add-to-app_android_add-flutter-fragment_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-fragment_md_h4_1d82d7",
+    "title": "Initial route with a cached engine",
+    "summary": "Initial route with a cached engine",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_0841cb4d_7"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-fragment_md_h2_9dcd6d"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-fragment_md_h2_fac786",
+    "title": "Display a splash screen",
+    "summary": "Display a splash screen",
+    "depth": 2,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-fragment_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-fragment_md_h2_3afebd",
+    "title": "Run Flutter with a specified initial route",
+    "summary": "Run Flutter with a specified initial route",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_0841cb4d_7"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-fragment_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-fragment_md_h2_e32cbb",
+    "title": "Run Flutter from a specified entrypoint",
+    "summary": "Run Flutter from a specified entrypoint",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_0841cb4d_8"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-fragment_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-fragment_md_h2_8758ac",
+    "title": "Control `FlutterFragment`'s render mode",
+    "summary": "Control `FlutterFragment`'s render mode",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_0841cb4d_9"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-fragment_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-fragment_md_h2_07ed1c",
+    "title": "Display a `FlutterFragment` with transparency",
+    "summary": "Display a `FlutterFragment` with transparency",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_0841cb4d_10",
+      "doc_0841cb4d_11"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-fragment_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-fragment_md_h2_6daf5a",
+    "title": "The relationship between `FlutterFragment` and its `Activity`",
+    "summary": "The relationship between `FlutterFragment` and its `Activity`",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_0841cb4d_12",
+      "doc_0841cb4d_13"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-fragment_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-screen_md",
+    "title": "Add a Flutter screen to an Android app",
+    "summary": "Documentation page: Add a Flutter screen to an Android app",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_fd990887_0",
+      "doc_fd990887_1",
+      "doc_fd990887_2",
+      "doc_fd990887_3",
+      "doc_fd990887_4",
+      "doc_fd990887_5",
+      "doc_fd990887_6",
+      "doc_fd990887_7",
+      "doc_fd990887_8"
+    ],
+    "children": [
+      "src_content_add-to-app_android_add-flutter-screen_md_h2_28acd6",
+      "src_content_add-to-app_android_add-flutter-screen_md_h2_2665f8"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-screen_md_h2_28acd6",
+    "title": "Add a normal Flutter screen",
+    "summary": "Add a normal Flutter screen",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_fd990887_0",
+      "doc_fd990887_1",
+      "doc_fd990887_2",
+      "doc_fd990887_3",
+      "doc_fd990887_4",
+      "doc_fd990887_5",
+      "doc_fd990887_6"
+    ],
+    "children": [
+      "src_content_add-to-app_android_add-flutter-screen_md_h3_a8d89d",
+      "src_content_add-to-app_android_add-flutter-screen_md_h3_df338f",
+      "src_content_add-to-app_android_add-flutter-screen_md_h3_a0173d"
+    ],
+    "parent": "src_content_add-to-app_android_add-flutter-screen_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-screen_md_h3_a8d89d",
+    "title": "Step 1: Add FlutterActivity to AndroidManifest.xml",
+    "summary": "Step 1: Add FlutterActivity to AndroidManifest.xml",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_fd990887_0"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-screen_md_h2_28acd6"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-screen_md_h3_df338f",
+    "title": "Step 2: Launch FlutterActivity",
+    "summary": "Step 2: Launch FlutterActivity",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_fd990887_1",
+      "doc_fd990887_2"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-screen_md_h2_28acd6"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-screen_md_h3_a0173d",
+    "title": "Step 3: (Optional) Use a cached FlutterEngine",
+    "summary": "Step 3: (Optional) Use a cached FlutterEngine",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_fd990887_3",
+      "doc_fd990887_4",
+      "doc_fd990887_5",
+      "doc_fd990887_6"
+    ],
+    "children": [
+      "src_content_add-to-app_android_add-flutter-screen_md_h4_1d82d7"
+    ],
+    "parent": "src_content_add-to-app_android_add-flutter-screen_md_h2_28acd6"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-screen_md_h4_1d82d7",
+    "title": "Initial route with a cached engine",
+    "summary": "Initial route with a cached engine",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_fd990887_6"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-screen_md_h3_a0173d"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-screen_md_h2_2665f8",
+    "title": "Add a translucent Flutter screen",
+    "summary": "Add a translucent Flutter screen",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_fd990887_6",
+      "doc_fd990887_7",
+      "doc_fd990887_8"
+    ],
+    "children": [
+      "src_content_add-to-app_android_add-flutter-screen_md_h3_5c9146",
+      "src_content_add-to-app_android_add-flutter-screen_md_h3_1fc380"
+    ],
+    "parent": "src_content_add-to-app_android_add-flutter-screen_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-screen_md_h3_5c9146",
+    "title": "Step 1: Use a theme with translucency",
+    "summary": "Step 1: Use a theme with translucency",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_fd990887_7"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-screen_md_h2_2665f8"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-screen_md_h3_1fc380",
+    "title": "Step 2: Start FlutterActivity with transparency",
+    "summary": "Step 2: Start FlutterActivity with transparency",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_fd990887_8"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-screen_md_h2_2665f8"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-view_md",
+    "title": "Add a Flutter View to an Android app",
+    "summary": "Documentation page: Add a Flutter View to an Android app",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_533ec183_0",
+      "doc_533ec183_1",
+      "doc_533ec183_2",
+      "doc_533ec183_3",
+      "doc_533ec183_4",
+      "doc_533ec183_5"
+    ],
+    "children": [
+      "src_content_add-to-app_android_add-flutter-view_md_h2_71e1f9",
+      "src_content_add-to-app_android_add-flutter-view_md_h2_90cc71",
+      "src_content_add-to-app_android_add-flutter-view_md_h2_d00228"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-view_md_h2_71e1f9",
+    "title": "A sample",
+    "summary": "A sample",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_533ec183_1"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-view_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-view_md_h2_90cc71",
+    "title": "General approach",
+    "summary": "General approach",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_533ec183_2",
+      "doc_533ec183_3"
+    ],
+    "children": [
+      "src_content_add-to-app_android_add-flutter-view_md_h3_99cd18"
+    ],
+    "parent": "src_content_add-to-app_android_add-flutter-view_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-view_md_h3_99cd18",
+    "title": "APIs to implement",
+    "summary": "APIs to implement",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_533ec183_3"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-view_md_h2_90cc71"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-view_md_h2_d00228",
+    "title": "Content-sized views",
+    "summary": "Content-sized views",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_533ec183_4",
+      "doc_533ec183_5"
+    ],
+    "children": [
+      "src_content_add-to-app_android_add-flutter-view_md_h3_e3e16b"
+    ],
+    "parent": "src_content_add-to-app_android_add-flutter-view_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_add-flutter-view_md_h3_e3e16b",
+    "title": "Restrictions",
+    "summary": "Restrictions",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_533ec183_5"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_add-flutter-view_md_h2_d00228"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_index_md",
+    "title": "Add Flutter to Android",
+    "summary": "Documentation page: Add Flutter to Android",
+    "depth": 0,
+    "chunk_ids": [],
+    "children": [],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_android_plugin-setup_md",
+    "title": "Manage plugins and dependencies in add-to-app",
+    "summary": "Documentation page: Manage plugins and dependencies in add-to-app",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_bfc3c301_0",
+      "doc_bfc3c301_1",
+      "doc_bfc3c301_2",
+      "doc_bfc3c301_3"
+    ],
+    "children": [
+      "src_content_add-to-app_android_plugin-setup_md_h2_22e020",
+      "src_content_add-to-app_android_plugin-setup_md_h2_97c516",
+      "src_content_add-to-app_android_plugin-setup_md_h2_4a35d3"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_android_plugin-setup_md_h2_22e020",
+    "title": "A. Simple scenario",
+    "summary": "A. Simple scenario",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_bfc3c301_0"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_plugin-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_plugin-setup_md_h2_97c516",
+    "title": "B. Plugins needing project edits",
+    "summary": "B. Plugins needing project edits",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_bfc3c301_1"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_plugin-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_plugin-setup_md_h2_4a35d3",
+    "title": "C. Merging libraries",
+    "summary": "C. Merging libraries",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_bfc3c301_2",
+      "doc_bfc3c301_3"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_plugin-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md",
+    "title": "Integrate a Flutter module into your Android project",
+    "summary": "Documentation page: Integrate a Flutter module into your Android project",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_26e25ae4_0",
+      "doc_26e25ae4_1",
+      "doc_26e25ae4_2",
+      "doc_26e25ae4_3",
+      "doc_26e25ae4_4",
+      "doc_26e25ae4_5",
+      "doc_26e25ae4_6",
+      "doc_26e25ae4_7",
+      "doc_26e25ae4_8",
+      "doc_26e25ae4_9",
+      "doc_26e25ae4_10",
+      "doc_26e25ae4_11"
+    ],
+    "children": [
+      "src_content_add-to-app_android_project-setup_md_h2_0d7109",
+      "src_content_add-to-app_android_project-setup_md_h2_c388a8"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h2_0d7109",
+    "title": "Integrate your Flutter module",
+    "summary": "Integrate your Flutter module",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_26e25ae4_1",
+      "doc_26e25ae4_2",
+      "doc_26e25ae4_3",
+      "doc_26e25ae4_4"
+    ],
+    "children": [
+      "src_content_add-to-app_android_project-setup_md_h3_3fb080",
+      "src_content_add-to-app_android_project-setup_md_h3_6665fd"
+    ],
+    "parent": "src_content_add-to-app_android_project-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h3_3fb080",
+    "title": "Integrate with Android Studio {:.no_toc}",
+    "summary": "Integrate with Android Studio {:.no_toc}",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_26e25ae4_1"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_project-setup_md_h2_0d7109"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h3_6665fd",
+    "title": "Integrate without Android Studio {:.no_toc}",
+    "summary": "Integrate without Android Studio {:.no_toc}",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_26e25ae4_2",
+      "doc_26e25ae4_3",
+      "doc_26e25ae4_4"
+    ],
+    "children": [
+      "src_content_add-to-app_android_project-setup_md_h4_f91e5d",
+      "src_content_add-to-app_android_project-setup_md_h4_d5d2ba",
+      "src_content_add-to-app_android_project-setup_md_h4_540270"
+    ],
+    "parent": "src_content_add-to-app_android_project-setup_md_h2_0d7109"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h4_f91e5d",
+    "title": "Create a Flutter module",
+    "summary": "Create a Flutter module",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_26e25ae4_2"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_project-setup_md_h3_6665fd"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h4_d5d2ba",
+    "title": "Java version requirement",
+    "summary": "Java version requirement",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_26e25ae4_3"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_project-setup_md_h3_6665fd"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h4_540270",
+    "title": "Centralize repository settings",
+    "summary": "Centralize repository settings",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_26e25ae4_4"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_project-setup_md_h3_6665fd"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h2_c388a8",
+    "title": "Add the Flutter module as a dependency",
+    "summary": "Add the Flutter module as a dependency",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_26e25ae4_5",
+      "doc_26e25ae4_6",
+      "doc_26e25ae4_7",
+      "doc_26e25ae4_8",
+      "doc_26e25ae4_9",
+      "doc_26e25ae4_10",
+      "doc_26e25ae4_11"
+    ],
+    "children": [
+      "src_content_add-to-app_android_project-setup_md_h3_94d5d0",
+      "src_content_add-to-app_android_project-setup_md_h3_77a22f",
+      "src_content_add-to-app_android_project-setup_md_h3_8a3334"
+    ],
+    "parent": "src_content_add-to-app_android_project-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h3_94d5d0",
+    "title": "Depend on the Android Archive (AAR) {:.no_toc}",
+    "summary": "Depend on the Android Archive (AAR) {:.no_toc}",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_26e25ae4_6",
+      "doc_26e25ae4_7"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_project-setup_md_h2_c388a8"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h3_77a22f",
+    "title": "Kotlin DSL based Android Project",
+    "summary": "Kotlin DSL based Android Project",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_26e25ae4_8"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_project-setup_md_h2_c388a8"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h3_8a3334",
+    "title": "Depend on the module's source code {:.no_toc}",
+    "summary": "Depend on the module's source code {:.no_toc}",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_26e25ae4_9",
+      "doc_26e25ae4_10",
+      "doc_26e25ae4_11"
+    ],
+    "children": [
+      "src_content_add-to-app_android_project-setup_md_h4_f18a53",
+      "src_content_add-to-app_android_project-setup_md_h4_0517fd"
+    ],
+    "parent": "src_content_add-to-app_android_project-setup_md_h2_c388a8"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h4_f18a53",
+    "title": "Updating `settings.gradle`",
+    "summary": "Updating `settings.gradle`",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_26e25ae4_10"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_project-setup_md_h3_8a3334"
+  },
+  {
+    "node_id": "src_content_add-to-app_android_project-setup_md_h4_0517fd",
+    "title": "Updating `app/build.gradle`",
+    "summary": "Updating `app/build.gradle`",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_26e25ae4_11"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_android_project-setup_md_h3_8a3334"
+  },
+  {
+    "node_id": "src_content_add-to-app_android__initial-route-cached-engine_md",
+    "title": "src/content/add-to-app/android/_initial-route-cached-engine.md",
+    "summary": "Documentation page: src/content/add-to-app/android/_initial-route-cached-engine.md",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_8509157a_0",
+      "doc_8509157a_1"
+    ],
+    "children": [],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md",
+    "title": "Add a Flutter screen to an iOS app",
+    "summary": "Documentation page: Add a Flutter screen to an iOS app",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_25cfe39d_0",
+      "doc_25cfe39d_1",
+      "doc_25cfe39d_2",
+      "doc_25cfe39d_3",
+      "doc_25cfe39d_4",
+      "doc_25cfe39d_5",
+      "doc_25cfe39d_6",
+      "doc_25cfe39d_7",
+      "doc_25cfe39d_8",
+      "doc_25cfe39d_9",
+      "doc_25cfe39d_10",
+      "doc_25cfe39d_11",
+      "doc_25cfe39d_12",
+      "doc_25cfe39d_13",
+      "doc_25cfe39d_14",
+      "doc_25cfe39d_15",
+      "doc_25cfe39d_16",
+      "doc_25cfe39d_17",
+      "doc_25cfe39d_18",
+      "doc_25cfe39d_19",
+      "doc_25cfe39d_20"
+    ],
+    "children": [
+      "src_content_add-to-app_ios_add-flutter-screen_md_h2_1595c3",
+      "src_content_add-to-app_ios_add-flutter-screen_md_h2_17e96c",
+      "src_content_add-to-app_ios_add-flutter-screen_md_h2_ed1167",
+      "src_content_add-to-app_ios_add-flutter-screen_md_h2_d00228"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h2_1595c3",
+    "title": "Start a FlutterEngine and FlutterViewController",
+    "summary": "Start a FlutterEngine and FlutterViewController",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_25cfe39d_0",
+      "doc_25cfe39d_1",
+      "doc_25cfe39d_2",
+      "doc_25cfe39d_3",
+      "doc_25cfe39d_4",
+      "doc_25cfe39d_5",
+      "doc_25cfe39d_6",
+      "doc_25cfe39d_7"
+    ],
+    "children": [
+      "src_content_add-to-app_ios_add-flutter-screen_md_h3_81c0f9",
+      "src_content_add-to-app_ios_add-flutter-screen_md_h3_210b15",
+      "src_content_add-to-app_ios_add-flutter-screen_md_h3_291dc4"
+    ],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h3_81c0f9",
+    "title": "Create a FlutterEngine",
+    "summary": "Create a FlutterEngine",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_25cfe39d_1",
+      "doc_25cfe39d_2"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md_h2_1595c3"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h3_210b15",
+    "title": "Show a FlutterViewController with your FlutterEngine",
+    "summary": "Show a FlutterViewController with your FlutterEngine",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_25cfe39d_3",
+      "doc_25cfe39d_4",
+      "doc_25cfe39d_5"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md_h2_1595c3"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h3_291dc4",
+    "title": "_Alternatively_ - Create a FlutterViewController with an implicit FlutterEngine",
+    "summary": "_Alternatively_ - Create a FlutterViewController with an implicit FlutterEngine",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_25cfe39d_6",
+      "doc_25cfe39d_7"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md_h2_1595c3"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h2_17e96c",
+    "title": "Using the FlutterAppDelegate",
+    "summary": "Using the FlutterAppDelegate",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_25cfe39d_8",
+      "doc_25cfe39d_9",
+      "doc_25cfe39d_10",
+      "doc_25cfe39d_11",
+      "doc_25cfe39d_12",
+      "doc_25cfe39d_13",
+      "doc_25cfe39d_14"
+    ],
+    "children": [
+      "src_content_add-to-app_ios_add-flutter-screen_md_h3_4907cf",
+      "src_content_add-to-app_ios_add-flutter-screen_md_h3_6f5bcf"
+    ],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h3_4907cf",
+    "title": "Creating a FlutterAppDelegate subclass",
+    "summary": "Creating a FlutterAppDelegate subclass",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_25cfe39d_9",
+      "doc_25cfe39d_10"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md_h2_17e96c"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h3_6f5bcf",
+    "title": "If you can't directly make FlutterAppDelegate a subclass",
+    "summary": "If you can't directly make FlutterAppDelegate a subclass",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_25cfe39d_11",
+      "doc_25cfe39d_12",
+      "doc_25cfe39d_13",
+      "doc_25cfe39d_14"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md_h2_17e96c"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h2_ed1167",
+    "title": "Launch options",
+    "summary": "Launch options",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_25cfe39d_15",
+      "doc_25cfe39d_16",
+      "doc_25cfe39d_17",
+      "doc_25cfe39d_18"
+    ],
+    "children": [
+      "src_content_add-to-app_ios_add-flutter-screen_md_h3_53a4e4",
+      "src_content_add-to-app_ios_add-flutter-screen_md_h3_c0f73b",
+      "src_content_add-to-app_ios_add-flutter-screen_md_h3_9405c3",
+      "src_content_add-to-app_ios_add-flutter-screen_md_h3_6311ae"
+    ],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h3_53a4e4",
+    "title": "Dart entrypoint",
+    "summary": "Dart entrypoint",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_25cfe39d_15"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md_h2_ed1167"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h3_c0f73b",
+    "title": "Dart library",
+    "summary": "Dart library",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_25cfe39d_16"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md_h2_ed1167"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h3_9405c3",
+    "title": "Route",
+    "summary": "Route",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_25cfe39d_17"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md_h2_ed1167"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h3_6311ae",
+    "title": "Other",
+    "summary": "Other",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_25cfe39d_18"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md_h2_ed1167"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h2_d00228",
+    "title": "Content-sized views",
+    "summary": "Content-sized views",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_25cfe39d_18",
+      "doc_25cfe39d_19",
+      "doc_25cfe39d_20"
+    ],
+    "children": [
+      "src_content_add-to-app_ios_add-flutter-screen_md_h3_e3e16b"
+    ],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_add-flutter-screen_md_h3_e3e16b",
+    "title": "Restrictions",
+    "summary": "Restrictions",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_25cfe39d_19",
+      "doc_25cfe39d_20"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_add-flutter-screen_md_h2_d00228"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_index_md",
+    "title": "Add Flutter to iOS",
+    "summary": "Documentation page: Add Flutter to iOS",
+    "depth": 0,
+    "chunk_ids": [],
+    "children": [],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_project-setup_md",
+    "title": "Integrate a Flutter module into your iOS project",
+    "summary": "Documentation page: Integrate a Flutter module into your iOS project",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_09883f61_0",
+      "doc_09883f61_1",
+      "doc_09883f61_2",
+      "doc_09883f61_3",
+      "doc_09883f61_4",
+      "doc_09883f61_5",
+      "doc_09883f61_6",
+      "doc_09883f61_7",
+      "doc_09883f61_8"
+    ],
+    "children": [
+      "src_content_add-to-app_ios_project-setup_md_h2_163e80",
+      "src_content_add-to-app_ios_project-setup_md_h2_f91e5d",
+      "src_content_add-to-app_ios_project-setup_md_h2_d2728d",
+      "src_content_add-to-app_ios_project-setup_md_h2_b94424",
+      "src_content_add-to-app_ios_project-setup_md_h2_76ffcc",
+      "src_content_add-to-app_ios_project-setup_md_h2_1c35db",
+      "src_content_add-to-app_ios_project-setup_md_h2_cce78d"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_project-setup_md_h2_163e80",
+    "title": "Development system requirements",
+    "summary": "Development system requirements",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_09883f61_1"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_project-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_project-setup_md_h2_f91e5d",
+    "title": "Create a Flutter module",
+    "summary": "Create a Flutter module",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_09883f61_1"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_project-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_project-setup_md_h2_d2728d",
+    "title": "Organize your module",
+    "summary": "Organize your module",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_09883f61_2"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_project-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_project-setup_md_h2_b94424",
+    "title": "Embed a Flutter module in your iOS app",
+    "summary": "Embed a Flutter module in your iOS app",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_09883f61_3"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_project-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_project-setup_md_h2_76ffcc",
+    "title": "Set local network privacy permissions",
+    "summary": "Set local network privacy permissions",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_09883f61_4",
+      "doc_09883f61_5",
+      "doc_09883f61_6"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_project-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_project-setup_md_h2_1c35db",
+    "title": "Mitigate known issue with Apple Silicon Macs",
+    "summary": "Mitigate known issue with Apple Silicon Macs",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_09883f61_7"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_project-setup_md"
+  },
+  {
+    "node_id": "src_content_add-to-app_ios_project-setup_md_h2_cce78d",
+    "title": "Next steps",
+    "summary": "Next steps",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_09883f61_8"
+    ],
+    "children": [],
+    "parent": "src_content_add-to-app_ios_project-setup_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-rules_md",
+    "title": "AI rules for Flutter and Dart",
+    "summary": "Documentation page: AI rules for Flutter and Dart",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_d61e4c05_0",
+      "doc_d61e4c05_1",
+      "doc_d61e4c05_2",
+      "doc_d61e4c05_3"
+    ],
+    "children": [
+      "src_content_ai_ai-rules_md_h2_3b8782",
+      "src_content_ai_ai-rules_md_h2_2e471b",
+      "src_content_ai_ai-rules_md_h2_f7008c"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_ai-rules_md_h2_3b8782",
+    "title": "Overview",
+    "summary": "Overview",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_d61e4c05_0"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-rules_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-rules_md_h2_2e471b",
+    "title": "Device & editor specific limits",
+    "summary": "Device & editor specific limits",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_d61e4c05_1",
+      "doc_d61e4c05_2"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-rules_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-rules_md_h2_f7008c",
+    "title": "Create rules for your editor",
+    "summary": "Create rules for your editor",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_d61e4c05_3"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-rules_md"
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md",
+    "title": "Create with AI",
+    "summary": "Documentation page: Create with AI",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_e8279392_0",
+      "doc_e8279392_1",
+      "doc_e8279392_2",
+      "doc_e8279392_3",
+      "doc_e8279392_4",
+      "doc_e8279392_5",
+      "doc_e8279392_6",
+      "doc_e8279392_7",
+      "doc_e8279392_8",
+      "doc_e8279392_9"
+    ],
+    "children": [
+      "src_content_ai_create-with-ai_md_h2_3b8782",
+      "src_content_ai_create-with-ai_md_h2_63bfb5",
+      "src_content_ai_create-with-ai_md_h2_4b1b97"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md_h2_3b8782",
+    "title": "Overview",
+    "summary": "Overview",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_e8279392_0"
+    ],
+    "children": [],
+    "parent": "src_content_ai_create-with-ai_md"
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md_h2_63bfb5",
+    "title": "Build AI-powered experiences with Flutter",
+    "summary": "Build AI-powered experiences with Flutter",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_e8279392_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_create-with-ai_md"
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md_h2_4b1b97",
+    "title": "AI development tools",
+    "summary": "AI development tools",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_e8279392_2",
+      "doc_e8279392_3",
+      "doc_e8279392_4",
+      "doc_e8279392_5",
+      "doc_e8279392_6",
+      "doc_e8279392_7",
+      "doc_e8279392_8",
+      "doc_e8279392_9"
+    ],
+    "children": [
+      "src_content_ai_create-with-ai_md_h3_219c45",
+      "src_content_ai_create-with-ai_md_h3_96780a",
+      "src_content_ai_create-with-ai_md_h3_eed6e5",
+      "src_content_ai_create-with-ai_md_h3_0e031e",
+      "src_content_ai_create-with-ai_md_h3_252bb1",
+      "src_content_ai_create-with-ai_md_h3_44ec63"
+    ],
+    "parent": "src_content_ai_create-with-ai_md"
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md_h3_219c45",
+    "title": "GenUI SDK for Flutter {: #genui }",
+    "summary": "GenUI SDK for Flutter {: #genui }",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e8279392_3"
+    ],
+    "children": [],
+    "parent": "src_content_ai_create-with-ai_md_h2_4b1b97"
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md_h3_96780a",
+    "title": "Antigravity",
+    "summary": "Antigravity",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e8279392_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_create-with-ai_md_h2_4b1b97"
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md_h3_eed6e5",
+    "title": "Gemini Code Assist",
+    "summary": "Gemini Code Assist",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e8279392_5"
+    ],
+    "children": [],
+    "parent": "src_content_ai_create-with-ai_md_h2_4b1b97"
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md_h3_0e031e",
+    "title": "Gemini CLI",
+    "summary": "Gemini CLI",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e8279392_6",
+      "doc_e8279392_7"
+    ],
+    "children": [
+      "src_content_ai_create-with-ai_md_h4_022ded"
+    ],
+    "parent": "src_content_ai_create-with-ai_md_h2_4b1b97"
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md_h4_022ded",
+    "title": "Flutter extension for Gemini CLI",
+    "summary": "Flutter extension for Gemini CLI",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_e8279392_7"
+    ],
+    "children": [],
+    "parent": "src_content_ai_create-with-ai_md_h3_0e031e"
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md_h3_252bb1",
+    "title": "Dart and Flutter MCP server",
+    "summary": "Dart and Flutter MCP server",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e8279392_8"
+    ],
+    "children": [],
+    "parent": "src_content_ai_create-with-ai_md_h2_4b1b97"
+  },
+  {
+    "node_id": "src_content_ai_create-with-ai_md_h3_44ec63",
+    "title": "Rules for Flutter and Dart",
+    "summary": "Rules for Flutter and Dart",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e8279392_9"
+    ],
+    "children": [],
+    "parent": "src_content_ai_create-with-ai_md_h2_4b1b97"
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md",
+    "title": "Flutter extension for Gemini CLI",
+    "summary": "Documentation page: Flutter extension for Gemini CLI",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_8783a863_0",
+      "doc_8783a863_1",
+      "doc_8783a863_2",
+      "doc_8783a863_3",
+      "doc_8783a863_4",
+      "doc_8783a863_5",
+      "doc_8783a863_6"
+    ],
+    "children": [
+      "src_content_ai_gemini-cli-extension_md_h2_ee68e5",
+      "src_content_ai_gemini-cli-extension_md_h2_be11c7",
+      "src_content_ai_gemini-cli-extension_md_h2_29349e",
+      "src_content_ai_gemini-cli-extension_md_h2_0f2ed0",
+      "src_content_ai_gemini-cli-extension_md_h2_87ddbe",
+      "src_content_ai_gemini-cli-extension_md_h2_7f090b",
+      "src_content_ai_gemini-cli-extension_md_h2_d11612",
+      "src_content_ai_gemini-cli-extension_md_h2_faecfc",
+      "src_content_ai_gemini-cli-extension_md_h2_8910fc",
+      "src_content_ai_gemini-cli-extension_md_h2_ddcf50"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md_h2_ee68e5",
+    "title": "Prerequisites",
+    "summary": "Prerequisites",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8783a863_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_gemini-cli-extension_md"
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md_h2_be11c7",
+    "title": "Get started",
+    "summary": "Get started",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8783a863_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_gemini-cli-extension_md"
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md_h2_29349e",
+    "title": "Available commands",
+    "summary": "Available commands",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8783a863_2"
+    ],
+    "children": [],
+    "parent": "src_content_ai_gemini-cli-extension_md"
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md_h2_0f2ed0",
+    "title": "Create an app",
+    "summary": "Create an app",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8783a863_3"
+    ],
+    "children": [],
+    "parent": "src_content_ai_gemini-cli-extension_md"
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md_h2_87ddbe",
+    "title": "Implement features from the plan",
+    "summary": "Implement features from the plan",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8783a863_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_gemini-cli-extension_md"
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md_h2_7f090b",
+    "title": "Modify",
+    "summary": "Modify",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8783a863_5"
+    ],
+    "children": [],
+    "parent": "src_content_ai_gemini-cli-extension_md"
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md_h2_d11612",
+    "title": "Clean up and commit",
+    "summary": "Clean up and commit",
+    "depth": 2,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_ai_gemini-cli-extension_md"
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md_h2_faecfc",
+    "title": "Fully loaded with best practices",
+    "summary": "Fully loaded with best practices",
+    "depth": 2,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_ai_gemini-cli-extension_md"
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md_h2_8910fc",
+    "title": "Access to development tools with the Flutter and Dart MCP server",
+    "summary": "Access to development tools with the Flutter and Dart MCP server",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8783a863_5"
+    ],
+    "children": [],
+    "parent": "src_content_ai_gemini-cli-extension_md"
+  },
+  {
+    "node_id": "src_content_ai_gemini-cli-extension_md_h2_ddcf50",
+    "title": "Resources",
+    "summary": "Resources",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8783a863_6"
+    ],
+    "children": [],
+    "parent": "src_content_ai_gemini-cli-extension_md"
+  },
+  {
+    "node_id": "src_content_ai_index_md",
+    "title": "Flutter & AI",
+    "summary": "Documentation page: Flutter & AI",
+    "depth": 0,
+    "chunk_ids": [],
+    "children": [],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md",
+    "title": "Dart and Flutter MCP server",
+    "summary": "Documentation page: Dart and Flutter MCP server",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_8efaff54_0",
+      "doc_8efaff54_1",
+      "doc_8efaff54_2",
+      "doc_8efaff54_3",
+      "doc_8efaff54_4",
+      "doc_8efaff54_5",
+      "doc_8efaff54_6",
+      "doc_8efaff54_7",
+      "doc_8efaff54_8",
+      "doc_8efaff54_9",
+      "doc_8efaff54_10",
+      "doc_8efaff54_11",
+      "doc_8efaff54_12",
+      "doc_8efaff54_13",
+      "doc_8efaff54_14",
+      "doc_8efaff54_15"
+    ],
+    "children": [
+      "src_content_ai_mcp-server_md_h2_3b8782",
+      "src_content_ai_mcp-server_md_h2_187e35",
+      "src_content_ai_mcp-server_md_h2_ae4edd"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h2_3b8782",
+    "title": "Overview",
+    "summary": "Overview",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8efaff54_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h2_187e35",
+    "title": "Set up your MCP client",
+    "summary": "Set up your MCP client",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8efaff54_2",
+      "doc_8efaff54_3",
+      "doc_8efaff54_4",
+      "doc_8efaff54_5",
+      "doc_8efaff54_6",
+      "doc_8efaff54_7",
+      "doc_8efaff54_8",
+      "doc_8efaff54_9",
+      "doc_8efaff54_10",
+      "doc_8efaff54_11",
+      "doc_8efaff54_12"
+    ],
+    "children": [
+      "src_content_ai_mcp-server_md_h3_96780a",
+      "src_content_ai_mcp-server_md_h3_0e031e",
+      "src_content_ai_mcp-server_md_h3_eb9578",
+      "src_content_ai_mcp-server_md_h3_775171",
+      "src_content_ai_mcp-server_md_h3_8fd998",
+      "src_content_ai_mcp-server_md_h3_9abdae",
+      "src_content_ai_mcp-server_md_h3_5c38a2",
+      "src_content_ai_mcp-server_md_h3_38c66b",
+      "src_content_ai_mcp-server_md_h3_9cc772"
+    ],
+    "parent": "src_content_ai_mcp-server_md"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_96780a",
+    "title": "Antigravity",
+    "summary": "Antigravity",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_2",
+      "doc_8efaff54_3",
+      "doc_8efaff54_4"
+    ],
+    "children": [
+      "src_content_ai_mcp-server_md_h4_016146",
+      "src_content_ai_mcp-server_md_h4_a556b1",
+      "src_content_ai_mcp-server_md_h4_1f29ab"
+    ],
+    "parent": "src_content_ai_mcp-server_md_h2_187e35"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h4_016146",
+    "title": "Install from the MCP store {: #antigravity-mcp-store-install}",
+    "summary": "Install from the MCP store {: #antigravity-mcp-store-install}",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_8efaff54_3"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h3_96780a"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h4_a556b1",
+    "title": "Connect manually {: #antigravity-mcp-manual-install}",
+    "summary": "Connect manually {: #antigravity-mcp-manual-install}",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_8efaff54_3"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h3_96780a"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h4_1f29ab",
+    "title": "Install extensions",
+    "summary": "Install extensions",
+    "depth": 4,
+    "chunk_ids": [
+      "doc_8efaff54_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h3_96780a"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_0e031e",
+    "title": "Gemini CLI",
+    "summary": "Gemini CLI",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_5"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h2_187e35"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_eb9578",
+    "title": "Firebase Studio",
+    "summary": "Firebase Studio",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_6"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h2_187e35"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_775171",
+    "title": "Gemini Code Assist in VS Code",
+    "summary": "Gemini Code Assist in VS Code",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_7"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h2_187e35"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_8fd998",
+    "title": "GitHub Copilot in VS Code",
+    "summary": "GitHub Copilot in VS Code",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_8"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h2_187e35"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_9abdae",
+    "title": "Cursor",
+    "summary": "Cursor",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_9"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h2_187e35"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_5c38a2",
+    "title": "OpenCode",
+    "summary": "OpenCode",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_10"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h2_187e35"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_38c66b",
+    "title": "Claude Code",
+    "summary": "Claude Code",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_11"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h2_187e35"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_9cc772",
+    "title": "Codex CLI",
+    "summary": "Codex CLI",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_12"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h2_187e35"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h2_ae4edd",
+    "title": "Use your MCP client",
+    "summary": "Use your MCP client",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8efaff54_13",
+      "doc_8efaff54_14",
+      "doc_8efaff54_15"
+    ],
+    "children": [
+      "src_content_ai_mcp-server_md_h3_758aeb",
+      "src_content_ai_mcp-server_md_h3_cabe5d"
+    ],
+    "parent": "src_content_ai_mcp-server_md"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_758aeb",
+    "title": "Fix a runtime layout error in a Flutter app",
+    "summary": "Fix a runtime layout error in a Flutter app",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_14"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h2_ae4edd"
+  },
+  {
+    "node_id": "src_content_ai_mcp-server_md_h3_cabe5d",
+    "title": "Add new functionality with package search",
+    "summary": "Add new functionality with package search",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8efaff54_15"
+    ],
+    "children": [],
+    "parent": "src_content_ai_mcp-server_md_h2_ae4edd"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_chat-client-sample_md",
+    "title": "Chat client sample",
+    "summary": "Documentation page: Chat client sample",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_de89341b_0"
+    ],
+    "children": [],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_custom-llm-providers_md",
+    "title": "Custom LLM providers",
+    "summary": "Documentation page: Custom LLM providers",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_c2f47c25_0",
+      "doc_c2f47c25_1",
+      "doc_c2f47c25_2",
+      "doc_c2f47c25_3",
+      "doc_c2f47c25_4",
+      "doc_c2f47c25_5"
+    ],
+    "children": [
+      "src_content_ai_ai-toolkit_custom-llm-providers_md_h2_b672f5",
+      "src_content_ai_ai-toolkit_custom-llm-providers_md_h2_ff7c0f"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_custom-llm-providers_md_h2_b672f5",
+    "title": "Implementation",
+    "summary": "Implementation",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_c2f47c25_1",
+      "doc_c2f47c25_2",
+      "doc_c2f47c25_3",
+      "doc_c2f47c25_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_custom-llm-providers_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_custom-llm-providers_md_h2_ff7c0f",
+    "title": "Examples",
+    "summary": "Examples",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_c2f47c25_5"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_custom-llm-providers_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md",
+    "title": "Feature integration",
+    "summary": "Documentation page: Feature integration",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_8ed49d8e_0",
+      "doc_8ed49d8e_1",
+      "doc_8ed49d8e_2",
+      "doc_8ed49d8e_3",
+      "doc_8ed49d8e_4",
+      "doc_8ed49d8e_5",
+      "doc_8ed49d8e_6",
+      "doc_8ed49d8e_7",
+      "doc_8ed49d8e_8",
+      "doc_8ed49d8e_9",
+      "doc_8ed49d8e_10",
+      "doc_8ed49d8e_11",
+      "doc_8ed49d8e_12",
+      "doc_8ed49d8e_13",
+      "doc_8ed49d8e_14",
+      "doc_8ed49d8e_15",
+      "doc_8ed49d8e_16",
+      "doc_8ed49d8e_17",
+      "doc_8ed49d8e_18"
+    ],
+    "children": [
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_086d5b",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_672387",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_a49cec",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_b51691",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_7c98af",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_158e36",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_6d1bb2",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_67fecd",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_58a35d",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_423200",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_454d6a",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_2544ee",
+      "src_content_ai_ai-toolkit_feature-integration_md_h2_410aaa"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_086d5b",
+    "title": "Welcome messages",
+    "summary": "Welcome messages",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_672387",
+    "title": "Suggested prompts",
+    "summary": "Suggested prompts",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_2"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_a49cec",
+    "title": "LLM instructions",
+    "summary": "LLM instructions",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_3",
+      "doc_8ed49d8e_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_b51691",
+    "title": "Function calling",
+    "summary": "Function calling",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_5"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_7c98af",
+    "title": "Disable attachments and audio input",
+    "summary": "Disable attachments and audio input",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_6"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_158e36",
+    "title": "Custom speech-to-text",
+    "summary": "Custom speech-to-text",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_7"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_6d1bb2",
+    "title": "Manage cancel or error behavior",
+    "summary": "Manage cancel or error behavior",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_8"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_67fecd",
+    "title": "Manage history",
+    "summary": "Manage history",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_9",
+      "doc_8ed49d8e_10"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_58a35d",
+    "title": "Chat serialization/deserialization",
+    "summary": "Chat serialization/deserialization",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_11"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_423200",
+    "title": "Custom response widgets",
+    "summary": "Custom response widgets",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_12",
+      "doc_8ed49d8e_13",
+      "doc_8ed49d8e_14"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_454d6a",
+    "title": "Custom styling",
+    "summary": "Custom styling",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_15"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_2544ee",
+    "title": "Chat without UI",
+    "summary": "Chat without UI",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_16",
+      "doc_8ed49d8e_17"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_feature-integration_md_h2_410aaa",
+    "title": "Rerouting prompts",
+    "summary": "Rerouting prompts",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_8ed49d8e_18"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_feature-integration_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_index_md",
+    "title": "Flutter AI Toolkit",
+    "summary": "Documentation page: Flutter AI Toolkit",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_7da45b9c_0",
+      "doc_7da45b9c_1",
+      "doc_7da45b9c_2",
+      "doc_7da45b9c_3",
+      "doc_7da45b9c_4",
+      "doc_7da45b9c_5",
+      "doc_7da45b9c_6",
+      "doc_7da45b9c_7"
+    ],
+    "children": [
+      "src_content_ai_ai-toolkit_index_md_h2_be01a3",
+      "src_content_ai_ai-toolkit_index_md_h2_f0258b",
+      "src_content_ai_ai-toolkit_index_md_h2_be11c7",
+      "src_content_ai_ai-toolkit_index_md_h2_ff7c0f",
+      "src_content_ai_ai-toolkit_index_md_h2_bea4c2"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_index_md_h2_be01a3",
+    "title": "Key features",
+    "summary": "Key features",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_7da45b9c_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_index_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_index_md_h2_f0258b",
+    "title": "Demo",
+    "summary": "Demo",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_7da45b9c_2"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_index_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_index_md_h2_be11c7",
+    "title": "Get started",
+    "summary": "Get started",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_7da45b9c_3",
+      "doc_7da45b9c_4",
+      "doc_7da45b9c_5"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_index_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_index_md_h2_ff7c0f",
+    "title": "Examples",
+    "summary": "Examples",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_7da45b9c_6"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_index_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_index_md_h2_bea4c2",
+    "title": "Feedback",
+    "summary": "Feedback",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_7da45b9c_7"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_index_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_user-experience_md",
+    "title": "User experience",
+    "summary": "Documentation page: User experience",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_530e2e83_0",
+      "doc_530e2e83_1",
+      "doc_530e2e83_2",
+      "doc_530e2e83_3",
+      "doc_530e2e83_4",
+      "doc_530e2e83_5",
+      "doc_530e2e83_6"
+    ],
+    "children": [
+      "src_content_ai_ai-toolkit_user-experience_md_h2_e95b93",
+      "src_content_ai_ai-toolkit_user-experience_md_h2_361f91",
+      "src_content_ai_ai-toolkit_user-experience_md_h2_d1399d",
+      "src_content_ai_ai-toolkit_user-experience_md_h2_41c1ff",
+      "src_content_ai_ai-toolkit_user-experience_md_h2_a61278",
+      "src_content_ai_ai-toolkit_user-experience_md_h2_24d068",
+      "src_content_ai_ai-toolkit_user-experience_md_h2_171894"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_user-experience_md_h2_e95b93",
+    "title": "Multiline text input",
+    "summary": "Multiline text input",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_530e2e83_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_user-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_user-experience_md_h2_361f91",
+    "title": "Voice input",
+    "summary": "Voice input",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_530e2e83_2"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_user-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_user-experience_md_h2_d1399d",
+    "title": "Multimedia input",
+    "summary": "Multimedia input",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_530e2e83_3"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_user-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_user-experience_md_h2_41c1ff",
+    "title": "Image zoom",
+    "summary": "Image zoom",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_530e2e83_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_user-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_user-experience_md_h2_a61278",
+    "title": "Copy to clipboard",
+    "summary": "Copy to clipboard",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_530e2e83_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_user-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_user-experience_md_h2_24d068",
+    "title": "Message editing",
+    "summary": "Message editing",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_530e2e83_5"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_user-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_ai-toolkit_user-experience_md_h2_171894",
+    "title": "Material and Cupertino",
+    "summary": "Material and Cupertino",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_530e2e83_6"
+    ],
+    "children": [],
+    "parent": "src_content_ai_ai-toolkit_user-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_developer-experience_md",
+    "title": "Developer experience",
+    "summary": "Documentation page: Developer experience",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_8f59f2f4_0",
+      "doc_8f59f2f4_1",
+      "doc_8f59f2f4_2",
+      "doc_8f59f2f4_3",
+      "doc_8f59f2f4_4"
+    ],
+    "children": [
+      "src_content_ai_best-practices_developer-experience_md_h3_0b6cbd",
+      "src_content_ai_best-practices_developer-experience_md_h3_ca0dba",
+      "src_content_ai_best-practices_developer-experience_md_h3_ad3d06",
+      "src_content_ai_best-practices_developer-experience_md_h3_d15e53"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_best-practices_developer-experience_md_h3_0b6cbd",
+    "title": "Plan",
+    "summary": "Plan",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8f59f2f4_1",
+      "doc_8f59f2f4_2",
+      "doc_8f59f2f4_3"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_developer-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_developer-experience_md_h3_ca0dba",
+    "title": "Code",
+    "summary": "Code",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8f59f2f4_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_developer-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_developer-experience_md_h3_ad3d06",
+    "title": "Validate",
+    "summary": "Validate",
+    "depth": 3,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_ai_best-practices_developer-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_developer-experience_md_h3_d15e53",
+    "title": "Iterate",
+    "summary": "Iterate",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_8f59f2f4_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_developer-experience_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_index_md",
+    "title": "Flutter AI best practices",
+    "summary": "Documentation page: Flutter AI best practices",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_ad18e4c7_0",
+      "doc_ad18e4c7_1"
+    ],
+    "children": [],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_best-practices_mode-of-interaction_md",
+    "title": "Mode of interaction",
+    "summary": "Documentation page: Mode of interaction",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_5be7133a_0",
+      "doc_5be7133a_1",
+      "doc_5be7133a_2",
+      "doc_5be7133a_3",
+      "doc_5be7133a_4"
+    ],
+    "children": [
+      "src_content_ai_best-practices_mode-of-interaction_md_h3_c4a4b9",
+      "src_content_ai_best-practices_mode-of-interaction_md_h3_928d30",
+      "src_content_ai_best-practices_mode-of-interaction_md_h3_ebff72"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_best-practices_mode-of-interaction_md_h3_c4a4b9",
+    "title": "Separation of concerns",
+    "summary": "Separation of concerns",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_5be7133a_1",
+      "doc_5be7133a_2"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_mode-of-interaction_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_mode-of-interaction_md_h3_928d30",
+    "title": "Ask vs agent",
+    "summary": "Ask vs agent",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_5be7133a_3"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_mode-of-interaction_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_mode-of-interaction_md_h3_ebff72",
+    "title": "Guardrails",
+    "summary": "Guardrails",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_5be7133a_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_mode-of-interaction_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_prompting_md",
+    "title": "Prompting",
+    "summary": "Documentation page: Prompting",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_3845a62a_0",
+      "doc_3845a62a_1",
+      "doc_3845a62a_2",
+      "doc_3845a62a_3",
+      "doc_3845a62a_4",
+      "doc_3845a62a_5",
+      "doc_3845a62a_6",
+      "doc_3845a62a_7"
+    ],
+    "children": [
+      "src_content_ai_best-practices_prompting_md_h3_5e9537",
+      "src_content_ai_best-practices_prompting_md_h1_f106c9"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_best-practices_prompting_md_h3_5e9537",
+    "title": "Prompt construction",
+    "summary": "Prompt construction",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_3845a62a_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_prompting_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_prompting_md_h1_f106c9",
+    "title": "Puzzle Information",
+    "summary": "Puzzle Information",
+    "depth": 1,
+    "chunk_ids": [
+      "doc_3845a62a_2",
+      "doc_3845a62a_3",
+      "doc_3845a62a_4",
+      "doc_3845a62a_5",
+      "doc_3845a62a_6",
+      "doc_3845a62a_7"
+    ],
+    "children": [
+      "src_content_ai_best-practices_prompting_md_h2_923f3e",
+      "src_content_ai_best-practices_prompting_md_h2_fb48a8"
+    ],
+    "parent": "src_content_ai_best-practices_prompting_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_prompting_md_h2_923f3e",
+    "title": "Grid Layout",
+    "summary": "Grid Layout",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_3845a62a_2"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_prompting_md_h1_f106c9"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_prompting_md_h2_fb48a8",
+    "title": "Clue",
+    "summary": "Clue",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_3845a62a_3",
+      "doc_3845a62a_4",
+      "doc_3845a62a_5",
+      "doc_3845a62a_6",
+      "doc_3845a62a_7"
+    ],
+    "children": [
+      "src_content_ai_best-practices_prompting_md_h3_fa074a",
+      "src_content_ai_best-practices_prompting_md_h3_b37fd0",
+      "src_content_ai_best-practices_prompting_md_h3_08ad30"
+    ],
+    "parent": "src_content_ai_best-practices_prompting_md_h1_f106c9"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_prompting_md_h3_fa074a",
+    "title": "Layering your prompts",
+    "summary": "Layering your prompts",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_3845a62a_4",
+      "doc_3845a62a_5"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_prompting_md_h2_fb48a8"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_prompting_md_h3_b37fd0",
+    "title": "Parameterizing your prompts",
+    "summary": "Parameterizing your prompts",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_3845a62a_6"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_prompting_md_h2_fb48a8"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_prompting_md_h3_08ad30",
+    "title": "Prompt versioning",
+    "summary": "Prompt versioning",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_3845a62a_7"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_prompting_md_h2_fb48a8"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_structure-output_md",
+    "title": "Structure & output",
+    "summary": "Documentation page: Structure & output",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_a2b008ab_0",
+      "doc_a2b008ab_1",
+      "doc_a2b008ab_2"
+    ],
+    "children": [
+      "src_content_ai_best-practices_structure-output_md_h3_c37f25",
+      "src_content_ai_best-practices_structure-output_md_h3_831917"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_best-practices_structure-output_md_h3_c37f25",
+    "title": "Structured input",
+    "summary": "Structured input",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_a2b008ab_0"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_structure-output_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_structure-output_md_h3_831917",
+    "title": "Structured output",
+    "summary": "Structured output",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_a2b008ab_1",
+      "doc_a2b008ab_2"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_structure-output_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_tool-calls_md",
+    "title": "Tool calls (aka function calls)",
+    "summary": "Documentation page: Tool calls (aka function calls)",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_000d90d3_0",
+      "doc_000d90d3_1",
+      "doc_000d90d3_2",
+      "doc_000d90d3_3",
+      "doc_000d90d3_4",
+      "doc_000d90d3_5",
+      "doc_000d90d3_6",
+      "doc_000d90d3_7",
+      "doc_000d90d3_8",
+      "doc_000d90d3_9",
+      "doc_000d90d3_10",
+      "doc_000d90d3_11"
+    ],
+    "children": [
+      "src_content_ai_best-practices_tool-calls_md_h3_de5324",
+      "src_content_ai_best-practices_tool-calls_md_h3_a6c964",
+      "src_content_ai_best-practices_tool-calls_md_h3_90292e",
+      "src_content_ai_best-practices_tool-calls_md_h2_31adcc"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_best-practices_tool-calls_md_h3_de5324",
+    "title": "Tool defined",
+    "summary": "Tool defined",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_000d90d3_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_tool-calls_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_tool-calls_md_h3_a6c964",
+    "title": "Gemini functions",
+    "summary": "Gemini functions",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_000d90d3_2",
+      "doc_000d90d3_3"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_tool-calls_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_tool-calls_md_h3_90292e",
+    "title": "Tool: `getWordMetadata`",
+    "summary": "Tool: `getWordMetadata`",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_000d90d3_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_tool-calls_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_tool-calls_md_h2_31adcc",
+    "title": "The Agentic Loop",
+    "summary": "The Agentic Loop",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_000d90d3_5",
+      "doc_000d90d3_6",
+      "doc_000d90d3_7",
+      "doc_000d90d3_8",
+      "doc_000d90d3_9",
+      "doc_000d90d3_10",
+      "doc_000d90d3_11"
+    ],
+    "children": [
+      "src_content_ai_best-practices_tool-calls_md_h3_e2a3f8",
+      "src_content_ai_best-practices_tool-calls_md_h3_7bacf8",
+      "src_content_ai_best-practices_tool-calls_md_h3_20c534",
+      "src_content_ai_best-practices_tool-calls_md_h3_0ec726"
+    ],
+    "parent": "src_content_ai_best-practices_tool-calls_md"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_tool-calls_md_h3_e2a3f8",
+    "title": "Structured output and tool calls",
+    "summary": "Structured output and tool calls",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_000d90d3_7"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_tool-calls_md_h2_31adcc"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_tool-calls_md_h3_7bacf8",
+    "title": "Tool: `returnResult`",
+    "summary": "Tool: `returnResult`",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_000d90d3_8"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_tool-calls_md_h2_31adcc"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_tool-calls_md_h3_20c534",
+    "title": "Human in the loop",
+    "summary": "Human in the loop",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_000d90d3_9"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_tool-calls_md_h2_31adcc"
+  },
+  {
+    "node_id": "src_content_ai_best-practices_tool-calls_md_h3_0ec726",
+    "title": "Tool: `resolveConflict`",
+    "summary": "Tool: `resolveConflict`",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_000d90d3_10",
+      "doc_000d90d3_11"
+    ],
+    "children": [],
+    "parent": "src_content_ai_best-practices_tool-calls_md_h2_31adcc"
+  },
+  {
+    "node_id": "src_content_ai_genui_components_md",
+    "title": "GenUI SDK main components and concepts",
+    "summary": "Documentation page: GenUI SDK main components and concepts",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_9838bf0f_0",
+      "doc_9838bf0f_1"
+    ],
+    "children": [
+      "src_content_ai_genui_components_md_h2_f0dbb3",
+      "src_content_ai_genui_components_md_h2_9ffdb9"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_genui_components_md_h2_f0dbb3",
+    "title": "Main components",
+    "summary": "Main components",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_9838bf0f_0"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_components_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_components_md_h2_9ffdb9",
+    "title": "How it works",
+    "summary": "How it works",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_9838bf0f_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_components_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md",
+    "title": "Get started with the GenUI SDK for Flutter",
+    "summary": "Documentation page: Get started with the GenUI SDK for Flutter",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_00069882_0",
+      "doc_00069882_1",
+      "doc_00069882_2",
+      "doc_00069882_3",
+      "doc_00069882_4",
+      "doc_00069882_5",
+      "doc_00069882_6",
+      "doc_00069882_7",
+      "doc_00069882_8",
+      "doc_00069882_9",
+      "doc_00069882_10",
+      "doc_00069882_11",
+      "doc_00069882_12",
+      "doc_00069882_13",
+      "doc_00069882_14",
+      "doc_00069882_15",
+      "doc_00069882_16",
+      "doc_00069882_17",
+      "doc_00069882_18",
+      "doc_00069882_19",
+      "doc_00069882_20"
+    ],
+    "children": [
+      "src_content_ai_genui_get-started_md_h2_947373",
+      "src_content_ai_genui_get-started_md_h2_c5afa4",
+      "src_content_ai_genui_get-started_md_h2_ecfe29",
+      "src_content_ai_genui_get-started_md_h2_f97756",
+      "src_content_ai_genui_get-started_md_h2_6a4a9d",
+      "src_content_ai_genui_get-started_md_h2_cce78d",
+      "src_content_ai_genui_get-started_md_h2_92f468",
+      "src_content_ai_genui_get-started_md_h2_224409"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h2_947373",
+    "title": "Configure your agent provider",
+    "summary": "Configure your agent provider",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_00069882_1",
+      "doc_00069882_2",
+      "doc_00069882_3",
+      "doc_00069882_4",
+      "doc_00069882_5",
+      "doc_00069882_6",
+      "doc_00069882_7",
+      "doc_00069882_8"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h2_c5afa4",
+    "title": "Create the connection to an agent",
+    "summary": "Create the connection to an agent",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_00069882_9",
+      "doc_00069882_10"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h2_ecfe29",
+    "title": "Send messages and display the agent's responses",
+    "summary": "Send messages and display the agent's responses",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_00069882_11",
+      "doc_00069882_12"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h2_f97756",
+    "title": "Add your own widgets to the catalog {:#custom-widgets}",
+    "summary": "Add your own widgets to the catalog {:#custom-widgets}",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_00069882_13",
+      "doc_00069882_14"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h2_6a4a9d",
+    "title": "Data model and data binding",
+    "summary": "Data model and data binding",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_00069882_15",
+      "doc_00069882_16",
+      "doc_00069882_17"
+    ],
+    "children": [
+      "src_content_ai_genui_get-started_md_h3_d22c59",
+      "src_content_ai_genui_get-started_md_h3_be53a0",
+      "src_content_ai_genui_get-started_md_h3_e3421a"
+    ],
+    "parent": "src_content_ai_genui_get-started_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h3_d22c59",
+    "title": "Binding to the data model",
+    "summary": "Binding to the data model",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_00069882_16"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md_h2_6a4a9d"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h3_be53a0",
+    "title": "Image",
+    "summary": "Image",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_00069882_17"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md_h2_6a4a9d"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h3_e3421a",
+    "title": "Updating the data model",
+    "summary": "Updating the data model",
+    "depth": 3,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md_h2_6a4a9d"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h2_cce78d",
+    "title": "Next steps",
+    "summary": "Next steps",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_00069882_17"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h2_92f468",
+    "title": "System instructions",
+    "summary": "System instructions",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_00069882_18"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h2_224409",
+    "title": "Troubleshooting/FAQ {:#troubleshoot}",
+    "summary": "Troubleshooting/FAQ {:#troubleshoot}",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_00069882_19",
+      "doc_00069882_20"
+    ],
+    "children": [
+      "src_content_ai_genui_get-started_md_h3_996042",
+      "src_content_ai_genui_get-started_md_h3_c96c2b"
+    ],
+    "parent": "src_content_ai_genui_get-started_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h3_996042",
+    "title": "How can I configure logging?",
+    "summary": "How can I configure logging?",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_00069882_19"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md_h2_224409"
+  },
+  {
+    "node_id": "src_content_ai_genui_get-started_md_h3_c96c2b",
+    "title": "I'm getting errors about my minimum macOS/iOS version.",
+    "summary": "I'm getting errors about my minimum macOS/iOS version.",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_00069882_20"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_get-started_md_h2_224409"
+  },
+  {
+    "node_id": "src_content_ai_genui_index_md",
+    "title": "GenUI SDK for Flutter",
+    "summary": "Documentation page: GenUI SDK for Flutter",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_3a292fda_0",
+      "doc_3a292fda_1"
+    ],
+    "children": [
+      "src_content_ai_genui_index_md_h2_98a954",
+      "src_content_ai_genui_index_md_h2_3f135d"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_genui_index_md_h2_98a954",
+    "title": "What is GenUI?",
+    "summary": "What is GenUI?",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_3a292fda_0"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_index_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_index_md_h2_3f135d",
+    "title": "When would you use it?",
+    "summary": "When would you use it?",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_3a292fda_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_index_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md",
+    "title": "Input and events",
+    "summary": "Documentation page: Input and events",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_779630b3_0",
+      "doc_779630b3_1",
+      "doc_779630b3_2",
+      "doc_779630b3_3",
+      "doc_779630b3_4",
+      "doc_779630b3_5",
+      "doc_779630b3_6"
+    ],
+    "children": [
+      "src_content_ai_genui_input-events_md_h2_3b8782",
+      "src_content_ai_genui_input-events_md_h2_fe5299",
+      "src_content_ai_genui_input-events_md_h2_5bfafb",
+      "src_content_ai_genui_input-events_md_h2_d0aab6",
+      "src_content_ai_genui_input-events_md_h2_184834"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md_h2_3b8782",
+    "title": "Overview",
+    "summary": "Overview",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_779630b3_0"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_input-events_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md_h2_fe5299",
+    "title": "Defining events",
+    "summary": "Defining events",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_779630b3_1",
+      "doc_779630b3_2"
+    ],
+    "children": [
+      "src_content_ai_genui_input-events_md_h3_a976d5",
+      "src_content_ai_genui_input-events_md_h3_b5aea9"
+    ],
+    "parent": "src_content_ai_genui_input-events_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md_h3_a976d5",
+    "title": "Protocol level",
+    "summary": "Protocol level",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_779630b3_1"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_input-events_md_h2_fe5299"
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md_h3_b5aea9",
+    "title": "Dart implementation",
+    "summary": "Dart implementation",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_779630b3_2"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_input-events_md_h2_fe5299"
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md_h2_5bfafb",
+    "title": "Capturing events in widgets",
+    "summary": "Capturing events in widgets",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_779630b3_3"
+    ],
+    "children": [
+      "src_content_ai_genui_input-events_md_h3_9c22cc"
+    ],
+    "parent": "src_content_ai_genui_input-events_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md_h3_9c22cc",
+    "title": "Example: Button implementation {: #button-example}",
+    "summary": "Example: Button implementation {: #button-example}",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_779630b3_3"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_input-events_md_h2_5bfafb"
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md_h2_d0aab6",
+    "title": "Event processing pipeline",
+    "summary": "Event processing pipeline",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_779630b3_4",
+      "doc_779630b3_5"
+    ],
+    "children": [
+      "src_content_ai_genui_input-events_md_h3_57c0a8",
+      "src_content_ai_genui_input-events_md_h3_d36cb7"
+    ],
+    "parent": "src_content_ai_genui_input-events_md"
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md_h3_57c0a8",
+    "title": "GenUISurface",
+    "summary": "GenUISurface",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_779630b3_4"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_input-events_md_h2_d0aab6"
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md_h3_d36cb7",
+    "title": "A2uiMessageProcessor",
+    "summary": "A2uiMessageProcessor",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_779630b3_5"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_input-events_md_h2_d0aab6"
+  },
+  {
+    "node_id": "src_content_ai_genui_input-events_md_h2_184834",
+    "title": "Transmission to AI",
+    "summary": "Transmission to AI",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_779630b3_6"
+    ],
+    "children": [],
+    "parent": "src_content_ai_genui_input-events_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_concepts_md",
+    "title": "Common architecture concepts",
+    "summary": "Documentation page: Common architecture concepts",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_20dc6920_0",
+      "doc_20dc6920_1",
+      "doc_20dc6920_2",
+      "doc_20dc6920_3",
+      "doc_20dc6920_4",
+      "doc_20dc6920_5",
+      "doc_20dc6920_6",
+      "doc_20dc6920_7"
+    ],
+    "children": [
+      "src_content_app-architecture_concepts_md_h2_c4a4b9",
+      "src_content_app-architecture_concepts_md_h2_122277",
+      "src_content_app-architecture_concepts_md_h2_2158d9",
+      "src_content_app-architecture_concepts_md_h2_3cea3b",
+      "src_content_app-architecture_concepts_md_h2_c82ca5",
+      "src_content_app-architecture_concepts_md_h2_76a1aa",
+      "src_content_app-architecture_concepts_md_h2_bfe73b",
+      "src_content_app-architecture_concepts_md_h2_bea4c2"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_concepts_md_h2_c4a4b9",
+    "title": "Separation of concerns",
+    "summary": "Separation of concerns",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_20dc6920_0"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_concepts_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_concepts_md_h2_122277",
+    "title": "Layered architecture",
+    "summary": "Layered architecture",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_20dc6920_1"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_concepts_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_concepts_md_h2_2158d9",
+    "title": "Single source of truth",
+    "summary": "Single source of truth",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_20dc6920_2"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_concepts_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_concepts_md_h2_3cea3b",
+    "title": "Unidirectional data flow",
+    "summary": "Unidirectional data flow",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_20dc6920_3"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_concepts_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_concepts_md_h2_c82ca5",
+    "title": "UI is a function of (immutable) state",
+    "summary": "UI is a function of (immutable) state",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_20dc6920_4"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_concepts_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_concepts_md_h2_76a1aa",
+    "title": "Extensibility",
+    "summary": "Extensibility",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_20dc6920_5"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_concepts_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_concepts_md_h2_bfe73b",
+    "title": "Testability",
+    "summary": "Testability",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_20dc6920_6"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_concepts_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_concepts_md_h2_bea4c2",
+    "title": "Feedback",
+    "summary": "Feedback",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_20dc6920_7"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_concepts_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_md",
+    "title": "Architecture design patterns",
+    "summary": "Documentation page: Architecture design patterns",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_d5071315_0"
+    ],
+    "children": [],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md",
+    "title": "Guide to app architecture",
+    "summary": "Documentation page: Guide to app architecture",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_c8a3f9ac_0",
+      "doc_c8a3f9ac_1",
+      "doc_c8a3f9ac_2",
+      "doc_c8a3f9ac_3",
+      "doc_c8a3f9ac_4",
+      "doc_c8a3f9ac_5",
+      "doc_c8a3f9ac_6",
+      "doc_c8a3f9ac_7",
+      "doc_c8a3f9ac_8",
+      "doc_c8a3f9ac_9",
+      "doc_c8a3f9ac_10",
+      "doc_c8a3f9ac_11",
+      "doc_c8a3f9ac_12",
+      "doc_c8a3f9ac_13"
+    ],
+    "children": [
+      "src_content_app-architecture_guide_md_h2_5109d1",
+      "src_content_app-architecture_guide_md_h2_0a9b66",
+      "src_content_app-architecture_guide_md_h2_2acaff",
+      "src_content_app-architecture_guide_md_h2_a80864",
+      "src_content_app-architecture_guide_md_h2_bea4c2"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h2_5109d1",
+    "title": "Overview of project structure",
+    "summary": "Overview of project structure",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_c8a3f9ac_1",
+      "doc_c8a3f9ac_2"
+    ],
+    "children": [
+      "src_content_app-architecture_guide_md_h3_25018e"
+    ],
+    "parent": "src_content_app-architecture_guide_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h3_25018e",
+    "title": "MVVM",
+    "summary": "MVVM",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_c8a3f9ac_2"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_guide_md_h2_5109d1"
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h2_0a9b66",
+    "title": "UI layer",
+    "summary": "UI layer",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_c8a3f9ac_3",
+      "doc_c8a3f9ac_4",
+      "doc_c8a3f9ac_5",
+      "doc_c8a3f9ac_6"
+    ],
+    "children": [
+      "src_content_app-architecture_guide_md_h3_ed4832",
+      "src_content_app-architecture_guide_md_h3_b84bee"
+    ],
+    "parent": "src_content_app-architecture_guide_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h3_ed4832",
+    "title": "Views",
+    "summary": "Views",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_c8a3f9ac_5"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_guide_md_h2_0a9b66"
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h3_b84bee",
+    "title": "View models",
+    "summary": "View models",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_c8a3f9ac_6"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_guide_md_h2_0a9b66"
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h2_2acaff",
+    "title": "Data layer",
+    "summary": "Data layer",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_c8a3f9ac_7",
+      "doc_c8a3f9ac_8",
+      "doc_c8a3f9ac_9"
+    ],
+    "children": [
+      "src_content_app-architecture_guide_md_h3_de1f88",
+      "src_content_app-architecture_guide_md_h3_992a0f"
+    ],
+    "parent": "src_content_app-architecture_guide_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h3_de1f88",
+    "title": "Repositories",
+    "summary": "Repositories",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_c8a3f9ac_8"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_guide_md_h2_2acaff"
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h3_992a0f",
+    "title": "Services",
+    "summary": "Services",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_c8a3f9ac_9"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_guide_md_h2_2acaff"
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h2_a80864",
+    "title": "Optional: Domain layer",
+    "summary": "Optional: Domain layer",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_c8a3f9ac_10",
+      "doc_c8a3f9ac_11",
+      "doc_c8a3f9ac_12"
+    ],
+    "children": [
+      "src_content_app-architecture_guide_md_h3_7c3755"
+    ],
+    "parent": "src_content_app-architecture_guide_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h3_7c3755",
+    "title": "Data access with use-cases",
+    "summary": "Data access with use-cases",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_c8a3f9ac_11",
+      "doc_c8a3f9ac_12"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_guide_md_h2_a80864"
+  },
+  {
+    "node_id": "src_content_app-architecture_guide_md_h2_bea4c2",
+    "title": "Feedback",
+    "summary": "Feedback",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_c8a3f9ac_13"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_guide_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_index_md",
+    "title": "Architecting Flutter apps",
+    "summary": "Documentation page: Architecting Flutter apps",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_334456e7_0",
+      "doc_334456e7_1",
+      "doc_334456e7_2",
+      "doc_334456e7_3"
+    ],
+    "children": [
+      "src_content_app-architecture_index_md_h2_dac2d5",
+      "src_content_app-architecture_index_md_h2_f8656c",
+      "src_content_app-architecture_index_md_h2_32d7d2",
+      "src_content_app-architecture_index_md_h2_bea4c2"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_index_md_h2_dac2d5",
+    "title": "What you'll learn",
+    "summary": "What you'll learn",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_334456e7_1"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_index_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_index_md_h2_f8656c",
+    "title": "Benefits of intentional architecture",
+    "summary": "Benefits of intentional architecture",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_334456e7_1"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_index_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_index_md_h2_32d7d2",
+    "title": "How to use this guide",
+    "summary": "How to use this guide",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_334456e7_2"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_index_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_index_md_h2_bea4c2",
+    "title": "Feedback",
+    "summary": "Feedback",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_334456e7_3"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_index_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_recommendations_md",
+    "title": "Architecture recommendations and resources",
+    "summary": "Documentation page: Architecture recommendations and resources",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_fe23c3da_0",
+      "doc_fe23c3da_1",
+      "doc_fe23c3da_2",
+      "doc_fe23c3da_3"
+    ],
+    "children": [
+      "src_content_app-architecture_recommendations_md_h2_c4a4b9",
+      "src_content_app-architecture_recommendations_md_h2_9d4159",
+      "src_content_app-architecture_recommendations_md_h2_1a61f2",
+      "src_content_app-architecture_recommendations_md_h2_fa6a5a",
+      "src_content_app-architecture_recommendations_md_h2_9dc8ae",
+      "src_content_app-architecture_recommendations_md_h2_bea4c2"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_recommendations_md_h2_c4a4b9",
+    "title": "Separation of concerns",
+    "summary": "Separation of concerns",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_fe23c3da_1"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_recommendations_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_recommendations_md_h2_9d4159",
+    "title": "Handling data",
+    "summary": "Handling data",
+    "depth": 2,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_app-architecture_recommendations_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_recommendations_md_h2_1a61f2",
+    "title": "App structure",
+    "summary": "App structure",
+    "depth": 2,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_app-architecture_recommendations_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_recommendations_md_h2_fa6a5a",
+    "title": "Testing",
+    "summary": "Testing",
+    "depth": 2,
+    "chunk_ids": [],
+    "children": [],
+    "parent": "src_content_app-architecture_recommendations_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_recommendations_md_h2_9dc8ae",
+    "title": "Recommended resources {:#resources}",
+    "summary": "Recommended resources {:#resources}",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_fe23c3da_2"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_recommendations_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_recommendations_md_h2_bea4c2",
+    "title": "Feedback",
+    "summary": "Feedback",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_fe23c3da_3"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_recommendations_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_data-layer_md",
+    "title": "Data layer",
+    "summary": "Documentation page: Data layer",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_5e04a1ec_0",
+      "doc_5e04a1ec_1",
+      "doc_5e04a1ec_2",
+      "doc_5e04a1ec_3",
+      "doc_5e04a1ec_4",
+      "doc_5e04a1ec_5",
+      "doc_5e04a1ec_6",
+      "doc_5e04a1ec_7"
+    ],
+    "children": [
+      "src_content_app-architecture_case-study_data-layer_md_h2_635299",
+      "src_content_app-architecture_case-study_data-layer_md_h2_9a97d9",
+      "src_content_app-architecture_case-study_data-layer_md_h2_bea4c2"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_data-layer_md_h2_635299",
+    "title": "Define a service",
+    "summary": "Define a service",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_5e04a1ec_1"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_data-layer_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_data-layer_md_h2_9a97d9",
+    "title": "Define a repository",
+    "summary": "Define a repository",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_5e04a1ec_2",
+      "doc_5e04a1ec_3",
+      "doc_5e04a1ec_4",
+      "doc_5e04a1ec_5",
+      "doc_5e04a1ec_6"
+    ],
+    "children": [
+      "src_content_app-architecture_case-study_data-layer_md_h3_49f5a1",
+      "src_content_app-architecture_case-study_data-layer_md_h3_a86e10"
+    ],
+    "parent": "src_content_app-architecture_case-study_data-layer_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_data-layer_md_h3_49f5a1",
+    "title": "Domain models",
+    "summary": "Domain models",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_5e04a1ec_4",
+      "doc_5e04a1ec_5"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_data-layer_md_h2_9a97d9"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_data-layer_md_h3_a86e10",
+    "title": "Complete the event cycle",
+    "summary": "Complete the event cycle",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_5e04a1ec_6"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_data-layer_md_h2_9a97d9"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_data-layer_md_h2_bea4c2",
+    "title": "Feedback",
+    "summary": "Feedback",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_5e04a1ec_7"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_data-layer_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_dependency-injection_md",
+    "title": "Communicating between layers",
+    "summary": "Documentation page: Communicating between layers",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_fb58501f_0",
+      "doc_fb58501f_1",
+      "doc_fb58501f_2",
+      "doc_fb58501f_3",
+      "doc_fb58501f_4",
+      "doc_fb58501f_5"
+    ],
+    "children": [
+      "src_content_app-architecture_case-study_dependency-injection_md_h2_fb1026",
+      "src_content_app-architecture_case-study_dependency-injection_md_h2_bea4c2"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_dependency-injection_md_h2_fb1026",
+    "title": "Dependency injection",
+    "summary": "Dependency injection",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_fb58501f_2",
+      "doc_fb58501f_3",
+      "doc_fb58501f_4"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_dependency-injection_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_dependency-injection_md_h2_bea4c2",
+    "title": "Feedback",
+    "summary": "Feedback",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_fb58501f_5"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_dependency-injection_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_index_md",
+    "title": "Architecture case study",
+    "summary": "Documentation page: Architecture case study",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_4f27b541_0",
+      "doc_4f27b541_1",
+      "doc_4f27b541_2",
+      "doc_4f27b541_3",
+      "doc_4f27b541_4",
+      "doc_4f27b541_5",
+      "doc_4f27b541_6"
+    ],
+    "children": [
+      "src_content_app-architecture_case-study_index_md_h2_f9977d",
+      "src_content_app-architecture_case-study_index_md_h2_0d46cd",
+      "src_content_app-architecture_case-study_index_md_h2_bea4c2"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_index_md_h2_f9977d",
+    "title": "Package structure",
+    "summary": "Package structure",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_4f27b541_2",
+      "doc_4f27b541_3"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_index_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_index_md_h2_0d46cd",
+    "title": "Other architecture options",
+    "summary": "Other architecture options",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_4f27b541_4",
+      "doc_4f27b541_5"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_index_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_index_md_h2_bea4c2",
+    "title": "Feedback",
+    "summary": "Feedback",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_4f27b541_6"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_index_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_testing_md",
+    "title": "Testing each layer",
+    "summary": "Documentation page: Testing each layer",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_c972c4e5_0",
+      "doc_c972c4e5_1",
+      "doc_c972c4e5_2",
+      "doc_c972c4e5_3",
+      "doc_c972c4e5_4"
+    ],
+    "children": [
+      "src_content_app-architecture_case-study_testing_md_h2_81f60b",
+      "src_content_app-architecture_case-study_testing_md_h2_8da6b3",
+      "src_content_app-architecture_case-study_testing_md_h2_bea4c2"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_testing_md_h2_81f60b",
+    "title": "Testing the UI layer",
+    "summary": "Testing the UI layer",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_c972c4e5_0",
+      "doc_c972c4e5_1",
+      "doc_c972c4e5_2"
+    ],
+    "children": [
+      "src_content_app-architecture_case-study_testing_md_h3_427bbb",
+      "src_content_app-architecture_case-study_testing_md_h3_b96330"
+    ],
+    "parent": "src_content_app-architecture_case-study_testing_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_testing_md_h3_427bbb",
+    "title": "ViewModel unit tests",
+    "summary": "ViewModel unit tests",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_c972c4e5_0"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_testing_md_h2_81f60b"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_testing_md_h3_b96330",
+    "title": "View widget tests",
+    "summary": "View widget tests",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_c972c4e5_1",
+      "doc_c972c4e5_2"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_testing_md_h2_81f60b"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_testing_md_h2_8da6b3",
+    "title": "Testing the data layer",
+    "summary": "Testing the data layer",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_c972c4e5_3"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_testing_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_testing_md_h2_bea4c2",
+    "title": "Feedback",
+    "summary": "Feedback",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_c972c4e5_4"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_testing_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md",
+    "title": "UI layer case study",
+    "summary": "Documentation page: UI layer case study",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_e109e7b9_0",
+      "doc_e109e7b9_1",
+      "doc_e109e7b9_2",
+      "doc_e109e7b9_3",
+      "doc_e109e7b9_4",
+      "doc_e109e7b9_5",
+      "doc_e109e7b9_6",
+      "doc_e109e7b9_7",
+      "doc_e109e7b9_8",
+      "doc_e109e7b9_9",
+      "doc_e109e7b9_10",
+      "doc_e109e7b9_11",
+      "doc_e109e7b9_12",
+      "doc_e109e7b9_13",
+      "doc_e109e7b9_14",
+      "doc_e109e7b9_15",
+      "doc_e109e7b9_16"
+    ],
+    "children": [
+      "src_content_app-architecture_case-study_ui-layer_md_h2_0c9d35",
+      "src_content_app-architecture_case-study_ui-layer_md_h2_ba4859",
+      "src_content_app-architecture_case-study_ui-layer_md_h2_bea4c2"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md_h2_0c9d35",
+    "title": "Define a view model",
+    "summary": "Define a view model",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_e109e7b9_1",
+      "doc_e109e7b9_2",
+      "doc_e109e7b9_3",
+      "doc_e109e7b9_4",
+      "doc_e109e7b9_5"
+    ],
+    "children": [
+      "src_content_app-architecture_case-study_ui-layer_md_h3_66a59c",
+      "src_content_app-architecture_case-study_ui-layer_md_h3_adb2c6"
+    ],
+    "parent": "src_content_app-architecture_case-study_ui-layer_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md_h3_66a59c",
+    "title": "UI state",
+    "summary": "UI state",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e109e7b9_2",
+      "doc_e109e7b9_3",
+      "doc_e109e7b9_4",
+      "doc_e109e7b9_5"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_ui-layer_md_h2_0c9d35"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md_h3_adb2c6",
+    "title": "Updating UI state",
+    "summary": "Updating UI state",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e109e7b9_4",
+      "doc_e109e7b9_5"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_ui-layer_md_h2_0c9d35"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md_h2_ba4859",
+    "title": "Define a view",
+    "summary": "Define a view",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_e109e7b9_1",
+      "doc_e109e7b9_2",
+      "doc_e109e7b9_3",
+      "doc_e109e7b9_4",
+      "doc_e109e7b9_5",
+      "doc_e109e7b9_6",
+      "doc_e109e7b9_7",
+      "doc_e109e7b9_8",
+      "doc_e109e7b9_9",
+      "doc_e109e7b9_10",
+      "doc_e109e7b9_11",
+      "doc_e109e7b9_12",
+      "doc_e109e7b9_13",
+      "doc_e109e7b9_14",
+      "doc_e109e7b9_15"
+    ],
+    "children": [
+      "src_content_app-architecture_case-study_ui-layer_md_h3_e00b9c",
+      "src_content_app-architecture_case-study_ui-layer_md_h3_057cca",
+      "src_content_app-architecture_case-study_ui-layer_md_h3_824b71",
+      "src_content_app-architecture_case-study_ui-layer_md_h3_4d6e1c",
+      "src_content_app-architecture_case-study_ui-layer_md_h3_e1f364"
+    ],
+    "parent": "src_content_app-architecture_case-study_ui-layer_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md_h3_e00b9c",
+    "title": "Display UI data in a view",
+    "summary": "Display UI data in a view",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e109e7b9_7"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_ui-layer_md_h2_ba4859"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md_h3_057cca",
+    "title": "Update the UI",
+    "summary": "Update the UI",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e109e7b9_8"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_ui-layer_md_h2_ba4859"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md_h3_824b71",
+    "title": "Handling user events",
+    "summary": "Handling user events",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e109e7b9_9",
+      "doc_e109e7b9_10"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_ui-layer_md_h2_ba4859"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md_h3_4d6e1c",
+    "title": "Command objects",
+    "summary": "Command objects",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e109e7b9_11",
+      "doc_e109e7b9_12"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_ui-layer_md_h2_ba4859"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md_h3_e1f364",
+    "title": "Ensuring views can render before data exists",
+    "summary": "Ensuring views can render before data exists",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_e109e7b9_13",
+      "doc_e109e7b9_14",
+      "doc_e109e7b9_15"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_ui-layer_md_h2_ba4859"
+  },
+  {
+    "node_id": "src_content_app-architecture_case-study_ui-layer_md_h2_bea4c2",
+    "title": "Feedback",
+    "summary": "Feedback",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_e109e7b9_16"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_case-study_ui-layer_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_command_md",
+    "title": "The command pattern",
+    "summary": "Documentation page: The command pattern",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_9086729f_0",
+      "doc_9086729f_1",
+      "doc_9086729f_2",
+      "doc_9086729f_3",
+      "doc_9086729f_4",
+      "doc_9086729f_5",
+      "doc_9086729f_6",
+      "doc_9086729f_7",
+      "doc_9086729f_8",
+      "doc_9086729f_9",
+      "doc_9086729f_10",
+      "doc_9086729f_11"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_command_md_h2_3eb695",
+      "src_content_app-architecture_design-patterns_command_md_h2_3e9e26",
+      "src_content_app-architecture_design-patterns_command_md_h2_b58f0e"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_command_md_h2_3eb695",
+    "title": "Challenges when implementing view models",
+    "summary": "Challenges when implementing view models",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_9086729f_1",
+      "doc_9086729f_2",
+      "doc_9086729f_3"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_command_md_h3_6672ff",
+      "src_content_app-architecture_design-patterns_command_md_h3_d6e998"
+    ],
+    "parent": "src_content_app-architecture_design-patterns_command_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_command_md_h3_6672ff",
+    "title": "UI state in view models",
+    "summary": "UI state in view models",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_9086729f_2"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_command_md_h2_3eb695"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_command_md_h3_d6e998",
+    "title": "Triggering UI actions from view models",
+    "summary": "Triggering UI actions from view models",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_9086729f_3"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_command_md_h2_3eb695"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_command_md_h2_3e9e26",
+    "title": "Command pattern",
+    "summary": "Command pattern",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_9086729f_4",
+      "doc_9086729f_5",
+      "doc_9086729f_6",
+      "doc_9086729f_7",
+      "doc_9086729f_8"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_command_md_h3_137733",
+      "src_content_app-architecture_design-patterns_command_md_h3_c44eb6",
+      "src_content_app-architecture_design-patterns_command_md_h3_e6555c",
+      "src_content_app-architecture_design-patterns_command_md_h3_f3616f"
+    ],
+    "parent": "src_content_app-architecture_design-patterns_command_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_command_md_h3_137733",
+    "title": "Executing a command",
+    "summary": "Executing a command",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_9086729f_5"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_command_md_h2_3e9e26"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_command_md_h3_c44eb6",
+    "title": "Listening to the command state",
+    "summary": "Listening to the command state",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_9086729f_6"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_command_md_h2_3e9e26"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_command_md_h3_e6555c",
+    "title": "Combining command and ViewModel",
+    "summary": "Combining command and ViewModel",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_9086729f_7"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_command_md_h2_3e9e26"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_command_md_h3_f3616f",
+    "title": "Extending the command pattern",
+    "summary": "Extending the command pattern",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_9086729f_8"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_command_md_h2_3e9e26"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_command_md_h2_b58f0e",
+    "title": "Putting it all together",
+    "summary": "Putting it all together",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_9086729f_9",
+      "doc_9086729f_10",
+      "doc_9086729f_11"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_command_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_key-value-data_md",
+    "title": "Persistent storage architecture: Key-value data",
+    "summary": "Documentation page: Persistent storage architecture: Key-value data",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_4e20d650_0",
+      "doc_4e20d650_1",
+      "doc_4e20d650_2",
+      "doc_4e20d650_3",
+      "doc_4e20d650_4",
+      "doc_4e20d650_5",
+      "doc_4e20d650_6",
+      "doc_4e20d650_7",
+      "doc_4e20d650_8"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_key-value-data_md_h2_2427f8",
+      "src_content_app-architecture_design-patterns_key-value-data_md_h2_a1e6ea",
+      "src_content_app-architecture_design-patterns_key-value-data_md_h2_b58f0e"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_key-value-data_md_h2_2427f8",
+    "title": "Example application: App with theme selection",
+    "summary": "Example application: App with theme selection",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_4e20d650_1"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_key-value-data_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_key-value-data_md_h2_a1e6ea",
+    "title": "Storing theme selection key-value data",
+    "summary": "Storing theme selection key-value data",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_4e20d650_2",
+      "doc_4e20d650_3",
+      "doc_4e20d650_4",
+      "doc_4e20d650_5",
+      "doc_4e20d650_6"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_key-value-data_md_h3_fec8b0",
+      "src_content_app-architecture_design-patterns_key-value-data_md_h3_203dd4"
+    ],
+    "parent": "src_content_app-architecture_design-patterns_key-value-data_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_key-value-data_md_h3_fec8b0",
+    "title": "Theme selection presentation layer",
+    "summary": "Theme selection presentation layer",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_4e20d650_3",
+      "doc_4e20d650_4"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_key-value-data_md_h2_a1e6ea"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_key-value-data_md_h3_203dd4",
+    "title": "Theme selection data layer",
+    "summary": "Theme selection data layer",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_4e20d650_5",
+      "doc_4e20d650_6"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_key-value-data_md_h2_a1e6ea"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_key-value-data_md_h2_b58f0e",
+    "title": "Putting it all together",
+    "summary": "Putting it all together",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_4e20d650_7",
+      "doc_4e20d650_8"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_key-value-data_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md",
+    "title": "Offline-first support",
+    "summary": "Documentation page: Offline-first support",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_ee9f8fc1_0",
+      "doc_ee9f8fc1_1",
+      "doc_ee9f8fc1_2",
+      "doc_ee9f8fc1_3",
+      "doc_ee9f8fc1_4",
+      "doc_ee9f8fc1_5",
+      "doc_ee9f8fc1_6",
+      "doc_ee9f8fc1_7",
+      "doc_ee9f8fc1_8",
+      "doc_ee9f8fc1_9",
+      "doc_ee9f8fc1_10",
+      "doc_ee9f8fc1_11",
+      "doc_ee9f8fc1_12",
+      "doc_ee9f8fc1_13",
+      "doc_ee9f8fc1_14",
+      "doc_ee9f8fc1_15"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_offline-first_md_h2_d3699e",
+      "src_content_app-architecture_design-patterns_offline-first_md_h2_91d543",
+      "src_content_app-architecture_design-patterns_offline-first_md_h2_b7c360",
+      "src_content_app-architecture_design-patterns_offline-first_md_h2_dd41f5",
+      "src_content_app-architecture_design-patterns_offline-first_md_h2_b58f0e"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h2_d3699e",
+    "title": "Offline-first architecture",
+    "summary": "Offline-first architecture",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_ee9f8fc1_1",
+      "doc_ee9f8fc1_2"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h2_91d543",
+    "title": "Reading data",
+    "summary": "Reading data",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_ee9f8fc1_3",
+      "doc_ee9f8fc1_4",
+      "doc_ee9f8fc1_5",
+      "doc_ee9f8fc1_6",
+      "doc_ee9f8fc1_7"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_offline-first_md_h3_955277",
+      "src_content_app-architecture_design-patterns_offline-first_md_h3_6ac033",
+      "src_content_app-architecture_design-patterns_offline-first_md_h3_84a540"
+    ],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h3_955277",
+    "title": "Using local data as a fallback",
+    "summary": "Using local data as a fallback",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_ee9f8fc1_4"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md_h2_91d543"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h3_6ac033",
+    "title": "Using a Stream",
+    "summary": "Using a Stream",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_ee9f8fc1_5",
+      "doc_ee9f8fc1_6"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md_h2_91d543"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h3_84a540",
+    "title": "Using only local data",
+    "summary": "Using only local data",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_ee9f8fc1_7"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md_h2_91d543"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h2_b7c360",
+    "title": "Writing data",
+    "summary": "Writing data",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_ee9f8fc1_8",
+      "doc_ee9f8fc1_9"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_offline-first_md_h3_d060a2",
+      "src_content_app-architecture_design-patterns_offline-first_md_h3_561b96"
+    ],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h3_d060a2",
+    "title": "Online-only writing",
+    "summary": "Online-only writing",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_ee9f8fc1_8"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md_h2_b7c360"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h3_561b96",
+    "title": "Offline-first writing",
+    "summary": "Offline-first writing",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_ee9f8fc1_9"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md_h2_b7c360"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h2_dd41f5",
+    "title": "Synchronizing state",
+    "summary": "Synchronizing state",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_ee9f8fc1_10",
+      "doc_ee9f8fc1_11",
+      "doc_ee9f8fc1_12",
+      "doc_ee9f8fc1_13",
+      "doc_ee9f8fc1_14"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_offline-first_md_h3_8648e2",
+      "src_content_app-architecture_design-patterns_offline-first_md_h3_31102a",
+      "src_content_app-architecture_design-patterns_offline-first_md_h3_3d2bf8"
+    ],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h3_8648e2",
+    "title": "Writing a synchronization task",
+    "summary": "Writing a synchronization task",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_ee9f8fc1_11",
+      "doc_ee9f8fc1_12"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md_h2_dd41f5"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h3_31102a",
+    "title": "Storing a synchronization flag",
+    "summary": "Storing a synchronization flag",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_ee9f8fc1_13"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md_h2_dd41f5"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h3_3d2bf8",
+    "title": "Pushing data from server",
+    "summary": "Pushing data from server",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_ee9f8fc1_14"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md_h2_dd41f5"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_offline-first_md_h2_b58f0e",
+    "title": "Putting it all together",
+    "summary": "Putting it all together",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_ee9f8fc1_15"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_offline-first_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_optimistic-state_md",
+    "title": "Optimistic state",
+    "summary": "Documentation page: Optimistic state",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_777caeae_0",
+      "doc_777caeae_1",
+      "doc_777caeae_2",
+      "doc_777caeae_3",
+      "doc_777caeae_4",
+      "doc_777caeae_5",
+      "doc_777caeae_6",
+      "doc_777caeae_7",
+      "doc_777caeae_8",
+      "doc_777caeae_9",
+      "doc_777caeae_10",
+      "doc_777caeae_11",
+      "doc_777caeae_12"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_optimistic-state_md_h2_4e2d40",
+      "src_content_app-architecture_design-patterns_optimistic-state_md_h2_684baf",
+      "src_content_app-architecture_design-patterns_optimistic-state_md_h2_11e160",
+      "src_content_app-architecture_design-patterns_optimistic-state_md_h2_fdaa24"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_optimistic-state_md_h2_4e2d40",
+    "title": "Example feature: a subscribe button",
+    "summary": "Example feature: a subscribe button",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_777caeae_1"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_optimistic-state_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_optimistic-state_md_h2_684baf",
+    "title": "Feature architecture",
+    "summary": "Feature architecture",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_777caeae_2",
+      "doc_777caeae_3",
+      "doc_777caeae_4",
+      "doc_777caeae_5",
+      "doc_777caeae_6",
+      "doc_777caeae_7",
+      "doc_777caeae_8"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_optimistic-state_md_h3_2ffbd9",
+      "src_content_app-architecture_design-patterns_optimistic-state_md_h3_f35e02",
+      "src_content_app-architecture_design-patterns_optimistic-state_md_h3_07d9f6",
+      "src_content_app-architecture_design-patterns_optimistic-state_md_h3_8ae9d2"
+    ],
+    "parent": "src_content_app-architecture_design-patterns_optimistic-state_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_optimistic-state_md_h3_2ffbd9",
+    "title": "Implement the `SubscriptionRepository`",
+    "summary": "Implement the `SubscriptionRepository`",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_777caeae_4"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_optimistic-state_md_h2_684baf"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_optimistic-state_md_h3_f35e02",
+    "title": "Implement the `SubscribeButtonViewModel`",
+    "summary": "Implement the `SubscribeButtonViewModel`",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_777caeae_5",
+      "doc_777caeae_6"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_optimistic-state_md_h2_684baf"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_optimistic-state_md_h3_07d9f6",
+    "title": "Implement the `SubscribeButton`",
+    "summary": "Implement the `SubscribeButton`",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_777caeae_7"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_optimistic-state_md_h2_684baf"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_optimistic-state_md_h3_8ae9d2",
+    "title": "Handling errors",
+    "summary": "Handling errors",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_777caeae_8"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_optimistic-state_md_h2_684baf"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_optimistic-state_md_h2_11e160",
+    "title": "Advanced Optimistic State",
+    "summary": "Advanced Optimistic State",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_777caeae_9"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_optimistic-state_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_optimistic-state_md_h2_fdaa24",
+    "title": "Interactive example",
+    "summary": "Interactive example",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_777caeae_10",
+      "doc_777caeae_11",
+      "doc_777caeae_12"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_optimistic-state_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_result_md",
+    "title": "Error handling with Result objects",
+    "summary": "Documentation page: Error handling with Result objects",
+    "depth": 0,
+    "chunk_ids": [
+      "doc_9d69ddd0_0",
+      "doc_9d69ddd0_1",
+      "doc_9d69ddd0_2",
+      "doc_9d69ddd0_3",
+      "doc_9d69ddd0_4",
+      "doc_9d69ddd0_5",
+      "doc_9d69ddd0_6",
+      "doc_9d69ddd0_7",
+      "doc_9d69ddd0_8",
+      "doc_9d69ddd0_9"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_result_md_h2_850f6e",
+      "src_content_app-architecture_design-patterns_result_md_h2_f5ea24",
+      "src_content_app-architecture_design-patterns_result_md_h2_56a105",
+      "src_content_app-architecture_design-patterns_result_md_h2_b58f0e"
+    ],
+    "parent": ""
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_result_md_h2_850f6e",
+    "title": "Error flow in Flutter applications",
+    "summary": "Error flow in Flutter applications",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_9d69ddd0_1",
+      "doc_9d69ddd0_2"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_result_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_result_md_h2_f5ea24",
+    "title": "Using the result pattern",
+    "summary": "Using the result pattern",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_9d69ddd0_3",
+      "doc_9d69ddd0_4",
+      "doc_9d69ddd0_5",
+      "doc_9d69ddd0_6"
+    ],
+    "children": [
+      "src_content_app-architecture_design-patterns_result_md_h3_f6c38a",
+      "src_content_app-architecture_design-patterns_result_md_h3_13f74d"
+    ],
+    "parent": "src_content_app-architecture_design-patterns_result_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_result_md_h3_f6c38a",
+    "title": "Creating a `Result` object",
+    "summary": "Creating a `Result` object",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_9d69ddd0_4",
+      "doc_9d69ddd0_5"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_result_md_h2_f5ea24"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_result_md_h3_13f74d",
+    "title": "Unwrapping the Result object",
+    "summary": "Unwrapping the Result object",
+    "depth": 3,
+    "chunk_ids": [
+      "doc_9d69ddd0_6"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_result_md_h2_f5ea24"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_result_md_h2_56a105",
+    "title": "Improving control flow",
+    "summary": "Improving control flow",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_9d69ddd0_7"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_result_md"
+  },
+  {
+    "node_id": "src_content_app-architecture_design-patterns_result_md_h2_b58f0e",
+    "title": "Putting it all together",
+    "summary": "Putting it all together",
+    "depth": 2,
+    "chunk_ids": [
+      "doc_9d69ddd0_8",
+      "doc_9d69ddd0_9"
+    ],
+    "children": [],
+    "parent": "src_content_app-architecture_design-patterns_result_md"
+  }
+]

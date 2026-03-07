@@ -1,0 +1,24 @@
+{
+  "source_type": {
+    "unique_values": 2,
+    "total_entries": 735
+  },
+  "feature_area": {
+    "unique_values": 19,
+    "total_entries": 735
+  },
+  "state": {
+    "unique_values": 1,
+    "total_entries": 357
+  },
+  "os_platform": {
+    "unique_values": 4,
+    "total_entries": 357
+  },
+  "verified": {
+    "unique_values": 1,
+    "total_entries": 357
+  },
+  "chunk_count": 735,
+  "embedding_dim": 384
+}

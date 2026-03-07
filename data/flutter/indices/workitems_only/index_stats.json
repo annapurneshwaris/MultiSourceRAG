@@ -1,0 +1,20 @@
+{
+  "source_type": {
+    "unique_values": 1,
+    "total_entries": 317
+  },
+  "feature_area": {
+    "unique_values": 12,
+    "total_entries": 317
+  },
+  "state": {
+    "unique_values": 1,
+    "total_entries": 317
+  },
+  "item_type": {
+    "unique_values": 3,
+    "total_entries": 317
+  },
+  "chunk_count": 317,
+  "embedding_dim": 384
+}

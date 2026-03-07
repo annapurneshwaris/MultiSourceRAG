@@ -1,0 +1,12 @@
+{
+  "source_type": {
+    "unique_values": 1,
+    "total_entries": 378
+  },
+  "feature_area": {
+    "unique_values": 4,
+    "total_entries": 378
+  },
+  "chunk_count": 378,
+  "embedding_dim": 384
+}

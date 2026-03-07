@@ -1,0 +1,67 @@
+{
+  "total_chunks": 1052,
+  "doc_chunks": 378,
+  "bug_chunks": 357,
+  "workitem_chunks": 317,
+  "tree_nodes": 350,
+  "doc_areas": {
+    "ai": 145,
+    "architecture": 134,
+    "integration": 96,
+    "unknown": 3
+  },
+  "bug_areas": {
+    "framework": 90,
+    "text_input": 46,
+    "regression": 42,
+    "engine": 38,
+    "android": 30,
+    "plugins": 29,
+    "ios": 27,
+    "web": 19,
+    "tooling": 17,
+    "accessibility": 4,
+    "testing": 4,
+    "crash": 4,
+    "other_feature": 2,
+    "unknown": 2,
+    "scrolling": 2,
+    "desktop": 1
+  },
+  "workitem_areas": {
+    "feature": 152,
+    "unknown": 102,
+    "framework": 22,
+    "tooling": 10,
+    "text_input": 7,
+    "ios": 7,
+    "testing": 5,
+    "android": 4,
+    "windows": 4,
+    "other_feature": 2,
+    "web": 1,
+    "engine": 1
+  },
+  "workitem_types": {
+    "feature_request": 100,
+    "iteration_plan": 117,
+    "plan_item": 100
+  },
+  "token_stats": {
+    "doc_median": 300,
+    "bug_median": 413,
+    "wi_median": 262,
+    "doc_min": 17,
+    "doc_max": 500,
+    "bug_min": 10,
+    "bug_max": 624,
+    "wi_min": 3,
+    "wi_max": 12499
+  },
+  "feature_area_coverage": {
+    "doc_unknown": 3,
+    "bug_unknown": 2,
+    "wi_unknown": 102
+  },
+  "processing_time_seconds": 0.2
+}
